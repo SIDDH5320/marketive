@@ -1,0 +1,296 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brutalist Colors — use --color-* prefix so Tailwind v4 generates bg-primary-*, text-primary-* etc. */
+  --color-primary-300: #e0ff4d;
+  --color-primary-400: #D4FF00;
+  --color-primary-500: #D4FF00;
+  --color-primary-600: #b3d900;
+
+  --color-accent-400: #ff3377;
+  --color-accent-500: #ff0055;
+  --color-accent-600: #e6004c;
+
+  --color-surface-dark: #080808;
+  --color-surface-darker: #0d0d0d;
+  --color-surface-card: #0a0a0a;
+  --color-surface-card-hover: #111111;
+  --color-surface-border: #333333;
+
+  --color-surface-light: #ffffff;
+  --color-surface-light-card: #f5f5f5;
+  --color-surface-light-card-hover: #eeeeee;
+  --color-surface-light-border: #000000;
+
+  /* Typography */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Syne', 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Semantic aliases used by @layer components and JS setProperty */
+:root {
+  --primary: #D4FF00;
+  --primary-glow: rgba(212, 255, 0, 0.5);
+  --primary-foreground: #000000;
+  --primary-on-dark: #D4FF00;
+  --primary-on-light: #D4FF00;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (hover: hover) {
+    *, *::before, *::after { cursor: none !important; }
+  }
+
+  body {
+    font-family: var(--font-sans);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  body.dark {
+    background-color: var(--color-surface-dark);
+    color: #f4f4f5;
+  }
+
+  body.light {
+    background-color: var(--color-surface-light);
+    color: #111111;
+  }
+
+  /* Ensure headings are strongly contrasted in both modes */
+  body.dark h1,
+  body.dark h2,
+  body.dark h3,
+  body.dark h4,
+  body.dark h5 {
+    color: #ffffff;
+  }
+
+  body.light h1,
+  body.light h2,
+  body.light h3,
+  body.light h4,
+  body.light h5 {
+    color: #0a0a0a;
+  }
+
+  body.dark p,
+  body.dark span:not([class*="text-"]):not([class*="accent"]) {
+    color: #a1a1aa;
+  }
+
+  body.light p {
+    color: #3f3f46;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  body.dark ::-webkit-scrollbar-thumb {
+    background: #333;
+  }
+
+  body.light ::-webkit-scrollbar-thumb {
+    background: #ccc;
+  }
+
+  ::selection {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+  }
+}
+
+@layer components {
+
+  /* ============================================================
+     BRUTALIST CARD STYLES
+     ============================================================ */
+  .card-dark {
+    background: var(--color-surface-card);
+    border: 2px solid var(--color-surface-border);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-dark:hover {
+    border-color: var(--primary);
+    transform: translate(-4px, -4px);
+    box-shadow: 6px 6px 0 0 var(--primary), 0 0 20px var(--primary-glow);
+  }
+
+  .card-light {
+    background: var(--color-surface-light-card);
+    border: 2px solid var(--color-surface-light-border);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-light:hover {
+    background: #ffffff;
+    border-color: #000000;
+    transform: translate(-4px, -4px);
+    box-shadow: 6px 6px 0 0 #000000;
+  }
+
+  /* ============================================================
+     BRUTALIST BUTTONS
+     ============================================================ */
+  .btn-primary {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    padding: 16px 36px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    position: relative;
+  }
+
+  body.dark .btn-primary:hover {
+    background: #ffffff;
+    color: #000000;
+    transform: translate(-4px, -4px);
+    box-shadow: 6px 6px 0 0 var(--primary), 0 0 20px var(--primary-glow);
+  }
+
+  body.light .btn-primary {
+    border: 2px solid #000000;
+  }
+
+  body.light .btn-primary:hover {
+    background: #000000;
+    color: var(--primary-on-dark);
+    transform: translate(-4px, -4px);
+    box-shadow: 6px 6px 0 0 var(--primary), 0 0 20px var(--primary-glow);
+  }
+
+  .btn-secondary-dark {
+    background: transparent;
+    color: #ffffff;
+    padding: 16px 36px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+  }
+
+  .btn-secondary-dark:hover {
+    background: #ffffff;
+    color: #000000;
+    transform: translate(-4px, -4px);
+    box-shadow: 6px 6px 0 0 var(--primary), 0 0 20px var(--primary-glow);
+    border-color: #ffffff;
+  }
+
+  .btn-secondary-light {
+    background: transparent;
+    color: #000000;
+    padding: 16px 36px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 2px solid #000000;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+  }
+
+  .btn-secondary-light:hover {
+    background: #000000;
+    color: #ffffff;
+    transform: translate(-4px, -4px);
+    box-shadow: 6px 6px 0 0 #000000;
+  }
+
+  @media (max-width: 768px) {
+
+    .btn-primary,
+    .btn-secondary-dark,
+    .btn-secondary-light {
+      padding: 14px 28px;
+      font-size: 0.875rem;
+    }
+  }
+}
+
+@layer utilities {
+
+  /* ============================================================
+     SOLID ACCENT TEXT (Replaces gradient text)
+     ============================================================ */
+  .accent-text {
+    color: var(--primary);
+  }
+
+  body.dark .accent-text {
+    color: var(--primary-on-dark);
+  }
+
+  body.light .accent-text {
+    color: var(--primary-on-light);
+  }
+
+  /* ============================================================
+     NOISE OVERLAY (Kept for texture)
+     ============================================================ */
+  .noise-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  }
+
+  /* ============================================================
+     SCROLL PROGRESS BAR
+     ============================================================ */
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: var(--primary);
+    box-shadow: 0 0 10px var(--primary-glow);
+    z-index: 10000;
+    transition: width 0.05s linear;
+  }
+
+  /* ============================================================
+     BRUTALIST SOLID ACCENT BOXES
+     ============================================================ */
+  .bg-accent-solid {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    box-shadow: 0 0 20px var(--primary-glow);
+  }
+}
