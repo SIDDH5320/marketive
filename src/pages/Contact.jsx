@@ -22,7 +22,7 @@ export default function Contact() {
   return (
     <motion.div {...pageTransition}>
       <Helmet>
-        <title>Contact Marketive — Get a Free Digital Marketing Audit</title>
+        <title>Contact Marketive - Get a Free Digital Marketing Audit</title>
         <meta name="description" content="Get in touch with Marketive's team. Request a free audit, discuss your growth goals, or ask about our SEO, SEM, and content services." />
         <link rel="canonical" href="https://marketive.com.au/contact" />
       </Helmet>
@@ -99,10 +99,10 @@ export default function Contact() {
                 ))}
               </div>
 
-              {/* Map — Melbourne CBD */}
+              {/* Map - Melbourne CBD */}
               <div className={`h-52 overflow-hidden border-2 ${isDark ? 'border-surface-border' : 'border-black'}`}>
                 <iframe
-                  title="Marketive office location — Melbourne CBD"
+                  title="Marketive office location - Melbourne CBD"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353!3d-37.8162792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ceed30!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sau!4v1718000000000"
                   width="100%"
                   height="100%"

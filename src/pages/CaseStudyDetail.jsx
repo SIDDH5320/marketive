@@ -8,12 +8,12 @@ import { pageTransition, fadeInUp, staggerContainer } from '../utils/animations'
 import CTASection from '../components/CTASection';
 
 const IMAGE_MAP = {
-  'gradient-1': 'https://images.unsplash.com/photo-1543286386-713bdd548da4?w=1400&q=80',
-  'gradient-2': 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1400&q=80',
-  'gradient-3': 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1400&q=80',
-  'gradient-4': 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1400&q=80',
-  'gradient-5': 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1400&q=80',
-  'gradient-6': 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1400&q=80',
+  'gradient-1': '/images/case-studies/gradient-1.jpg',
+  'gradient-2': '/images/case-studies/gradient-2.jpg',
+  'gradient-3': '/images/case-studies/gradient-3.jpg',
+  'gradient-4': '/images/case-studies/gradient-4.jpg',
+  'gradient-5': '/images/case-studies/gradient-5.jpg',
+  'gradient-6': '/images/case-studies/gradient-6.jpg',
 };
 
 const CATEGORY_COLOR = {
@@ -25,12 +25,12 @@ const CATEGORY_COLOR = {
 };
 
 const SIDEBAR_IMAGES = {
-  'gradient-1': 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
-  'gradient-2': 'https://images.unsplash.com/photo-1553484771-371a605b060b?w=600&q=80',
-  'gradient-3': 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&q=80',
-  'gradient-4': 'https://images.unsplash.com/photo-1528716321680-815a8cdb8cbe?w=600&q=80',
-  'gradient-5': 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&q=80',
-  'gradient-6': 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80',
+  'gradient-1': '/images/case-studies/sidebar/gradient-1.jpg',
+  'gradient-2': '/images/case-studies/sidebar/gradient-2.jpg',
+  'gradient-3': '/images/case-studies/sidebar/gradient-3.jpg',
+  'gradient-4': '/images/case-studies/sidebar/gradient-4.jpg',
+  'gradient-5': '/images/case-studies/sidebar/gradient-5.jpg',
+  'gradient-6': '/images/case-studies/sidebar/gradient-6.jpg',
 };
 
 export default function CaseStudyDetail() {
@@ -58,7 +58,7 @@ export default function CaseStudyDetail() {
   return (
     <motion.div {...pageTransition}>
       <Helmet>
-        <title>{study.title} — Marketive Case Study</title>
+        <title>{study.title} - Marketive Case Study</title>
         <meta name="description" content={study.problem} />
       </Helmet>
 
@@ -152,7 +152,7 @@ export default function CaseStudyDetail() {
                   {study.solution}
                 </motion.p>
                 <motion.div variants={fadeInUp} className="rounded-2xl overflow-hidden">
-                  <img src={sideImg} alt="Strategy in action" className="w-full h-64 object-cover" />
+                  <img src={sideImg} alt="Strategy in action" loading="lazy" decoding="async" className="w-full h-64 object-cover" />
                 </motion.div>
               </motion.div>
 
@@ -257,6 +257,8 @@ export default function CaseStudyDetail() {
                     <img
                       src={IMAGE_MAP[r.image] || IMAGE_MAP['gradient-1']}
                       alt={r.title}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />

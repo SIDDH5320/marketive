@@ -1,5 +1,5 @@
 // ============================================================
-// MARKETIVE — SINGLE EDITABLE CONTENT FILE
+// MARKETIVE - SINGLE EDITABLE CONTENT FILE
 // ============================================================
 // ✏️  Edit ONLY this file to update all website content.
 //     No other files need to be touched.
@@ -60,7 +60,7 @@ const content = {
       tagline: "What We Do",
       heading: "Full-Stack Digital Marketing Solutions",
       description:
-        "From strategy to execution, we cover every pillar of digital growth — so you can focus on running your business.",
+        "From strategy to execution, we cover every pillar of digital growth - so you can focus on running your business.",
       services: [
         {
           icon: "Lightbulb",
@@ -84,7 +84,7 @@ const content = {
           icon: "FileText",
           title: "Content Strategy",
           description:
-            "Compelling content that educates, engages, and converts — from blogs to video scripts.",
+            "Compelling content that educates, engages, and converts - from blogs to video scripts.",
         },
         {
           icon: "Share2",
@@ -138,7 +138,7 @@ const content = {
         },
         {
           quote:
-            "They don't just run campaigns — they build growth engines. Marketive is an extension of our team.",
+            "They don't just run campaigns - they build growth engines. Marketive is an extension of our team.",
           name: "Priya Sharma",
           role: "Head of Digital, NovaHealth",
           avatar: "PS",
@@ -169,7 +169,7 @@ const content = {
       tagline: "What We Do",
       heading: "End-to-End Digital Marketing Services",
       description:
-        "We don't just execute tactics — we architect growth. Every service is powered by data, refined by creativity, and measured by results.",
+        "We don't just execute tactics - we architect growth. Every service is powered by data, refined by creativity, and measured by results.",
     },
     items: [
       {
@@ -194,6 +194,30 @@ const content = {
           "Scalable growth framework",
         ],
         cta: { label: "Get Your Free Strategy Session", path: "/contact" },
+        stats: [
+          { value: "120+", label: "Strategies Delivered" },
+          { value: "4.8x", label: "Avg ROI Uplift" },
+          { value: "30 Days", label: "To First Roadmap" },
+          { value: "98%", label: "Client Retention" },
+        ],
+        faqs: [
+          {
+            q: "How long does a strategy engagement take?",
+            a: "Most audits and roadmaps are delivered within 2-4 weeks, depending on the size of your business and how many channels we're analysing. Implementation timelines are mapped out as part of the roadmap itself.",
+          },
+          {
+            q: "Do you work with businesses that already have an in-house marketing team?",
+            a: "Absolutely. We regularly work alongside in-house teams as a strategic layer - providing the data, frameworks, and roadmap your team executes against.",
+          },
+          {
+            q: "What do I actually receive at the end of the audit?",
+            a: "A full digital audit report, a prioritised growth roadmap, a defined KPI framework, and a recommended budget allocation across channels.",
+          },
+          {
+            q: "How is success measured?",
+            a: "We agree on clear KPIs upfront - whether that's traffic, leads, revenue, or retention - and report against them every quarter.",
+          },
+        ],
       },
       {
         id: "seo",
@@ -201,7 +225,7 @@ const content = {
         title: "Search Engine Optimization",
         tagline: "Own Page One, Organically",
         description:
-          "Our SEO methodology goes beyond keywords. We build topical authority, fix technical foundations, and earn high-quality backlinks — creating a compounding asset that drives free traffic 24/7.",
+          "Our SEO methodology goes beyond keywords. We build topical authority, fix technical foundations, and earn high-quality backlinks - creating a compounding asset that drives free traffic 24/7.",
         features: [
           "Technical SEO & Site Architecture",
           "On-Page & Content Optimization",
@@ -217,6 +241,30 @@ const content = {
           "Long-term compounding ROI",
         ],
         cta: { label: "Start Ranking Higher", path: "/contact" },
+        stats: [
+          { value: "2,150%", label: "Avg Organic Traffic Growth" },
+          { value: "340+", label: "Keywords Ranked Top 10" },
+          { value: "6-9 Mo", label: "To Page One Results" },
+          { value: "97%", label: "Client Retention" },
+        ],
+        faqs: [
+          {
+            q: "Do you guarantee first-page rankings?",
+            a: "No ethical SEO agency can guarantee specific rankings - Google's algorithm has too many variables. What we guarantee is a transparent, white-hat process built on proven fundamentals that consistently drives results.",
+          },
+          {
+            q: "How long until I see SEO results?",
+            a: "Most clients see meaningful movement within 3-4 months and compounding growth by month 6-9. SEO is a long-term asset - the longer we work together, the stronger your moat becomes.",
+          },
+          {
+            q: "Do you follow Google's guidelines (white-hat only)?",
+            a: "Always. We never use link schemes, cloaking, or other tactics that risk a penalty. Every tactic we use is built to survive algorithm updates, not exploit loopholes.",
+          },
+          {
+            q: "What's included in monthly reporting?",
+            a: "Keyword rankings, organic traffic and conversions, technical health, backlink growth, and a plain-English summary of what we did and why.",
+          },
+        ],
       },
       {
         id: "sem",
@@ -240,6 +288,30 @@ const content = {
           "Rapid testing & iteration",
         ],
         cta: { label: "Launch Your Campaign", path: "/contact" },
+        stats: [
+          { value: "$15M+", label: "Ad Spend Managed" },
+          { value: "7.9x", label: "Avg ROAS" },
+          { value: "-62%", label: "Avg Cost Per Lead" },
+          { value: "48 Hrs", label: "Campaign Launch Time" },
+        ],
+        faqs: [
+          {
+            q: "What's the minimum ad budget you work with?",
+            a: "We typically work with clients spending $3,000+ per month in ad spend, which gives the algorithms enough data to optimise effectively. We'll always tell you honestly if your budget is too low to be effective.",
+          },
+          {
+            q: "Which platforms do you manage campaigns on?",
+            a: "Google Ads, Bing/Microsoft Advertising, YouTube, Display, Shopping, and Performance Max - plus paid social when it complements your funnel.",
+          },
+          {
+            q: "How do you optimize campaigns over time?",
+            a: "We run continuous A/B tests on ad copy, audiences, and landing pages, paired with smart bidding strategies that learn from your conversion data week over week.",
+          },
+          {
+            q: "Will I own my ad accounts?",
+            a: "Yes - all accounts are set up under your ownership. You always retain full access and control, even if you ever decide to move on.",
+          },
+        ],
       },
       {
         id: "content-strategy",
@@ -263,6 +335,30 @@ const content = {
           "Builds lasting brand equity",
         ],
         cta: { label: "Build Your Content Engine", path: "/contact" },
+        stats: [
+          { value: "1,800%", label: "Avg Blog Traffic Growth" },
+          { value: "500+", label: "Pieces Published Yearly" },
+          { value: "28K", label: "Newsletter Subscribers Built" },
+          { value: "92%", label: "On-Time Delivery" },
+        ],
+        faqs: [
+          {
+            q: "Who writes the content - AI or humans?",
+            a: "Every piece is researched and written by experienced human writers and subject-matter experts. We use AI for research and ideation, never as a replacement for quality and accuracy.",
+          },
+          {
+            q: "How do you measure content ROI?",
+            a: "We track every piece through the full funnel - impressions, traffic, leads, and attributed revenue - so we can double down on what's working and cut what isn't.",
+          },
+          {
+            q: "Can you match our existing brand voice?",
+            a: "Yes. We start every engagement with a brand voice and style guide review to make sure everything we publish sounds authentically like you.",
+          },
+          {
+            q: "How often will we publish?",
+            a: "Cadence depends on your strategy - most clients publish 2-4 long-form pieces per week alongside supporting social and email content.",
+          },
+        ],
       },
       {
         id: "social-media",
@@ -270,7 +366,7 @@ const content = {
         title: "Social Media Marketing",
         tagline: "Build Community, Drive Revenue",
         description:
-          "We create scroll-stopping social strategies across Instagram, LinkedIn, Facebook, TikTok, and X. From organic community building to paid social campaigns — we grow your brand where your audience lives.",
+          "We create scroll-stopping social strategies across Instagram, LinkedIn, Facebook, TikTok, and X. From organic community building to paid social campaigns - we grow your brand where your audience lives.",
         features: [
           "Social Media Strategy",
           "Content Creation & Design",
@@ -286,6 +382,30 @@ const content = {
           "Real-time customer insights",
         ],
         cta: { label: "Grow Your Social Presence", path: "/contact" },
+        stats: [
+          { value: "85K+", label: "Followers Generated" },
+          { value: "420%", label: "Avg Engagement Lift" },
+          { value: "$95K/mo", label: "Revenue From Social" },
+          { value: "15+", label: "Platforms Managed" },
+        ],
+        faqs: [
+          {
+            q: "Which platforms should my business be on?",
+            a: "It depends on your audience - we don't believe in being everywhere at once. We'll recommend the 2-3 platforms where your customers actually spend time and focus our effort there.",
+          },
+          {
+            q: "Do you create the content or just manage posting?",
+            a: "Full service - strategy, content creation, design, copywriting, scheduling, and community management. You approve, we execute.",
+          },
+          {
+            q: "How do you handle community management & DMs?",
+            a: "Our team monitors and responds to comments and messages during business hours using your approved brand voice, escalating anything sensitive straight to you.",
+          },
+          {
+            q: "Do you run paid social ads too?",
+            a: "Yes - organic and paid work best together. We can layer in paid social campaigns on Meta, TikTok, and LinkedIn to accelerate growth.",
+          },
+        ],
       },
       {
         id: "marketing-automation",
@@ -293,7 +413,7 @@ const content = {
         title: "Marketing Automation",
         tagline: "Scale Without the Chaos",
         description:
-          "We implement and optimize marketing automation platforms — from HubSpot to Klaviyo — building intelligent workflows that nurture leads, re-engage customers, and drive revenue on autopilot.",
+          "We implement and optimize marketing automation platforms - from HubSpot to Klaviyo - building intelligent workflows that nurture leads, re-engage customers, and drive revenue on autopilot.",
         features: [
           "Platform Setup & Migration",
           "Email Marketing Automation",
@@ -309,6 +429,30 @@ const content = {
           "Scalable processes",
         ],
         cta: { label: "Automate Your Growth", path: "/contact" },
+        stats: [
+          { value: "25 Hrs/wk", label: "Avg Time Saved" },
+          { value: "210%", label: "Lead-to-Customer Lift" },
+          { value: "12+", label: "Workflows Per Client" },
+          { value: "$1.2M", label: "Avg Pipeline Generated" },
+        ],
+        faqs: [
+          {
+            q: "Which automation platforms do you work with?",
+            a: "We're certified across HubSpot, Klaviyo, ActiveCampaign, and most major CRMs - and we'll recommend the right fit based on your business model and budget.",
+          },
+          {
+            q: "Can you migrate us from our current CRM?",
+            a: "Yes, we handle full data migration, workflow rebuilding, and integration testing so nothing falls through the cracks during the switch.",
+          },
+          {
+            q: "How long does implementation take?",
+            a: "A typical setup - platform configuration, core workflows, and integrations - takes 4-6 weeks. More complex migrations can take longer.",
+          },
+          {
+            q: "Do you write the email sequences too?",
+            a: "Yes - copywriting, design, and logic for every sequence is included, from welcome flows to win-back campaigns.",
+          },
+        ],
       },
     ],
   },
@@ -321,13 +465,13 @@ const content = {
       tagline: "Our Work",
       heading: "Results That Speak for Themselves",
       description:
-        "Explore real-world success stories where strategy meets execution — and the numbers do the talking.",
+        "Explore real-world success stories where strategy meets execution - and the numbers do the talking.",
     },
     categories: ["All", "SEO", "SEM", "Content", "Social Media", "Automation"],
     items: [
       {
         id: "techflow-seo",
-        title: "TechFlow SaaS — 2,150% Organic Traffic Growth",
+        title: "TechFlow SaaS - 2,150% Organic Traffic Growth",
         industry: "SaaS / Technology",
         category: "SEO",
         image: "gradient-1",
@@ -344,7 +488,7 @@ const content = {
       },
       {
         id: "urbannest-sem",
-        title: "UrbanNest — 340% ROAS Improvement",
+        title: "UrbanNest - 340% ROAS Improvement",
         industry: "Real Estate / PropTech",
         category: "SEM",
         image: "gradient-2",
@@ -361,14 +505,14 @@ const content = {
       },
       {
         id: "greenleaf-content",
-        title: "GreenLeaf — Content-Led Brand Authority",
+        title: "GreenLeaf - Content-Led Brand Authority",
         industry: "Sustainability / E-commerce",
         category: "Content",
         image: "gradient-3",
         problem:
           "GreenLeaf had strong products but zero brand recognition. Their blog was dormant, social engagement was minimal, and they had no thought leadership in the sustainability space.",
         solution:
-          "We developed a comprehensive content ecosystem — SEO blog content, a weekly newsletter, a podcast series, and a sustainability report that got picked up by major publications.",
+          "We developed a comprehensive content ecosystem - SEO blog content, a weekly newsletter, a podcast series, and a sustainability report that got picked up by major publications.",
         results: [
           { metric: "Blog Traffic", value: "+1,800%" },
           { metric: "Newsletter Subscribers", value: "0 → 28K" },
@@ -378,7 +522,7 @@ const content = {
       },
       {
         id: "novahealth-social",
-        title: "NovaHealth — Social Media Revenue Engine",
+        title: "NovaHealth - Social Media Revenue Engine",
         industry: "Healthcare / Wellness",
         category: "Social Media",
         image: "gradient-4",
@@ -395,7 +539,7 @@ const content = {
       },
       {
         id: "brightpath-automation",
-        title: "BrightPath — Marketing Automation Overhaul",
+        title: "BrightPath - Marketing Automation Overhaul",
         industry: "Education / EdTech",
         category: "Automation",
         image: "gradient-5",
@@ -412,7 +556,7 @@ const content = {
       },
       {
         id: "cloudsync-seo",
-        title: "CloudSync — Enterprise SEO Domination",
+        title: "CloudSync - Enterprise SEO Domination",
         industry: "Cloud Infrastructure",
         category: "SEO",
         image: "gradient-6",
@@ -436,14 +580,14 @@ const content = {
   about: {
     hero: {
       tagline: "About Marketive",
-      heading: "We're Not Just an Agency — We're Your Growth Partner",
+      heading: "We're Not Just an Agency - We're Your Growth Partner",
       description:
         "Founded in Melbourne, Marketive was born from a simple belief: every business deserves world-class digital marketing. We combine deep expertise, cutting-edge technology, and genuine partnership to deliver results that matter.",
     },
     mission: {
       heading: "Our Mission",
       description:
-        "To democratize growth. We make enterprise-level digital marketing strategies accessible to businesses of every size — from ambitious startups to established enterprises.",
+        "To democratize growth. We make enterprise-level digital marketing strategies accessible to businesses of every size - from ambitious startups to established enterprises.",
     },
     vision: {
       heading: "Our Vision",
@@ -567,7 +711,7 @@ Google's Search Generative Experience (SGE) is fundamentally changing how users 
 Over 65% of searches now end without a click. The solution? Own the featured snippets, People Also Ask boxes, and knowledge panels.
 
 ## 3. E-E-A-T Is Non-Negotiable
-Experience, Expertise, Authoritativeness, and Trustworthiness aren't just ranking factors — they're the foundation of sustainable SEO.
+Experience, Expertise, Authoritativeness, and Trustworthiness aren't just ranking factors - they're the foundation of sustainable SEO.
 
 ## 4. Video SEO Goes Mainstream
 YouTube is the second largest search engine. Brands ignoring video SEO are leaving massive traffic on the table.
@@ -605,7 +749,7 @@ Once you have conversion data, switch to smart bidding strategies like Target CP
 Run systematic A/B tests on ad copy, extensions, and landing page elements. Small improvements compound into massive ROI gains.
 
 ## The Bottom Line
-There's no magic bullet — just disciplined execution of fundamentals. Follow this framework consistently, and you'll see transformative results.
+There's no magic bullet - just disciplined execution of fundamentals. Follow this framework consistently, and you'll see transformative results.
         `,
       },
       {
@@ -631,7 +775,7 @@ Creating content is only half the battle. We built a distribution system that am
 We tracked every piece of content through the full funnel: impressions → clicks → leads → SQLs → revenue. This let us double down on what worked and cut what didn't.
 
 ## Results After 12 Months
-The content program generated 28,000 newsletter subscribers, 340 qualified leads, and $2M in directly attributed revenue. The best part? It compounds — the content continues to drive results long after publication.
+The content program generated 28,000 newsletter subscribers, 340 qualified leads, and $2M in directly attributed revenue. The best part? It compounds - the content continues to drive results long after publication.
         `,
       },
       {
@@ -654,7 +798,7 @@ You don't need to be on every platform. Focus on 2-3 where your audience actuall
 70% value-driven content (educate, entertain, inspire), 20% shared/curated content, and 10% promotional. This balance keeps your audience engaged without feeling sold to.
 
 ## Video First, Always
-Every platform is prioritizing video. Reels, Shorts, TikToks, LinkedIn video — if you're not creating video content, you're invisible to algorithms.
+Every platform is prioritizing video. Reels, Shorts, TikToks, LinkedIn video - if you're not creating video content, you're invisible to algorithms.
 
 ## Community Over Followers
 A engaged community of 1,000 is worth more than 100,000 passive followers. Focus on building genuine connections, responding to comments, and creating conversation.
@@ -664,7 +808,7 @@ A engaged community of 1,000 is worth more than 100,000 passive followers. Focus
         id: "marketing-automation-guide",
         title: "Marketing Automation: The Complete Setup Guide",
         excerpt:
-          "Everything you need to know about implementing marketing automation — from platform selection to your first workflow.",
+          "Everything you need to know about implementing marketing automation - from platform selection to your first workflow.",
         category: "Automation",
         author: "Alex Morgan",
         date: "February 12, 2025",
@@ -690,7 +834,7 @@ Automation should enhance personal connections, not replace them. Use automation
         id: "digital-strategy-checklist",
         title: "The Ultimate Digital Strategy Checklist for 2025",
         excerpt:
-          "A comprehensive checklist covering every aspect of digital marketing strategy — bookmark this one.",
+          "A comprehensive checklist covering every aspect of digital marketing strategy - bookmark this one.",
         category: "Strategy",
         author: "Alex Morgan",
         date: "February 5, 2025",
@@ -747,7 +891,7 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
       email: "hello@marketive.com.au",
       phone: "+61 3 9000 1234",
       address: "Level 12, 456 Collins Street, Melbourne VIC 3000",
-      hours: "Mon – Fri: 9:00 AM – 6:00 PM AEST",
+      hours: "Mon - Fri: 9:00 AM - 6:00 PM AEST",
     },
     form: {
       heading: "Send Us a Message",
@@ -780,7 +924,7 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
     cta: {
       heading: "Prefer a Quick Chat?",
       description:
-        "Book a free 30-minute strategy call directly with our team. No pressure, no obligations — just actionable advice.",
+        "Book a free 30-minute strategy call directly with our team. No pressure, no obligations - just actionable advice.",
       cta: { label: "Book a Free Call", path: "/contact" },
     },
   },
@@ -800,12 +944,12 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
       { label: "Contact", path: "/contact" },
     ],
     serviceLinks: [
-      { label: "Strategy & Consulting", path: "/services#strategy-consulting" },
-      { label: "SEO", path: "/services#seo" },
-      { label: "SEM / Google Ads", path: "/services#sem" },
-      { label: "Content Strategy", path: "/services#content-strategy" },
-      { label: "Social Media", path: "/services#social-media" },
-      { label: "Marketing Automation", path: "/services#marketing-automation" },
+      { label: "Strategy & Consulting", path: "/services/strategy-consulting" },
+      { label: "SEO", path: "/services/seo" },
+      { label: "SEM / Google Ads", path: "/services/sem" },
+      { label: "Content Strategy", path: "/services/content-strategy" },
+      { label: "Social Media", path: "/services/social-media" },
+      { label: "Marketing Automation", path: "/services/marketing-automation" },
     ],
     social: [
       { platform: "LinkedIn", url: "https://linkedin.com/company/marketive" },

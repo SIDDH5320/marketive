@@ -1,7 +1,8 @@
 @import "tailwindcss";
+@import "./fonts.css";
 
 @theme {
-  /* Brutalist Colors — use --color-* prefix so Tailwind v4 generates bg-primary-*, text-primary-* etc. */
+  /* Brutalist Colors - use --color-* prefix so Tailwind v4 generates bg-primary-*, text-primary-* etc. */
   --color-primary-300: #e0ff4d;
   --color-primary-400: #D4FF00;
   --color-primary-500: #D4FF00;
@@ -43,9 +44,6 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  @media (hover: hover) {
-    *, *::before, *::after { cursor: none !important; }
-  }
 
   body {
     font-family: var(--font-sans);
@@ -292,5 +290,44 @@
     background: var(--primary);
     color: var(--primary-foreground);
     box-shadow: 0 0 20px var(--primary-glow);
+  }
+
+  /* ============================================================
+     BRAND MARQUEE — seamless infinite scroll
+     ============================================================ */
+  .marquee-viewport {
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+  }
+
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 40s linear infinite;
+    will-change: transform;
+  }
+
+  /* Pause when the user hovers anywhere over the strip */
+  .marquee-viewport:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee-scroll {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-50%, 0, 0); }
+  }
+
+  /* Accessibility: no motion → show a single static, wrapped, centered row */
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 1.5rem;
+    }
+    .marquee-track > [aria-hidden="true"] {
+      display: none;
+    }
   }
 }

@@ -8,10 +8,10 @@ import { useScrollProgress } from './hooks/useScrollProgress';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ThemeSwitcher from './components/ThemeSwitcher';
-import CursorFollower from './components/CursorFollower';
 
 const Home = lazy(() => import('./pages/Home'));
 const Services = lazy(() => import('./pages/Services'));
+const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
 const CaseStudies = lazy(() => import('./pages/CaseStudies'));
 const CaseStudyDetail = lazy(() => import('./pages/CaseStudyDetail'));
 const About = lazy(() => import('./pages/About'));
@@ -73,6 +73,7 @@ function AppRoutes() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/:id" element={<ServiceDetail />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/case-studies/:id" element={<CaseStudyDetail />} />
           <Route path="/about" element={<About />} />
@@ -90,7 +91,6 @@ function Layout() {
   return (
     <>
       <SmoothScroll />
-      <CursorFollower />
       <ScrollProgress />
       <div className="noise-overlay" />
       <Navbar />

@@ -12,7 +12,7 @@ export default function ThankYou() {
   return (
     <motion.div {...pageTransition}>
       <Helmet>
-        <title>Thank You — Marketive</title>
+        <title>Thank You - Marketive</title>
         <meta name="robots" content="noindex" />
       </Helmet>
 

@@ -1,12 +1,12 @@
 import { useTheme } from '../hooks/useTheme';
 
 const IMAGE_MAP = {
-  'gradient-1': 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&q=80',
-  'gradient-2': 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80',
-  'gradient-3': 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=80',
-  'gradient-4': 'https://images.unsplash.com/photo-1611162616305-c69b3037dff8?w=600&q=80',
-  'gradient-5': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80',
-  'gradient-6': 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=80',
+  'gradient-1': '/images/blog/gradient-1.jpg',
+  'gradient-2': '/images/blog/gradient-2.jpg',
+  'gradient-3': '/images/blog/gradient-3.jpg',
+  'gradient-4': '/images/blog/gradient-4.jpg',
+  'gradient-5': '/images/blog/gradient-5.jpg',
+  'gradient-6': '/images/blog/gradient-6.jpg',
 };
 
 export default function BlogCard({ post, onClick }) {
@@ -28,6 +28,11 @@ export default function BlogCard({ post, onClick }) {
           alt={post.title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
+          onError={(e) => {
+            if (e.currentTarget.src !== IMAGE_MAP['gradient-1']) {
+              e.currentTarget.src = IMAGE_MAP['gradient-1'];
+            }
+          }}
         />
       </div>
 

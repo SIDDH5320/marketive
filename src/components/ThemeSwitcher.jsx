@@ -38,7 +38,7 @@ export default function ThemeSwitcher() {
               </button>
             </div>
 
-            {/* Current mode indicator — click the floating button to toggle */}
+            {/* Current mode indicator - click the floating button to toggle */}
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold uppercase text-gray-500">Mode</span>
               <span className={`text-xs font-bold uppercase px-2 py-1 border ${isDark ? 'border-white/20 text-white' : 'border-black/20 text-black'}`}>
@@ -101,7 +101,7 @@ export default function ThemeSwitcher() {
         )}
       </AnimatePresence>
 
-      {/* Dark/Light toggle button — always visible */}
+      {/* Dark/Light toggle button - always visible */}
       <button
         onClick={toggleTheme}
         className={`w-14 h-14 border-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-full flex items-center justify-center hover:scale-105 transition-transform ${

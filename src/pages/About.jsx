@@ -14,7 +14,7 @@ export default function About() {
   return (
     <motion.div {...pageTransition}>
       <Helmet>
-        <title>About Marketive — Australia's Results-Driven Digital Marketing Agency</title>
+        <title>About Marketive - Australia's Results-Driven Digital Marketing Agency</title>
         <meta name="description" content="Meet the team behind Australia's most results-driven digital marketing agency. Our mission, values, and the story of how we help brands grow." />
         <link rel="canonical" href="https://marketive.com.au/about" />
       </Helmet>

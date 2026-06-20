@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
@@ -13,17 +12,11 @@ export default function CaseStudies() {
   const isDark = theme === 'dark';
   const { caseStudies } = content;
   const navigate = useNavigate();
-  const [activeCategory, setActiveCategory] = useState('All');
-
-  const filtered =
-    activeCategory === 'All'
-      ? caseStudies.items
-      : caseStudies.items.filter(s => s.category === activeCategory);
 
   return (
     <motion.div {...pageTransition}>
       <Helmet>
-        <title>Case Studies — Real Results for Australian Businesses | Marketive</title>
+        <title>Case Studies - Real Results for Australian Businesses | Marketive</title>
         <meta name="description" content="See how Marketive has transformed brands across Australia. Real campaigns, measurable results, and proven ROI across SEO, SEM, and content." />
         <link rel="canonical" href="https://marketive.com.au/case-studies" />
       </Helmet>
@@ -57,29 +50,10 @@ export default function CaseStudies() {
       {/* ── Grid ── */}
       <section className={`py-14 lg:py-20 ${isDark ? 'bg-surface-dark' : 'bg-[#f5f5f7]'}`}>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          {/* Filters */}
-          <div className="flex flex-wrap gap-2 mb-10">
-            {caseStudies.categories.map(cat => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`px-5 py-2 rounded-full text-sm font-medium border transition-all duration-200 ${
-                  activeCategory === cat
-                    ? 'bg-gray-900 text-white border-gray-900'
-                    : isDark
-                    ? 'bg-transparent border-white/20 text-gray-300 hover:border-white/50 hover:text-white'
-                    : 'bg-white border-gray-300 text-gray-600 hover:border-gray-500 hover:text-gray-900'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-
           {/* Cards */}
           <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <AnimatePresence mode="popLayout">
-              {filtered.map(study => (
+              {caseStudies.items.map(study => (
                 <motion.div
                   key={study.id}
                   layout

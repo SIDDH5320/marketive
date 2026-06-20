@@ -37,14 +37,14 @@ export default function CursorFollower() {
 
   return (
     <>
-      {/* Large ring — follows with spring lag */}
+      {/* Large ring - follows with spring lag */}
       <motion.div
         style={{ x, y, translateX: '-50%', translateY: '-50%' }}
         animate={{ scale: hovered ? 1.8 : 1, opacity: hovered ? 0.6 : 0.35 }}
         transition={{ scale: { duration: 0.2 }, opacity: { duration: 0.2 } }}
         className="fixed top-0 left-0 w-9 h-9 border-2 border-primary-500 rounded-full pointer-events-none z-[9999] mix-blend-difference"
       />
-      {/* Small dot — instant */}
+      {/* Small dot - instant */}
       <motion.div
         style={{ x: rawX, y: rawY, translateX: '-50%', translateY: '-50%' }}
         animate={{ scale: hovered ? 0 : 1 }}

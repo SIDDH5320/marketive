@@ -2,12 +2,12 @@ import { useTheme } from '../hooks/useTheme';
 import { ArrowRight } from 'lucide-react';
 
 const IMAGE_MAP = {
-  'gradient-1': 'https://images.unsplash.com/photo-1543286386-713bdd548da4?w=600&q=80', // SEO/analytics dashboard
-  'gradient-2': 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80', // Google Ads / SEM
-  'gradient-3': 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&q=80', // Content / writing
-  'gradient-4': 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80', // Social media / healthcare
-  'gradient-5': 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&q=80', // Automation / email
-  'gradient-6': 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80', // Cloud / tech
+  'gradient-1': '/images/case-studies/gradient-1.jpg', // SEO/analytics dashboard
+  'gradient-2': '/images/case-studies/gradient-2.jpg', // Google Ads / SEM
+  'gradient-3': '/images/case-studies/gradient-3.jpg', // Content / writing
+  'gradient-4': '/images/case-studies/gradient-4.jpg', // Social media / healthcare
+  'gradient-5': '/images/case-studies/gradient-5.jpg', // Automation / email
+  'gradient-6': '/images/case-studies/gradient-6.jpg', // Cloud / tech
 };
 
 const CATEGORY_COLOR = {
@@ -70,16 +70,6 @@ export default function CaseStudyCard({ study, onClick }) {
         <p className={`text-sm leading-relaxed line-clamp-3 mb-5 flex-1 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
           {study.problem}
         </p>
-
-        {/* Mini results row */}
-        <div className={`grid grid-cols-2 gap-2 mb-5 p-3 rounded-xl ${isDark ? 'bg-white/5' : 'bg-gray-50'}`}>
-          {study.results.slice(0, 2).map((r, i) => (
-            <div key={i} className="text-center">
-              <p className="text-sm font-bold text-[#e85d04]">{r.value}</p>
-              <p className={`text-xs ${isDark ? 'text-gray-500' : 'text-gray-500'}`}>{r.metric}</p>
-            </div>
-          ))}
-        </div>
 
         <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-500 group-hover:underline">
           View case study <ArrowRight size={14} />

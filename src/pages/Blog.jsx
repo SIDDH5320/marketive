@@ -39,7 +39,7 @@ export default function Blog() {
   return (
     <motion.div {...pageTransition}>
       <Helmet>
-        <title>Digital Marketing Blog — Insights, Tips & Strategy | Marketive</title>
+        <title>Digital Marketing Blog - Insights, Tips & Strategy | Marketive</title>
         <meta name="description" content="Expert insights on SEO, SEM, content strategy, and digital marketing. Stay ahead with Marketive's latest articles and guides." />
         <link rel="canonical" href="https://marketive.com.au/blog" />
       </Helmet>

@@ -8,12 +8,12 @@ import { pageTransition } from '../utils/animations';
 import CTASection from '../components/CTASection';
 
 const IMAGE_MAP = {
-  'gradient-1': 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1200&q=80',
-  'gradient-2': 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&q=80',
-  'gradient-3': 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80',
-  'gradient-4': 'https://images.unsplash.com/photo-1611162616305-c69b3037dff8?w=1200&q=80',
-  'gradient-5': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80',
-  'gradient-6': 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&q=80',
+  'gradient-1': '/images/blog/gradient-1.jpg',
+  'gradient-2': '/images/blog/gradient-2.jpg',
+  'gradient-3': '/images/blog/gradient-3.jpg',
+  'gradient-4': '/images/blog/gradient-4.jpg',
+  'gradient-5': '/images/blog/gradient-5.jpg',
+  'gradient-6': '/images/blog/gradient-6.jpg',
 };
 
 function renderContent(text, isDark) {
@@ -62,7 +62,7 @@ export default function BlogDetail() {
   return (
     <motion.div {...pageTransition}>
       <Helmet>
-        <title>{post.title} — Marketive Blog</title>
+        <title>{post.title} - Marketive Blog</title>
         <meta name="description" content={post.excerpt} />
       </Helmet>
 
@@ -148,6 +148,8 @@ export default function BlogDetail() {
                     <img
                       src={IMAGE_MAP[r.image] || IMAGE_MAP['gradient-1']}
                       alt={r.title}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>

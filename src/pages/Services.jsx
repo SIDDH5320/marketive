@@ -22,7 +22,7 @@ const STATS = [
   {
     icon: '🚀',
     label: 'Companies that invest in data-driven marketing see',
-    highlight: '5–8× higher ROI',
+    highlight: '5-8× higher ROI',
     suffix: "compared to those that don't.",
   },
 ];
@@ -32,22 +32,22 @@ const PROCESS = [
     step: '01',
     title: 'Analyse',
     description:
-      'We deep-dive into your current digital presence — auditing your website, SEO, paid campaigns, social media, and competitors — to identify gaps and opportunities.',
-    img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+      'We deep-dive into your current digital presence - auditing your website, SEO, paid campaigns, social media, and competitors - to identify gaps and opportunities.',
+    img: '/images/services/process-1.jpg',
   },
   {
     step: '02',
     title: 'Strategise',
     description:
-      'Armed with data, we craft a tailored growth roadmap — defining target audiences, channel mix, KPIs, and a clear budget allocation aligned to your business goals.',
-    img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80',
+      'Armed with data, we craft a tailored growth roadmap - defining target audiences, channel mix, KPIs, and a clear budget allocation aligned to your business goals.',
+    img: '/images/services/process-2.jpg',
   },
   {
     step: '03',
     title: 'Implement',
     description:
-      'Our specialists execute across every channel with precision — launching campaigns, publishing content, tracking results, and continuously optimising for growth.',
-    img: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=80',
+      'Our specialists execute across every channel with precision - launching campaigns, publishing content, tracking results, and continuously optimising for growth.',
+    img: '/images/services/process-3.jpg',
   },
 ];
 
@@ -59,7 +59,7 @@ export default function Services() {
   return (
     <motion.div {...pageTransition}>
       <Helmet>
-        <title>Digital Marketing Services | SEO, SEM, Content & More — Marketive</title>
+        <title>Digital Marketing Services | SEO, SEM, Content & More - Marketive</title>
         <meta name="description" content="Full-stack digital marketing services: SEO, Google Ads, content strategy, social media, and marketing automation. Tailored for Australian businesses." />
         <link rel="canonical" href="https://marketive.com.au/services" />
       </Helmet>
@@ -98,7 +98,7 @@ export default function Services() {
             >
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+                  src="/images/services/hero.jpg"
                   alt="Digital marketing strategy"
                   className="w-full h-[420px] object-cover"
                 />
@@ -184,7 +184,9 @@ export default function Services() {
                   <div className="w-12 h-12 rounded-xl bg-[#e85d04]/10 flex items-center justify-center mb-5">
                     <Icon size={22} className="text-[#e85d04]" />
                   </div>
-                  <h3 className={`text-xl font-bold mb-3 ${isDark ? 'text-white' : 'text-gray-900'}`}>{service.title}</h3>
+                  <Link to={`/services/${service.id}`}>
+                    <h3 className={`text-xl font-bold mb-3 hover:text-[#e85d04] transition-colors ${isDark ? 'text-white' : 'text-gray-900'}`}>{service.title}</h3>
+                  </Link>
                   <p className={`text-sm leading-relaxed mb-5 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>{service.description}</p>
                   <ul className="space-y-2 mb-6">
                     {service.features.slice(0, 4).map((f, fi) => (
@@ -195,10 +197,10 @@ export default function Services() {
                     ))}
                   </ul>
                   <Link
-                    to="/contact"
+                    to={`/services/${service.id}`}
                     className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#e85d04] group-hover:underline"
                   >
-                    {service.cta.label} <ArrowRight size={14} />
+                    Learn more <ArrowRight size={14} />
                   </Link>
                 </motion.div>
               );
@@ -244,7 +246,7 @@ export default function Services() {
                   </motion.div>
                   <motion.div variants={isEven ? slideInRight : slideInLeft} className={!isEven ? 'lg:order-1' : ''}>
                     <div className="rounded-2xl overflow-hidden shadow-xl">
-                      <img src={step.img} alt={step.title} className="w-full h-72 object-cover" />
+                      <img src={step.img} alt={step.title} loading="lazy" decoding="async" className="w-full h-72 object-cover" />
                     </div>
                   </motion.div>
                 </motion.div>
@@ -271,7 +273,7 @@ export default function Services() {
                 Ready to grow your business?
               </motion.h2>
               <motion.p variants={fadeInUp} className={`text-base leading-relaxed mb-8 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                Tell us about your goals and we'll put together a tailored strategy to help you dominate your market. No fluff — just real results.
+                Tell us about your goals and we'll put together a tailored strategy to help you dominate your market. No fluff - just real results.
               </motion.p>
               <motion.div variants={fadeInUp} className="space-y-4">
                 {[
