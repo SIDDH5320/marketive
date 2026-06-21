@@ -11,6 +11,7 @@ import ThemeSwitcher from './components/ThemeSwitcher';
 
 const Home = lazy(() => import('./pages/Home'));
 const Services = lazy(() => import('./pages/Services'));
+const StrategyConsulting = lazy(() => import('./pages/StrategyConsulting'));
 const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
 const CaseStudies = lazy(() => import('./pages/CaseStudies'));
 const CaseStudyDetail = lazy(() => import('./pages/CaseStudyDetail'));
@@ -73,6 +74,7 @@ function AppRoutes() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/strategy-consulting" element={<StrategyConsulting />} />
           <Route path="/services/:id" element={<ServiceDetail />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/case-studies/:id" element={<CaseStudyDetail />} />

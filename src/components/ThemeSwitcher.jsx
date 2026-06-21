@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Palette, Check, X, RotateCcw, Sun, Moon } from 'lucide-react';
+import { Palette, Check, X, RotateCcw } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -15,7 +15,7 @@ const PRESETS = [
 const DEFAULT_COLOR = "#D4FF00";
 
 export default function ThemeSwitcher() {
-  const { theme, toggleTheme, accentColor, setAccentColor } = useTheme();
+  const { theme, accentColor, setAccentColor } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const isDark = theme === 'dark';
 
@@ -100,27 +100,6 @@ export default function ThemeSwitcher() {
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* Dark/Light toggle button - always visible */}
-      <button
-        onClick={toggleTheme}
-        className={`w-14 h-14 border-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-full flex items-center justify-center hover:scale-105 transition-transform ${
-          isDark ? 'bg-black text-white border-white' : 'bg-white text-black border-black'
-        }`}
-        title={isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-      >
-        <AnimatePresence mode="wait" initial={false}>
-          <motion.span
-            key={isDark ? 'sun' : 'moon'}
-            initial={{ rotate: -90, opacity: 0, scale: 0.5 }}
-            animate={{ rotate: 0, opacity: 1, scale: 1 }}
-            exit={{ rotate: 90, opacity: 0, scale: 0.5 }}
-            transition={{ duration: 0.25 }}
-          >
-            {isDark ? <Sun size={22} /> : <Moon size={22} />}
-          </motion.span>
-        </AnimatePresence>
-      </button>
 
       {/* Palette / color picker button */}
       <button

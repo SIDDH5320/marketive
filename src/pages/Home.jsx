@@ -12,7 +12,90 @@ import ServiceCard from '../components/ServiceCard';
 import CaseStudyCard from '../components/CaseStudyCard';
 import CTASection from '../components/CTASection';
 import AnimatedText from '../components/AnimatedText';
-import BrandLogo, { BRAND_LOGOS } from '../components/BrandLogos';
+
+// Partner logo components — accurate SVG representations of current brand logos.
+// Each accepts `isDark` so near-black label text can lighten on dark backgrounds
+// while the brand-colored marks (already legible on dark) stay untouched.
+const PARTNER_LOGOS = [
+  // YOTPO
+  ({ isDark }) => (
+    <div className="flex items-center justify-center w-16 h-16 rounded-full shrink-0" style={{ background: '#1565C0' }}>
+      <div style={{ textAlign: 'center', lineHeight: 1.15 }}>
+        <div style={{ fontFamily: 'Arial Black, sans-serif', fontSize: '13px', fontWeight: 900, color: 'white', letterSpacing: '1px' }}>YOT</div>
+        <div style={{ fontFamily: 'Arial Black, sans-serif', fontSize: '13px', fontWeight: 900, color: 'white', letterSpacing: '1px' }}>PO.</div>
+      </div>
+    </div>
+  ),
+  // Shopify Partner
+  ({ isDark }) => (
+    <div className="flex items-center gap-2 shrink-0">
+      <svg width="30" height="34" viewBox="0 0 110 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M95.5 23.5c-.4-3-3-4.7-5.1-4.9-2.1-.2-9.4-.6-9.4-.6s-6.2-6.2-6.9-6.9c-.7-.7-2-.5-2.5-.3l-3.4 1c-2-5.8-5.5-11.1-11.7-11.1h-.5C54.2.4 52.5-.4 51 .1 40.8 3.4 36.8 14.4 35.5 20.8l-10.8 3.3C21.4 25.2 21.3 25.3 21 28.5L13 96l60.5 11.4L103 99.6 95.5 23.5zM65.4 17.9l-8.7 2.7c1.2-4.6 3.5-9.1 7.8-10.9 1.3 2.3 1 5.7.9 8.2zm-14-7.7c.6 0 1.2.2 1.7.6-4.4 2.1-7.2 7.4-8.5 12.7l-11.5 3.5c1.8-6.6 6.6-15.6 18.3-16.8zM52.5 97.4c0 0-3.5-1.9-7.9-1.9-6.4 0-6.7 4-6.7 5 0 5.5 5.3 7.6 10.4 7.6 8.9 0 13.3-5.5 13.3-10.5 0-4.6-2.6-6.9-8.1-9.4-3.3-1.6-4.7-2.6-4.7-4.3 0-1.5 1.2-3 3.8-3 2.7 0 4.9 1 4.9 1l1.8-5.9s-2.2-1.3-6.5-1.3c-8.3 0-12.5 5.2-12.5 10.7 0 4.5 2.8 7.1 7.6 9.3 3.6 1.7 5 2.9 5 4.7zm13.1-35.8l-3.1 9.6s-2.8-1.5-6.2-1.5c-5 0-5.2 3.1-5.2 3.9 0 4.3 11.1 5.9 11.1 15.9 0 7.9-5 13-11.7 13-8.1 0-12.2-5-12.2-5l2.2-7.2s4.2 3.6 7.8 3.6c2.3 0 3.3-1.8 3.3-3.2 0-5.5-9.1-5.8-9.1-14.9 0-7.6 5.5-15 16.5-15 4.2 0 6.6 1.8 6.6 1.8zm2.8-35.1c0-2.3-.3-5.5-1.3-8.2 3.2.6 5.3 4.2 6.3 8.6l-5 1.6z" fill="#95BF47"/>
+        <path d="M81 18.6l-9.4-.6s-6.2-6.2-6.9-6.9c-.2-.2-.6-.3-.9-.3v97.6L103 99.6 95.5 23.5c-.4-3-3-4.7-5.1-4.9l-9.4-.6v.6z" fill="#5E8E3E"/>
+        <path d="M55.6 40.4l-3.1 9.6s-2.8-1.5-6.2-1.5c-5 0-5.2 3.1-5.2 3.9 0 4.3 11.1 5.9 11.1 15.9 0 7.9-5 13-11.7 13-8.1 0-12.2-5-12.2-5l2.2-7.2s4.2 3.6 7.8 3.6c2.3 0 3.3-1.8 3.3-3.2 0-5.5-9.1-5.8-9.1-14.9 0-7.6 5.5-15 16.5-15 4.2 0 6.6 1.8 6.6 1.8h-.1z" fill="white"/>
+      </svg>
+      <div style={{ lineHeight: 1.2 }}>
+        <div style={{ fontFamily: 'sans-serif', fontSize: '16px', fontWeight: 700, color: isDark ? '#f5f5f5' : '#1a1a1a' }}>shopify</div>
+        <div style={{ fontFamily: 'sans-serif', fontSize: '11px', color: isDark ? '#aab4be' : '#637381', letterSpacing: '0.3px' }}>partner</div>
+      </div>
+    </div>
+  ),
+  // Google Ads
+  ({ isDark }) => (
+    <div className="flex items-center gap-2.5 shrink-0">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        {/* Google Ads triangle logo */}
+        <path d="M1.5 24.5L10 10l4.5 7.8-4 6.7z" fill="#FBBC04"/>
+        <path d="M10 10L18.5 24.5H1.5L10 10z" fill="#FBBC04"/>
+        <path d="M10 10L18.5 24.5l4-6.9L14 3z" fill="#4285F4"/>
+        <path d="M14 3l8.5 14.6-4 6.9L10 10z" fill="#4285F4"/>
+        <path d="M18.5 24.5H26.5L22.5 17.6z" fill="#34A853"/>
+        <circle cx="22.5" cy="21" r="3.5" fill="#34A853"/>
+      </svg>
+      <span style={{ fontFamily: 'sans-serif', fontSize: '15px', fontWeight: 400, color: isDark ? '#cdd1d6' : '#5F6368' }}>Google Ads</span>
+    </div>
+  ),
+  // Omnisend
+  ({ isDark }) => (
+    <span className="shrink-0" style={{ fontFamily: 'sans-serif', fontSize: '22px', fontWeight: 400, color: isDark ? '#f5f5f5' : '#1a1a1a', letterSpacing: '-0.5px' }}>omnisend</span>
+  ),
+  // Google Tag Manager
+  ({ isDark }) => (
+    <div className="flex flex-col items-center gap-1 shrink-0">
+      <svg width="42" height="42" viewBox="0 0 192 192" fill="none">
+        <defs>
+          <linearGradient id="gtm1" x1="96" y1="26" x2="96" y2="100" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#80DEEA"/>
+            <stop offset="1" stopColor="#4FC3F7"/>
+          </linearGradient>
+          <linearGradient id="gtm2" x1="96" y1="92" x2="96" y2="166" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#4285F4"/>
+            <stop offset="1" stopColor="#1565C0"/>
+          </linearGradient>
+        </defs>
+        <path d="M96 26L26 96l70 70 70-70z" fill="url(#gtm1)"/>
+        <path d="M96 92L26 96l70 70 70-70z" fill="url(#gtm2)"/>
+        <path d="M75 75l42 42-21 21-42-42z" fill="white" opacity="0.3"/>
+        <rect x="82" y="82" width="28" height="28" rx="4" fill="white"/>
+      </svg>
+      <span style={{ fontFamily: 'sans-serif', fontSize: '11px', color: isDark ? '#cdd1d6' : '#5F6368', whiteSpace: 'nowrap' }}>Google Tag Manager</span>
+    </div>
+  ),
+  // SiteGround
+  ({ isDark }) => (
+    <div className="flex items-center gap-2.5 shrink-0">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <circle cx="16" cy="16" r="16" fill="#F07B05"/>
+        <circle cx="16" cy="16" r="11" fill="none" stroke="white" strokeWidth="1.8"/>
+        <circle cx="16" cy="16" r="5.5" fill="none" stroke="white" strokeWidth="1.8"/>
+        <line x1="16" y1="5" x2="16" y2="27" stroke="white" strokeWidth="1.8"/>
+        <line x1="5" y1="16" x2="27" y2="16" stroke="white" strokeWidth="1.8"/>
+        <ellipse cx="16" cy="16" rx="6" ry="11" fill="none" stroke="white" strokeWidth="1.8"/>
+      </svg>
+      <span style={{ fontFamily: '"Comic Sans MS", cursive, sans-serif', fontSize: '16px', fontWeight: 600, color: isDark ? '#f5f5f5' : '#1a1a1a' }}>SiteGround</span>
+    </div>
+  ),
+];
 
 function TestimonialsMarquee({ testimonials, isDark }) {
   const x = useMotionValue(0);
@@ -416,54 +499,33 @@ export default function Home() {
       </section>
 
       {/* ======================== TRUSTED BY ======================== */}
-      <section className={`relative overflow-hidden py-16 lg:py-20 border-y ${
-        isDark ? 'bg-surface-darker border-white/5' : 'bg-white border-black/5'
-      }`}>
-        {/* Subtle depth + brand glow behind the strip (dark mode) for readability */}
+      <section className={`relative py-14 ${isDark ? 'bg-surface-darker/50' : 'bg-white'}`}>
+        {/* Subtle dark backdrop so logo contrast doesn't fight a busy background */}
         {isDark && (
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute inset-0 bg-gradient-to-b from-surface-dark via-surface-darker to-surface-dark" />
-            <div
-              className="absolute left-1/2 top-1/2 h-32 w-[55%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-2xl"
-              style={{ background: 'radial-gradient(ellipse, rgba(212,255,0,0.07), transparent 70%)' }}
-            />
-          </div>
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{ background: 'radial-gradient(ellipse 60% 100% at 50% 50%, rgba(0,0,0,0.35), transparent)' }}
+          />
         )}
 
-        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className={`mb-12 text-center text-xs font-bold font-display uppercase tracking-[0.25em] ${
-              isDark ? 'text-gray-500' : 'text-gray-400'
-            }`}
-          >
-            Powering campaigns with the world&apos;s best platforms
-          </motion.p>
-
-          {/* Seamless marquee — pauses on hover, respects prefers-reduced-motion */}
-          <div className="marquee-viewport relative overflow-hidden">
-            <div className="marquee-track items-center">
-              {[...BRAND_LOGOS, ...BRAND_LOGOS].map((logo, i) => (
-                <div
-                  key={i}
-                  className="mx-7 flex shrink-0 items-center"
-                  aria-hidden={i >= BRAND_LOGOS.length}
-                >
-                  <BrandLogo
-                    name={logo.name}
-                    path={logo.path}
-                    className={`h-7 w-auto transition-all duration-300 hover:scale-110 ${
-                      isDark
-                        ? 'text-gray-400 hover:text-white'
-                        : 'text-gray-500 hover:text-gray-900'
-                    }`}
-                  />
-                </div>
-              ))}
-            </div>
+        {/* Seamless marquee — pauses on hover, respects prefers-reduced-motion */}
+        <div
+          className="marquee-viewport relative overflow-hidden mx-auto max-w-6xl px-8"
+          style={{
+            maskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)',
+            WebkitMaskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)',
+          }}
+        >
+          <div className="marquee-track items-center gap-16 px-8">
+            {[...PARTNER_LOGOS, ...PARTNER_LOGOS].map((Logo, i) => (
+              <div
+                key={i}
+                className={`shrink-0 transition-opacity duration-300 ${isDark ? 'opacity-80 hover:opacity-100' : 'opacity-70 hover:opacity-100'}`}
+                aria-hidden={i >= PARTNER_LOGOS.length}
+              >
+                <Logo isDark={isDark} />
+              </div>
+            ))}
           </div>
         </div>
       </section>

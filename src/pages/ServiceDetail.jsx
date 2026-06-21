@@ -89,7 +89,7 @@ export default function ServiceDetail() {
             </motion.div>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-3xl">
             <motion.div variants={staggerContainer} initial="hidden" animate="visible">
               <motion.div variants={fadeInUp} className="w-16 h-16 rounded-2xl bg-primary-500 border-2 border-black flex items-center justify-center mb-6">
                 <Icon size={28} className="text-black" />
@@ -114,25 +114,6 @@ export default function ServiceDetail() {
                   View Case Studies
                 </Link>
               </motion.div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, ease: 'easeOut' }}
-              className={`rounded-2xl p-8 lg:p-10 ${isDark ? 'card-dark' : 'card-light'}`}
-            >
-              <p className={`text-xs font-bold uppercase tracking-widest mb-6 ${isDark ? 'text-gray-500' : 'text-gray-500'}`}>
-                Results We Aim For
-              </p>
-              <div className="grid grid-cols-2 gap-6">
-                {service.stats.map((stat, i) => (
-                  <div key={i}>
-                    <div className="text-2xl lg:text-3xl font-bold font-display accent-text mb-1">{stat.value}</div>
-                    <p className={`text-xs leading-snug ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>{stat.label}</p>
-                  </div>
-                ))}
-              </div>
             </motion.div>
           </div>
         </div>
@@ -289,7 +270,7 @@ export default function ServiceDetail() {
               </motion.p>
               <motion.div variants={fadeInUp} className="space-y-4">
                 {[
-                  'Free initial consultation',
+                  'Initial consultation',
                   'Custom strategy tailored to your business',
                   'No lock-in contracts',
                   'Transparent reporting & communication',

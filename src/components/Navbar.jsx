@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ArrowRight } from 'lucide-react';
+import { Menu, X, ArrowRight, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 import content from '../content/content';
 
 export default function Navbar() {
-  const { theme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const location = useLocation();
@@ -84,6 +84,30 @@ export default function Navbar() {
               >
                 <span>{nav.cta.label}</span>
               </Link>
+
+              {/* Dark/Light toggle */}
+              <button
+                onClick={toggleTheme}
+                className={`w-10 h-10 border-2 flex items-center justify-center transition-colors ${isDark
+                    ? 'border-white text-white hover:bg-white hover:text-black'
+                    : 'border-black text-black hover:bg-black hover:text-white'
+                  }`}
+                aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+                title={isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+              >
+                <AnimatePresence mode="wait" initial={false}>
+                  <motion.span
+                    key={isDark ? 'sun' : 'moon'}
+                    initial={{ rotate: -90, opacity: 0, scale: 0.5 }}
+                    animate={{ rotate: 0, opacity: 1, scale: 1 }}
+                    exit={{ rotate: 90, opacity: 0, scale: 0.5 }}
+                    transition={{ duration: 0.25 }}
+                    className="flex items-center justify-center"
+                  >
+                    {isDark ? <Sun size={18} /> : <Moon size={18} />}
+                  </motion.span>
+                </AnimatePresence>
+              </button>
 
               {/* Mobile toggle */}
               <button

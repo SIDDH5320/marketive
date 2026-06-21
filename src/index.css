@@ -87,19 +87,55 @@
   }
 
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
+    height: 8px;
   }
 
   ::-webkit-scrollbar-track {
-    background: transparent;
+    border-radius: 8px;
   }
 
-  body.dark ::-webkit-scrollbar-thumb {
-    background: #333;
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+
+  body.light ::-webkit-scrollbar-track {
+    background: #f1f1f1;
   }
 
   body.light ::-webkit-scrollbar-thumb {
-    background: #ccc;
+    background: #b3b3b3;
+    border: 2px solid #f1f1f1;
+  }
+
+  body.light ::-webkit-scrollbar-thumb:hover {
+    background: #969696;
+  }
+
+  body.dark ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+
+  body.dark ::-webkit-scrollbar-thumb {
+    background: #5a5a5a;
+    border: 2px solid #1a1a1a;
+  }
+
+  body.dark ::-webkit-scrollbar-thumb:hover {
+    background: #787878;
+  }
+
+  body.light {
+    color-scheme: light;
+    scrollbar-width: thin;
+    scrollbar-color: #b3b3b3 #f1f1f1;
+  }
+
+  body.dark {
+    color-scheme: dark;
+    scrollbar-width: thin;
+    scrollbar-color: #5a5a5a #1a1a1a;
   }
 
   ::selection {
@@ -303,7 +339,7 @@
   .marquee-track {
     display: flex;
     width: max-content;
-    animation: marquee-scroll 40s linear infinite;
+    animation: marquee-scroll 30s linear infinite;
     will-change: transform;
   }
 
@@ -330,4 +366,29 @@
       display: none;
     }
   }
+}
+
+/* ============================================================
+   LIGHT-MODE ACCENT TEXT FIX
+   The lime brand accent (#D4FF00) is illegible as text on white.
+   Remap the text-primary utilities to the theme-aware readable
+   variant (--primary-on-light) in light mode only — so eyebrows,
+   links and inline icons stay visible. Background utilities
+   (bg-primary-*) are intentionally untouched. Unlayered so these
+   reliably win over Tailwind's utility layer.
+   ============================================================ */
+body.light .text-primary-300,
+body.light .text-primary-400,
+body.light .text-primary-500,
+body.light .text-primary-600 {
+  color: var(--primary-on-light);
+}
+
+body.light .hover\:text-primary-300:hover,
+body.light .hover\:text-primary-400:hover,
+body.light .hover\:text-primary-500:hover,
+body.light .group:hover .group-hover\:text-primary-300,
+body.light .group:hover .group-hover\:text-primary-400,
+body.light .group:hover .group-hover\:text-primary-500 {
+  color: var(--primary-on-light);
 }

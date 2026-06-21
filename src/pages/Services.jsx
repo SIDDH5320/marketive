@@ -277,7 +277,7 @@ export default function Services() {
               </motion.p>
               <motion.div variants={fadeInUp} className="space-y-4">
                 {[
-                  'Free initial consultation',
+                  'Initial consultation',
                   'Custom strategy tailored to your business',
                   'No lock-in contracts',
                   'Transparent reporting & communication',

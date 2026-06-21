@@ -99,11 +99,11 @@ export default function Contact() {
                 ))}
               </div>
 
-              {/* Map - Melbourne CBD */}
+              {/* Map - Doreen, Victoria */}
               <div className={`h-52 overflow-hidden border-2 ${isDark ? 'border-surface-border' : 'border-black'}`}>
                 <iframe
-                  title="Marketive office location - Melbourne CBD"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353!3d-37.8162792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ceed30!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sau!4v1718000000000"
+                  title="Marketive office location - Doreen, Victoria"
+                  src="https://maps.google.com/maps?q=Pier%20Avenue%2C%20Doreen%20VIC%203754&z=13&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, filter: isDark ? 'invert(90%) hue-rotate(180deg)' : 'none' }}

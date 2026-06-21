@@ -39,6 +39,7 @@ export default function Footer() {
             <p className={`text-sm leading-relaxed mb-8 font-medium ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
               {footer.description}
             </p>
+            {/* Social icons temporarily hidden — uncomment to restore
             <div className="flex gap-4">
               {footer.social.map((s) => {
                 const label = socialLabels[s.platform] || '↗';
@@ -60,6 +61,7 @@ export default function Footer() {
                 );
               })}
             </div>
+            */}
           </motion.div>
 
           {/* Quick Links */}

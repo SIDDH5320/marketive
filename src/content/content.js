@@ -156,8 +156,8 @@ const content = {
     ctaBanner: {
       heading: "Ready to Accelerate Your Growth?",
       description:
-        "Book a free 30-minute strategy call and discover how we can 10x your digital presence.",
-      cta: { label: "Book a Free Strategy Call", path: "/contact" },
+        "Get in touch and discover how we can 10x your digital presence.",
+      cta: { label: "Get in Touch", path: "/contact" },
     },
   },
 
@@ -193,7 +193,7 @@ const content = {
           "Data-backed decision making",
           "Scalable growth framework",
         ],
-        cta: { label: "Get Your Free Strategy Session", path: "/contact" },
+        cta: { label: "Get in Touch", path: "/contact" },
         stats: [
           { value: "120+", label: "Strategies Delivered" },
           { value: "4.8x", label: "Avg ROI Uplift" },
@@ -888,10 +888,10 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
         "Whether you're looking for a full-service partner or need help with a specific challenge, we'd love to hear from you.",
     },
     info: {
-      email: "hello@marketive.com.au",
-      phone: "+61 3 9000 1234",
-      address: "Level 12, 456 Collins Street, Melbourne VIC 3000",
-      hours: "Mon - Fri: 9:00 AM - 6:00 PM AEST",
+      email: "info@marketive.com.au",
+      phone: "0415 991 736",
+      address: "Pier Avenue, Doreen, Victoria, 3754",
+      hours: "Mon - Fri: 9:00 AM to 6:00 PM AEST",
     },
     form: {
       heading: "Send Us a Message",
@@ -924,8 +924,8 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
     cta: {
       heading: "Prefer a Quick Chat?",
       description:
-        "Book a free 30-minute strategy call directly with our team. No pressure, no obligations - just actionable advice.",
-      cta: { label: "Book a Free Call", path: "/contact" },
+        "Get in touch with our team directly. No pressure, no obligations - just actionable advice.",
+      cta: { label: "Get in Touch", path: "/contact" },
     },
   },
 

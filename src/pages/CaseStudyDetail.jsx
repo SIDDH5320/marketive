@@ -231,7 +231,7 @@ export default function CaseStudyDetail() {
                   to="/contact"
                   className="block text-center px-5 py-3 rounded-full bg-[#e85d04] text-white text-sm font-semibold hover:bg-[#cf5204] transition-colors"
                 >
-                  Get a Free Consultation
+                  Get in Touch
                 </Link>
               </div>
             </div>

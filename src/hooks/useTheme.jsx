@@ -16,13 +16,18 @@ const getThemeVariables = (hexColor) => {
   }
   
   const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
-  
+
+  // Darken a too-bright accent (e.g. lime #D4FF00) so it stays readable as TEXT
+  // on light backgrounds while keeping its hue — instead of falling back to black.
+  const clampHex = (v) => Math.max(0, Math.min(255, Math.round(v))).toString(16).padStart(2, '0');
+  const darken = (factor) => `#${clampHex(r * factor)}${clampHex(g * factor)}${clampHex(b * factor)}`;
+
   return {
     primary: hexColor,
     glow: `rgba(${r}, ${g}, ${b}, 0.5)`,
     foreground: yiq >= 128 ? '#000000' : '#ffffff',
     onDark: yiq <= 80 ? '#ffffff' : hexColor,
-    onLight: yiq >= 200 ? '#000000' : hexColor
+    onLight: yiq >= 200 ? darken(0.45) : hexColor
   };
 };
 
