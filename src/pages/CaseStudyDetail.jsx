@@ -91,7 +91,7 @@ export default function CaseStudyDetail() {
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10">
             {study.results.map((r, i) => (
               <div key={i} className="py-8 px-6 text-center">
-                <p className="text-3xl md:text-4xl font-bold text-[#e85d04] mb-1">{r.value}</p>
+                <p className="text-3xl md:text-4xl font-bold text-primary-500 mb-1">{r.value}</p>
                 <p className="text-sm text-white/60">{r.metric}</p>
               </div>
             ))}
@@ -177,7 +177,7 @@ export default function CaseStudyDetail() {
                       key={i}
                       className={`p-6 rounded-2xl text-center ${isDark ? 'bg-surface-card' : 'bg-gray-50'}`}
                     >
-                      <p className="text-3xl font-bold text-[#e85d04] mb-1">{r.value}</p>
+                      <p className="text-3xl font-bold text-primary-500 mb-1">{r.value}</p>
                       <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>{r.metric}</p>
                     </div>
                   ))}
@@ -216,7 +216,7 @@ export default function CaseStudyDetail() {
                     'Monthly strategy reviews',
                   ]).slice(0, 5).map((f, i) => (
                     <li key={i} className="flex items-start gap-2.5">
-                      <CheckCircle size={16} className="text-[#e85d04] mt-0.5 shrink-0" />
+                      <CheckCircle size={16} className="text-primary-500 mt-0.5 shrink-0" />
                       <span className={`text-sm ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>{f}</span>
                     </li>
                   ))}
@@ -229,7 +229,7 @@ export default function CaseStudyDetail() {
                 <p className="text-sm text-white/70 mb-5">Let's talk about how we can grow your business with a tailored strategy.</p>
                 <Link
                   to="/contact"
-                  className="block text-center px-5 py-3 rounded-full bg-[#e85d04] text-white text-sm font-semibold hover:bg-[#cf5204] transition-colors"
+                  className="block text-center px-5 py-3 rounded-full bg-primary-500 text-black text-sm font-semibold hover:bg-primary-600 transition-colors"
                 >
                   Get in Touch
                 </Link>

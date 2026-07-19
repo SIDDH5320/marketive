@@ -3,10 +3,10 @@
 
 @theme {
   /* Brutalist Colors - use --color-* prefix so Tailwind v4 generates bg-primary-*, text-primary-* etc. */
-  --color-primary-300: #e0ff4d;
-  --color-primary-400: #D4FF00;
-  --color-primary-500: #D4FF00;
-  --color-primary-600: #b3d900;
+  --color-primary-300: #d3f97a;
+  --color-primary-400: #C1F135;
+  --color-primary-500: #C1F135;
+  --color-primary-600: #a3ce2c;
 
   --color-accent-400: #ff3377;
   --color-accent-500: #ff0055;
@@ -30,11 +30,11 @@
 
 /* Semantic aliases used by @layer components and JS setProperty */
 :root {
-  --primary: #D4FF00;
-  --primary-glow: rgba(212, 255, 0, 0.5);
+  --primary: #C1F135;
+  --primary-glow: rgba(193, 241, 53, 0.5);
   --primary-foreground: #000000;
-  --primary-on-dark: #D4FF00;
-  --primary-on-light: #D4FF00;
+  --primary-on-dark: #C1F135;
+  --primary-on-light: #C1F135;
 }
 
 @layer base {
@@ -196,9 +196,16 @@
     position: relative;
   }
 
-  body.dark .btn-primary:hover {
+  /* Ensure btn-primary text is always black, overriding dark-mode span rule */
+  .btn-primary,
+  .btn-primary span {
+    color: #000000 !important;
+  }
+
+  body.dark .btn-primary:hover,
+  body.dark .btn-primary:hover span {
     background: #ffffff;
-    color: #000000;
+    color: #000000 !important;
     transform: translate(-4px, -4px);
     box-shadow: 6px 6px 0 0 var(--primary), 0 0 20px var(--primary-glow);
   }
@@ -207,9 +214,10 @@
     border: 2px solid #000000;
   }
 
-  body.light .btn-primary:hover {
+  body.light .btn-primary:hover,
+  body.light .btn-primary:hover span {
     background: #000000;
-    color: var(--primary-on-dark);
+    color: var(--primary-on-dark) !important;
     transform: translate(-4px, -4px);
     box-shadow: 6px 6px 0 0 var(--primary), 0 0 20px var(--primary-glow);
   }

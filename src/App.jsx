@@ -7,11 +7,13 @@ import { ThemeProvider } from './hooks/useTheme';
 import { useScrollProgress } from './hooks/useScrollProgress';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import ThemeSwitcher from './components/ThemeSwitcher';
+// Theme color-picker widget disabled — brand color is fixed. Dark/light toggle lives in the Navbar.
+// import ThemeSwitcher from './components/ThemeSwitcher';
 
 const Home = lazy(() => import('./pages/Home'));
 const Services = lazy(() => import('./pages/Services'));
-const StrategyConsulting = lazy(() => import('./pages/StrategyConsulting'));
+const ServicePage = lazy(() => import('./pages/ServicePage'));
+const Privacy = lazy(() => import('./pages/Privacy'));
 const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
 const CaseStudies = lazy(() => import('./pages/CaseStudies'));
 const CaseStudyDetail = lazy(() => import('./pages/CaseStudyDetail'));
@@ -74,7 +76,14 @@ function AppRoutes() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/services/strategy-consulting" element={<StrategyConsulting />} />
+          <Route path="/services/strategy-consulting" element={<ServicePage slug="strategy-consulting" />} />
+          <Route path="/services/marketing-automation" element={<ServicePage slug="marketing-automation" />} />
+          <Route path="/services/social-media" element={<ServicePage slug="social-media" />} />
+          <Route path="/services/content-strategy" element={<ServicePage slug="content-strategy" />} />
+          <Route path="/services/branding" element={<ServicePage slug="branding" />} />
+          <Route path="/services/web-design-development" element={<ServicePage slug="web-design-development" />} />
+          <Route path="/services/sem" element={<ServicePage slug="sem" />} />
+          <Route path="/services/seo" element={<ServicePage slug="seo" />} />
           <Route path="/services/:id" element={<ServiceDetail />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/case-studies/:id" element={<CaseStudyDetail />} />
@@ -83,6 +92,7 @@ function AppRoutes() {
           <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </AnimatePresence>
     </Suspense>
@@ -100,7 +110,7 @@ function Layout() {
         <AppRoutes />
       </main>
       <Footer />
-      <ThemeSwitcher />
+      {/* <ThemeSwitcher /> — hidden: fixed brand color, no color picker */}
     </>
   );
 }

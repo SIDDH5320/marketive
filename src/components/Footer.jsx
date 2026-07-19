@@ -121,24 +121,53 @@ export default function Footer() {
         </motion.div>
 
         {/* Bottom */}
-        <div className={`mt-20 pt-8 border-t-2 flex flex-col md:flex-row justify-between items-center gap-6 ${
+        <div className={`mt-20 pt-8 border-t-2 flex flex-col items-center gap-6 ${
           isDark ? 'border-white/20' : 'border-black/20'
         }`}>
-          <p className={`text-sm font-bold uppercase tracking-widest ${isDark ? 'text-gray-500' : 'text-gray-500'}`}>
-            {footer.copyright}
-          </p>
-          <div className="flex gap-8">
-            {footer.bottomLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`text-xs font-bold uppercase tracking-widest transition-colors ${
-                  isDark ? 'text-gray-500 hover:text-white' : 'text-gray-500 hover:text-black'
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+          {/* Top row: copyright + bottom links */}
+          <div className="w-full flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className={`text-sm font-bold uppercase tracking-widest ${isDark ? 'text-gray-500' : 'text-gray-500'}`}>
+              {footer.copyright}
+            </p>
+            <div className="flex gap-8">
+              {footer.bottomLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`text-xs font-bold uppercase tracking-widest transition-colors ${
+                    isDark ? 'text-gray-500 hover:text-white' : 'text-gray-500 hover:text-black'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Personal credit line */}
+          <div className={`flex items-center gap-1.5 text-xs tracking-wide ${isDark ? 'text-gray-600' : 'text-gray-400'}`}>
+            <span>Crafted with</span>
+            <motion.span
+              animate={{ scale: [1, 1.3, 1] }}
+              transition={{ duration: 1.2, repeat: Infinity, ease: 'easeInOut' }}
+              className="text-red-500 text-sm select-none"
+              aria-label="love"
+            >
+              ❤️
+            </motion.span>
+            <span>by</span>
+            <a
+              href="https://siddh5320.github.io/resume-porfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`font-semibold transition-colors underline underline-offset-2 decoration-dotted ${
+                isDark
+                  ? 'text-gray-400 hover:text-primary-500 decoration-gray-600 hover:decoration-primary-500'
+                  : 'text-gray-500 hover:text-primary-600 decoration-gray-300 hover:decoration-primary-600'
+              }`}
+            >
+              Siddh Shah
+            </a>
           </div>
         </div>
       </div>

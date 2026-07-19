@@ -89,7 +89,7 @@ export default function Blog() {
               />
               <button
                 type="submit"
-                className="m-1.5 px-6 py-3 rounded-full bg-[#e85d04] text-white text-sm font-semibold hover:bg-[#cf5204] transition-colors shrink-0"
+                className="m-1.5 px-6 py-3 rounded-full bg-primary-500 text-black text-sm font-semibold hover:bg-primary-600 transition-colors shrink-0"
               >
                 Search
               </button>

@@ -76,7 +76,7 @@ export default function BlogDetail() {
         {/* Overlay text */}
         <div className="absolute bottom-0 left-0 right-0 pb-12 px-6">
           <div className="max-w-3xl mx-auto">
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-white bg-[#e85d04] mb-4">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-black bg-primary-500 mb-4">
               {post.category}
             </span>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
@@ -105,7 +105,7 @@ export default function BlogDetail() {
           </button>
 
           {/* Lead excerpt */}
-          <p className={`text-xl leading-relaxed mb-8 font-medium border-l-4 border-[#e85d04] pl-5 ${
+          <p className={`text-xl leading-relaxed mb-8 font-medium border-l-4 border-primary-500 pl-5 ${
             isDark ? 'text-gray-200' : 'text-gray-700'
           }`}>
             {post.excerpt}
@@ -119,8 +119,8 @@ export default function BlogDetail() {
           <div className={`mt-14 p-6 rounded-2xl flex items-center gap-5 ${
             isDark ? 'bg-surface-card' : 'bg-gray-50'
           }`}>
-            <div className="w-14 h-14 rounded-full bg-[#e85d04] flex items-center justify-center shrink-0">
-              <span className="text-white font-bold text-xl">{post.author.charAt(0)}</span>
+            <div className="w-14 h-14 rounded-full bg-primary-500 flex items-center justify-center shrink-0">
+              <span className="text-black font-bold text-xl">{post.author.charAt(0)}</span>
             </div>
             <div>
               <p className={`font-bold text-base ${isDark ? 'text-white' : 'text-gray-900'}`}>{post.author}</p>
@@ -155,7 +155,7 @@ export default function BlogDetail() {
                   </div>
                   <div className="p-5">
                     <div className="flex items-center gap-2 mb-2">
-                      <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold text-white bg-[#e85d04]">{r.category}</span>
+                      <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold text-black bg-primary-500">{r.category}</span>
                       <span className={`text-xs ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>{r.date}</span>
                     </div>
                     <h3 className={`font-bold text-sm leading-snug group-hover:text-primary-500 transition-colors ${isDark ? 'text-white' : 'text-gray-900'}`}>

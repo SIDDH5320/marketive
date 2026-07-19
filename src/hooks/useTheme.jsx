@@ -39,12 +39,10 @@ export function ThemeProvider({ children }) {
     return 'dark';
   });
 
-  const [accentColor, setAccentColor] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme-color') || '#D4FF00';
-    }
-    return '#D4FF00';
-  });
+  // Brand accent is fixed site-wide. The color-picker widget is disabled, so we
+  // ignore any previously stored custom colour and always use the brand lime.
+  const BRAND_COLOR = '#C1F135';
+  const [accentColor, setAccentColor] = useState(BRAND_COLOR);
 
   useEffect(() => {
     document.body.className = theme;

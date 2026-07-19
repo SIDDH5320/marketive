@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ArrowRight, Check, Search, BarChart3, FileText, Share2, Lightbulb, Zap, TrendingUp, Target } from 'lucide-react';
+import { ArrowRight, Check, Search, BarChart3, FileText, Share2, Lightbulb, Zap, TrendingUp, Target, Palette, Monitor } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 import content from '../content/content';
 import { fadeInUp, slideInLeft, slideInRight, staggerContainer, pageTransition } from '../utils/animations';
@@ -9,7 +9,7 @@ import CTASection from '../components/CTASection';
 import ContactForm from '../components/ContactForm';
 
 const ICON_MAP = {
-  Lightbulb, Search, BarChart3, FileText, Share2, Zap, TrendingUp, Target,
+  Lightbulb, Search, BarChart3, FileText, Share2, Zap, TrendingUp, Target, Palette, Monitor,
 };
 
 const STATS = [
@@ -70,7 +70,7 @@ export default function Services() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left */}
             <motion.div variants={staggerContainer} initial="hidden" animate="visible">
-              <motion.span variants={fadeInUp} className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#e85d04] mb-4">
+              <motion.span variants={fadeInUp} className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-primary-500 mb-4">
                 {services.hero.tagline}
               </motion.span>
               <motion.h1
@@ -83,7 +83,7 @@ export default function Services() {
                 {services.hero.description}
               </motion.p>
               <motion.div variants={fadeInUp}>
-                <Link to="/contact" className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#e85d04] text-white font-semibold text-sm hover:bg-[#cf5204] transition-colors">
+                <Link to="/contact" className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-primary-500 text-black font-semibold text-sm hover:bg-primary-600 transition-colors">
                   Get in touch <ArrowRight size={16} />
                 </Link>
               </motion.div>
@@ -108,7 +108,7 @@ export default function Services() {
                 <span className="text-3xl">📈</span>
                 <div>
                   <p className={`font-bold text-sm ${isDark ? 'text-white' : 'text-gray-900'}`}>Average client growth</p>
-                  <p className="text-[#e85d04] font-bold text-xl">+347% ROI</p>
+                  <p className="text-primary-500 font-bold text-xl">+347% ROI</p>
                 </div>
               </div>
             </motion.div>
@@ -135,7 +135,7 @@ export default function Services() {
                 <span className="text-4xl shrink-0">{s.icon}</span>
                 <p className={`text-base leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
                   {s.label}{' '}
-                  <span className="font-bold text-[#e85d04]">{s.highlight}</span>{' '}
+                  <span className="font-bold text-primary-500">{s.highlight}</span>{' '}
                   {s.suffix}
                 </p>
               </motion.div>
@@ -154,7 +154,7 @@ export default function Services() {
             viewport={{ once: true }}
             className="text-center mb-14"
           >
-            <motion.span variants={fadeInUp} className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#e85d04] mb-3">
+            <motion.span variants={fadeInUp} className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-primary-500 mb-3">
               What We Do
             </motion.span>
             <motion.h2 variants={fadeInUp} className={`text-3xl md:text-4xl lg:text-5xl font-bold ${isDark ? 'text-white' : 'text-[#1a1a3e]'}`}>
@@ -178,27 +178,27 @@ export default function Services() {
                   className={`group rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
                     isDark
                       ? 'bg-surface-card hover:bg-surface-card/80'
-                      : 'bg-white border border-gray-100 shadow-sm hover:border-[#e85d04]/20'
+                      : 'bg-white border border-gray-100 shadow-sm hover:border-primary-500/20'
                   }`}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-[#e85d04]/10 flex items-center justify-center mb-5">
-                    <Icon size={22} className="text-[#e85d04]" />
+                  <div className="w-12 h-12 rounded-xl bg-primary-500/10 flex items-center justify-center mb-5">
+                    <Icon size={22} className="text-primary-500" />
                   </div>
                   <Link to={`/services/${service.id}`}>
-                    <h3 className={`text-xl font-bold mb-3 hover:text-[#e85d04] transition-colors ${isDark ? 'text-white' : 'text-gray-900'}`}>{service.title}</h3>
+                    <h3 className={`text-xl font-bold mb-3 hover:text-primary-500 transition-colors ${isDark ? 'text-white' : 'text-gray-900'}`}>{service.title}</h3>
                   </Link>
                   <p className={`text-sm leading-relaxed mb-5 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>{service.description}</p>
                   <ul className="space-y-2 mb-6">
                     {service.features.slice(0, 4).map((f, fi) => (
                       <li key={fi} className="flex items-start gap-2">
-                        <Check size={14} className="text-[#e85d04] mt-0.5 shrink-0" />
+                        <Check size={14} className="text-primary-500 mt-0.5 shrink-0" />
                         <span className={`text-sm ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>{f}</span>
                       </li>
                     ))}
                   </ul>
                   <Link
                     to={`/services/${service.id}`}
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#e85d04] group-hover:underline"
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-500 group-hover:underline"
                   >
                     Learn more <ArrowRight size={14} />
                   </Link>
@@ -219,7 +219,7 @@ export default function Services() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <motion.span variants={fadeInUp} className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#e85d04] mb-3">
+            <motion.span variants={fadeInUp} className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-primary-500 mb-3">
               Our Process
             </motion.span>
             <motion.h2 variants={fadeInUp} className={`text-3xl md:text-4xl lg:text-5xl font-bold ${isDark ? 'text-white' : 'text-[#1a1a3e]'}`}>
@@ -240,7 +240,12 @@ export default function Services() {
                   className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${!isEven ? 'lg:flex-row-reverse' : ''}`}
                 >
                   <motion.div variants={isEven ? slideInLeft : slideInRight} className={!isEven ? 'lg:order-2' : ''}>
-                    <span className="text-6xl font-bold text-[#e85d04]/20 font-display block mb-2">{step.step}</span>
+                    <span
+                      className="text-6xl font-bold font-display block mb-2"
+                      style={{ color: isDark ? '#ffffff' : 'var(--primary-on-light)', opacity: isDark ? 0.3 : 0.55 }}
+                    >
+                      {step.step}
+                    </span>
                     <h3 className={`text-3xl font-bold mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}>{step.title}</h3>
                     <p className={`text-base leading-relaxed ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>{step.description}</p>
                   </motion.div>
@@ -266,7 +271,7 @@ export default function Services() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <motion.span variants={fadeInUp} className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#e85d04] mb-3">
+              <motion.span variants={fadeInUp} className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-primary-500 mb-3">
                 Get Started
               </motion.span>
               <motion.h2 variants={fadeInUp} className={`text-3xl md:text-4xl font-bold mb-5 ${isDark ? 'text-white' : 'text-[#1a1a3e]'}`}>
@@ -283,8 +288,8 @@ export default function Services() {
                   'Transparent reporting & communication',
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-[#e85d04]/15 flex items-center justify-center shrink-0">
-                      <Check size={12} className="text-[#e85d04]" />
+                    <div className="w-5 h-5 rounded-full bg-primary-500/15 flex items-center justify-center shrink-0">
+                      <Check size={12} className="text-primary-500" />
                     </div>
                     <span className={`text-sm font-medium ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>{item}</span>
                   </div>

@@ -4,7 +4,7 @@ import { useTheme } from '../hooks/useTheme';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const PRESETS = [
-  "#D4FF00", // neon yellow (default)
+  "#C1F135", // lime green (default)
   "#00E5FF", // cyan
   "#2979FF", // blue
   "#7C4DFF", // purple
@@ -12,7 +12,7 @@ const PRESETS = [
   "#FF6A00"  // orange
 ];
 
-const DEFAULT_COLOR = "#D4FF00";
+const DEFAULT_COLOR = "#C1F135";
 
 export default function ThemeSwitcher() {
   const { theme, accentColor, setAccentColor } = useTheme();
@@ -60,7 +60,7 @@ export default function ThemeSwitcher() {
                       style={{ backgroundColor: color }}
                       title={`Switch to ${color}`}
                     >
-                      {isActive && <Check size={14} color={color === '#D4FF00' ? '#000' : '#fff'} className="mix-blend-difference" />}
+                      {isActive && <Check size={14} color={color === '#C1F135' ? '#000' : '#fff'} className="mix-blend-difference" />}
                     </button>
                   );
                 })}
@@ -90,7 +90,7 @@ export default function ThemeSwitcher() {
                   className={`flex items-center gap-1 text-xs uppercase font-bold px-2 py-1 border-2 border-transparent transition-colors ${
                     isDark ? 'hover:bg-white hover:text-black hover:border-white' : 'hover:bg-black hover:text-white hover:border-black'
                   }`}
-                  title="Reset to default yellow"
+                  title="Reset to default color"
                 >
                   <RotateCcw size={12} />
                   Reset

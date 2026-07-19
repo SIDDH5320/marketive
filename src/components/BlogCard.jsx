@@ -40,7 +40,7 @@ export default function BlogCard({ post, onClick }) {
       <div className="flex flex-col flex-1 p-6">
         {/* Badge + Date */}
         <div className="flex items-center gap-3 mb-3">
-          <span className="px-3 py-1 rounded-full text-xs font-semibold text-white bg-[#e85d04] shrink-0">
+          <span className="px-3 py-1 rounded-full text-xs font-semibold text-black bg-primary-500 shrink-0">
             {post.category}
           </span>
           <span className={`text-sm truncate ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
