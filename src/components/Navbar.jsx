@@ -129,18 +129,6 @@ export default function Navbar() {
                             <div
                               className={`w-72 p-2 border-2 shadow-[6px_6px_0_0_rgba(0,0,0,1)] ${isDark ? 'bg-black border-white/15' : 'bg-white border-black'}`}
                             >
-                              {/* "View all" link at the top */}
-                              <Link
-                                to={link.path}
-                                onClick={() => setOpenDesktopSub(null)}
-                                className={`block px-4 py-2.5 text-xs font-bold uppercase tracking-widest border-b mb-1 transition-colors ${
-                                  isDark
-                                    ? 'text-gray-500 border-white/10 hover:text-primary-500'
-                                    : 'text-gray-400 border-black/10 hover:text-primary-500'
-                                }`}
-                              >
-                                All {link.label}
-                              </Link>
                               {children.map((c) => {
                                 const cActive = location.pathname === c.path;
                                 return (
@@ -280,12 +268,6 @@ export default function Navbar() {
                             className="overflow-hidden"
                           >
                             <div className="flex flex-col gap-0.5 pl-3 pb-2 border-l-2 border-primary-500/30 ml-1">
-                              <Link
-                                to={link.path}
-                                className={`py-2 text-sm font-bold uppercase tracking-wide ${isDark ? 'text-gray-500 hover:text-primary-500' : 'text-gray-500 hover:text-primary-500'}`}
-                              >
-                                All {link.label}
-                              </Link>
                               {children.map((c) => (
                                 <Link
                                   key={c.path}

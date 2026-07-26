@@ -14,7 +14,6 @@ const Home = lazy(() => import('./pages/Home'));
 const Services = lazy(() => import('./pages/Services'));
 const ServicePage = lazy(() => import('./pages/ServicePage'));
 const Privacy = lazy(() => import('./pages/Privacy'));
-const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
 const CaseStudies = lazy(() => import('./pages/CaseStudies'));
 const CaseStudyDetail = lazy(() => import('./pages/CaseStudyDetail'));
 const About = lazy(() => import('./pages/About'));
@@ -22,6 +21,7 @@ const Blog = lazy(() => import('./pages/Blog'));
 const BlogDetail = lazy(() => import('./pages/BlogDetail'));
 const Contact = lazy(() => import('./pages/Contact'));
 const ThankYou = lazy(() => import('./pages/ThankYou'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 function PageLoader() {
   return (
@@ -84,7 +84,6 @@ function AppRoutes() {
           <Route path="/services/web-design-development" element={<ServicePage slug="web-design-development" />} />
           <Route path="/services/sem" element={<ServicePage slug="sem" />} />
           <Route path="/services/seo" element={<ServicePage slug="seo" />} />
-          <Route path="/services/:id" element={<ServiceDetail />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/case-studies/:id" element={<CaseStudyDetail />} />
           <Route path="/about" element={<About />} />
@@ -93,6 +92,7 @@ function AppRoutes() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
     </Suspense>

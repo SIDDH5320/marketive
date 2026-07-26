@@ -976,6 +976,18 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
   },
 
   // ----------------------------------------------------------
+  // 404 — PAGE NOT FOUND
+  // ----------------------------------------------------------
+  notFound: {
+    code: "404",
+    heading: "Page Not Found",
+    description:
+      "The page you're looking for doesn't exist or may have moved. Let's get you back on track.",
+    primaryCta: { label: "Back to Home", path: "/" },
+    secondaryCta: { label: "View Services", path: "/services" },
+  },
+
+  // ----------------------------------------------------------
   // FOOTER
   // ----------------------------------------------------------
   footer: {
