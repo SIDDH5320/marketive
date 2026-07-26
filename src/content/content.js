@@ -36,7 +36,7 @@ const content = {
   // ----------------------------------------------------------
   home: {
     hero: {
-      headline: "We Build Brands That",
+      headline: "Business",
       headlineHighlight: "Dominate Search",
       subheadline:
         "Australia's most results-driven digital marketing agency. We combine data, creativity, and cutting-edge strategy to fuel exponential growth.",
