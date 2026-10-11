@@ -79,9 +79,9 @@ function AppRoutes() {
           <Route path="/services/strategy-consulting" element={<ServicePage slug="strategy-consulting" />} />
           <Route path="/services/marketing-automation" element={<ServicePage slug="marketing-automation" />} />
           <Route path="/services/social-media" element={<ServicePage slug="social-media" />} />
-          <Route path="/services/content-strategy" element={<ServicePage slug="content-strategy" />} />
-          <Route path="/services/branding" element={<ServicePage slug="branding" />} />
-          <Route path="/services/web-design-development" element={<ServicePage slug="web-design-development" />} />
+          {/* <Route path="/services/content-strategy" element={<ServicePage slug="content-strategy" />} /> */}
+          {/* <Route path="/services/branding" element={<ServicePage slug="branding" />} /> */}
+          {/* <Route path="/services/web-design-development" element={<ServicePage slug="web-design-development" />} /> */}
           <Route path="/services/sem" element={<ServicePage slug="sem" />} />
           <Route path="/services/seo" element={<ServicePage slug="seo" />} />
           <Route path="/case-studies" element={<CaseStudies />} />

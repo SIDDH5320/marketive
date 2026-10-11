@@ -47,15 +47,17 @@ export default function CTASection({ heading, description, cta, showForm = false
                     {description}
                   </motion.p>
                 )}
-                <motion.div variants={fadeInUp}>
-                  <Link
-                    to={cta.path}
-                    className="inline-flex items-center gap-4 bg-black text-white px-10 py-5 font-display font-bold text-xl uppercase tracking-widest border-2 border-black hover:bg-white hover:text-black hover:shadow-[-8px_8px_0_0_#000] hover:-translate-y-2 hover:translate-x-2 transition-all duration-300"
-                  >
-                    {cta.label}
-                    <ArrowRight size={24} />
-                  </Link>
-                </motion.div>
+                {cta && (
+                  <motion.div variants={fadeInUp}>
+                    <Link
+                      to={cta.path}
+                      className="inline-flex items-center gap-4 bg-black text-white px-10 py-5 font-display font-bold text-xl uppercase tracking-widest border-2 border-black hover:bg-white hover:text-black hover:shadow-[-8px_8px_0_0_#000] hover:-translate-y-2 hover:translate-x-2 transition-all duration-300"
+                    >
+                      {cta.label}
+                      <ArrowRight size={24} />
+                    </Link>
+                  </motion.div>
+                )}
               </>
             )}
           </div>

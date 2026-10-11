@@ -1,5 +1,4 @@
 import { useTheme } from '../hooks/useTheme';
-import { ArrowRight } from 'lucide-react';
 
 const IMAGE_MAP = {
   'gradient-1': '/images/case-studies/gradient-1.jpg', // SEO/analytics dashboard
@@ -67,13 +66,9 @@ export default function CaseStudyCard({ study, onClick }) {
         }`}>
           {study.title}
         </h3>
-        <p className={`text-sm leading-relaxed line-clamp-3 mb-5 flex-1 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+        <p className={`text-sm leading-relaxed line-clamp-3 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
           {study.problem}
         </p>
-
-        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-500 group-hover:underline">
-          View case study <ArrowRight size={14} />
-        </span>
       </div>
     </article>
   );

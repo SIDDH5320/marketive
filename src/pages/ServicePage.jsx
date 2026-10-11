@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import * as LucideIcons from 'lucide-react';
-import { ArrowRight, Check, ChevronDown } from 'lucide-react';
+import { ArrowRight, Check, ChevronDown, Lightbulb } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 import { fadeInUp, slideInLeft, slideInRight, staggerContainer, pageTransition } from '../utils/animations';
 import SectionWrapper from '../components/SectionWrapper';
@@ -83,7 +83,7 @@ export default function ServicePage({ slug }) {
     ? dark('bg-surface-darker/60', 'bg-[#f5f5f7]')
     : dark('bg-surface-dark', 'bg-white'));
 
-  const { seo, hero, whyMatters, help, included, process, whyChoose, platforms, industries, faqs, finalCta } = data;
+  const { seo, hero, whyMatters, help, included, process, whyChoose, platforms, industries, didYouKnow, faqs, finalCta } = data;
 
   return (
     <motion.div {...pageTransition}>
@@ -134,7 +134,7 @@ export default function ServicePage({ slug }) {
               <Link to={hero.primaryCta.path} className="btn-primary">
                 {hero.primaryCta.label} <ArrowRight size={16} />
               </Link>
-              {hero.secondaryCta && (
+              {hero.secondaryCta && hero.secondaryCta.path !== '/case-studies' && (
                 <Link to={hero.secondaryCta.path} className={dark('btn-secondary-dark', 'btn-secondary-light')}>
                   {hero.secondaryCta.label}
                 </Link>
@@ -146,7 +146,7 @@ export default function ServicePage({ slug }) {
 
       {/* ── WHY IT MATTERS ── */}
       {whyMatters && (
-        <SectionWrapper heading={whyMatters.heading} description={whyMatters.description} className={nextBg()}>
+        <SectionWrapper tagline={whyMatters.tagline} heading={whyMatters.heading} description={whyMatters.description} className={nextBg()}>
           <div className="space-y-16 lg:space-y-24">
             {whyMatters.blocks.map((block, i) => {
               const imageLeft = i % 2 === 0;
@@ -165,7 +165,7 @@ export default function ServicePage({ slug }) {
                     </div>
                   </motion.div>
                   <motion.div variants={imageLeft ? slideInRight : slideInLeft} className={imageLeft ? 'lg:order-2' : 'lg:order-1'}>
-                    <p className={`text-xl lg:text-2xl font-medium leading-relaxed ${dark('text-gray-200', 'text-gray-800')}`}>{block.text}</p>
+                    <p className={`text-base lg:text-lg leading-relaxed mb-10 max-w-3xl mx-auto ${dark('text-gray-400', 'text-gray-600')}`}>{block.text}</p>
                   </motion.div>
                 </motion.div>
               );
@@ -218,80 +218,159 @@ export default function ServicePage({ slug }) {
         </SectionWrapper>
       )}
 
-      {/* ── WHAT'S INCLUDED ── */}
-      {included && (
-        <SectionWrapper tagline={included.tagline} heading={included.heading} description={included.description} className={nextBg()}>
-          {typeof included.items[0] === 'string' ? (
-            <motion.div
-              variants={staggerContainer}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: '-80px' }}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto"
-            >
-              {included.items.map((item) => (
-                <motion.div key={item} variants={fadeInUp} className={`flex items-center gap-3 p-4 rounded-xl ${dark('card-dark', 'card-light')}`}>
-                  <div className="w-7 h-7 rounded-lg bg-primary-500 border-2 border-black flex items-center justify-center shrink-0">
-                    <Check size={15} className="text-black" />
+      {/* ── PROCESS & INCLUDED ── */}
+      {slug === 'seo' ? (
+        <>
+          {process && (
+            <SectionWrapper tagline={process.tagline} heading={process.heading} description={process.description} className={nextBg()}>
+              <div className="max-w-3xl mx-auto">
+                {process.steps.map((s, i) => (
+                  <div key={s.step}>
+                    <motion.div
+                      variants={fadeInUp}
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: true, margin: '-60px' }}
+                      className={`flex gap-5 p-6 lg:p-7 rounded-2xl ${dark('card-dark', 'card-light')}`}
+                    >
+                      <div className="w-12 h-12 shrink-0 rounded-xl bg-primary-500 border-2 border-black flex items-center justify-center font-display font-bold text-xl text-black">
+                        {s.step}
+                      </div>
+                      <div>
+                        <h3 className={`text-lg lg:text-xl font-bold font-display mb-2 ${dark('text-white', 'text-gray-900')}`}>{s.title}</h3>
+                        <p className={`text-sm lg:text-base leading-relaxed ${dark('text-gray-400', 'text-gray-600')}`}>{s.text}</p>
+                      </div>
+                    </motion.div>
+                    {i < process.steps.length - 1 && (
+                      <div className="flex justify-center py-3" aria-hidden="true">
+                        <ChevronDown size={26} className="text-primary-500" />
+                      </div>
+                    )}
                   </div>
-                  <span className={`text-sm font-medium ${dark('text-gray-200', 'text-gray-800')}`}>{item}</span>
-                </motion.div>
-              ))}
-            </motion.div>
-          ) : (
-            <motion.div
-              variants={staggerContainer}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: '-80px' }}
-              className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto"
-            >
-              {included.items.map((item) => (
-                <motion.div key={item.title} variants={fadeInUp} className={`flex items-start gap-3 p-5 rounded-xl ${dark('card-dark', 'card-light')}`}>
-                  <div className="w-7 h-7 rounded-lg bg-primary-500 border-2 border-black flex items-center justify-center shrink-0">
-                    <Check size={15} className="text-black" />
-                  </div>
-                  <div>
-                    <span className={`block text-sm font-bold mb-1 ${dark('text-white', 'text-gray-900')}`}>{item.title}</span>
-                    <span className={`text-sm leading-relaxed ${dark('text-gray-400', 'text-gray-600')}`}>{item.text}</span>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
+                ))}
+              </div>
+            </SectionWrapper>
           )}
-        </SectionWrapper>
-      )}
 
-      {/* ── PROCESS ── */}
-      {process && (
-        <SectionWrapper tagline={process.tagline} heading={process.heading} description={process.description} className={nextBg()}>
-          <div className="max-w-3xl mx-auto">
-            {process.steps.map((s, i) => (
-              <div key={s.step}>
+          {included && (
+            <SectionWrapper tagline={included.tagline} heading={included.heading} description={included.description} className={nextBg()}>
+              {typeof included.items[0] === 'string' ? (
                 <motion.div
-                  variants={fadeInUp}
+                  variants={staggerContainer}
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: true, margin: '-60px' }}
-                  className={`flex gap-5 p-6 lg:p-7 rounded-2xl ${dark('card-dark', 'card-light')}`}
+                  viewport={{ once: true, margin: '-80px' }}
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto"
                 >
-                  <div className="w-12 h-12 shrink-0 rounded-xl bg-primary-500 border-2 border-black flex items-center justify-center font-display font-bold text-xl text-black">
-                    {s.step}
-                  </div>
-                  <div>
-                    <h3 className={`text-lg lg:text-xl font-bold font-display mb-2 ${dark('text-white', 'text-gray-900')}`}>{s.title}</h3>
-                    <p className={`text-sm lg:text-base leading-relaxed ${dark('text-gray-400', 'text-gray-600')}`}>{s.text}</p>
-                  </div>
+                  {included.items.map((item) => (
+                    <motion.div key={item} variants={fadeInUp} className={`flex items-center gap-3 p-4 rounded-xl ${dark('card-dark', 'card-light')}`}>
+                      <div className="w-7 h-7 rounded-lg bg-primary-500 border-2 border-black flex items-center justify-center shrink-0">
+                        <Check size={15} className="text-black" />
+                      </div>
+                      <span className={`text-sm font-medium ${dark('text-gray-200', 'text-gray-800')}`}>{item}</span>
+                    </motion.div>
+                  ))}
                 </motion.div>
-                {i < process.steps.length - 1 && (
-                  <div className="flex justify-center py-3" aria-hidden="true">
-                    <ChevronDown size={26} className="text-primary-500" />
+              ) : (
+                <motion.div
+                  variants={staggerContainer}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: '-80px' }}
+                  className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto"
+                >
+                  {included.items.map((item) => (
+                    <motion.div key={item.title} variants={fadeInUp} className={`flex items-start gap-3 p-5 rounded-xl ${dark('card-dark', 'card-light')}`}>
+                      <div className="w-7 h-7 rounded-lg bg-primary-500 border-2 border-black flex items-center justify-center shrink-0">
+                        <Check size={15} className="text-black" />
+                      </div>
+                      <div>
+                        <span className={`block text-sm font-bold mb-1 ${dark('text-white', 'text-gray-900')}`}>{item.title}</span>
+                        <span className={`text-sm leading-relaxed ${dark('text-gray-400', 'text-gray-600')}`}>{item.text}</span>
+                      </div>
+                    </motion.div>
+                  ))}
+                </motion.div>
+              )}
+            </SectionWrapper>
+          )}
+        </>
+      ) : (
+        <>
+          {included && (
+            <SectionWrapper tagline={included.tagline} heading={included.heading} description={included.description} className={nextBg()}>
+              {typeof included.items[0] === 'string' ? (
+                <motion.div
+                  variants={staggerContainer}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: '-80px' }}
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto"
+                >
+                  {included.items.map((item) => (
+                    <motion.div key={item} variants={fadeInUp} className={`flex items-center gap-3 p-4 rounded-xl ${dark('card-dark', 'card-light')}`}>
+                      <div className="w-7 h-7 rounded-lg bg-primary-500 border-2 border-black flex items-center justify-center shrink-0">
+                        <Check size={15} className="text-black" />
+                      </div>
+                      <span className={`text-sm font-medium ${dark('text-gray-200', 'text-gray-800')}`}>{item}</span>
+                    </motion.div>
+                  ))}
+                </motion.div>
+              ) : (
+                <motion.div
+                  variants={staggerContainer}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: '-80px' }}
+                  className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto"
+                >
+                  {included.items.map((item) => (
+                    <motion.div key={item.title} variants={fadeInUp} className={`flex items-start gap-3 p-5 rounded-xl ${dark('card-dark', 'card-light')}`}>
+                      <div className="w-7 h-7 rounded-lg bg-primary-500 border-2 border-black flex items-center justify-center shrink-0">
+                        <Check size={15} className="text-black" />
+                      </div>
+                      <div>
+                        <span className={`block text-sm font-bold mb-1 ${dark('text-white', 'text-gray-900')}`}>{item.title}</span>
+                        <span className={`text-sm leading-relaxed ${dark('text-gray-400', 'text-gray-600')}`}>{item.text}</span>
+                      </div>
+                    </motion.div>
+                  ))}
+                </motion.div>
+              )}
+            </SectionWrapper>
+          )}
+
+          {process && (
+            <SectionWrapper tagline={process.tagline} heading={process.heading} description={process.description} className={nextBg()}>
+              <div className="max-w-3xl mx-auto">
+                {process.steps.map((s, i) => (
+                  <div key={s.step}>
+                    <motion.div
+                      variants={fadeInUp}
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: true, margin: '-60px' }}
+                      className={`flex gap-5 p-6 lg:p-7 rounded-2xl ${dark('card-dark', 'card-light')}`}
+                    >
+                      <div className="w-12 h-12 shrink-0 rounded-xl bg-primary-500 border-2 border-black flex items-center justify-center font-display font-bold text-xl text-black">
+                        {s.step}
+                      </div>
+                      <div>
+                        <h3 className={`text-lg lg:text-xl font-bold font-display mb-2 ${dark('text-white', 'text-gray-900')}`}>{s.title}</h3>
+                        <p className={`text-sm lg:text-base leading-relaxed ${dark('text-gray-400', 'text-gray-600')}`}>{s.text}</p>
+                      </div>
+                    </motion.div>
+                    {i < process.steps.length - 1 && (
+                      <div className="flex justify-center py-3" aria-hidden="true">
+                        <ChevronDown size={26} className="text-primary-500" />
+                      </div>
+                    )}
                   </div>
-                )}
+                ))}
               </div>
-            ))}
-          </div>
-        </SectionWrapper>
+            </SectionWrapper>
+          )}
+        </>
       )}
 
       {/* ── WHY CHOOSE US ── */}
@@ -390,6 +469,51 @@ export default function ServicePage({ slug }) {
             })}
           </motion.div>
         </SectionWrapper>
+      )}
+
+      {/* ── DID YOU KNOW ── */}
+      {didYouKnow && (
+        <section className={`py-12 lg:py-16 ${nextBg()}`}>
+          <div className="max-w-3xl mx-auto px-6 lg:px-8">
+            <motion.div
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-60px' }}
+              className={`rounded-3xl p-8 sm:p-12 md:p-14 ${dark('card-dark', 'card-light')}`}
+            >
+              <h2 className={`text-2xl md:text-3xl font-bold font-display text-center mb-8 ${dark('text-white', 'text-gray-900')}`}>
+                {didYouKnow.heading || 'Did you know?'}
+              </h2>
+
+              <div className={`space-y-6 text-base md:text-lg leading-relaxed ${didYouKnow.items?.length === 1 ? 'text-center' : 'text-left'} ${dark('text-gray-300', 'text-gray-700')}`}>
+                {didYouKnow.items ? (
+                  didYouKnow.items.map((item, idx) => {
+                    const text = typeof item === 'object' ? item.text : item;
+                    const source = typeof item === 'object' ? item.source : null;
+                    return (
+                      <p key={idx}>
+                        {text}{' '}
+                        {source && <strong className={`font-bold ${dark('text-white', 'text-black')}`}>{source}</strong>}
+                      </p>
+                    );
+                  })
+                ) : (
+                  <>
+                    <p>
+                      Businesses that align their content strategy with SEO are 13x more likely to see positive ROI{' '}
+                      <strong className={`font-bold ${dark('text-white', 'text-black')}`}>(HubSpot, 2021)</strong>
+                    </p>
+                    <p>
+                      Social signals can indirectly influence search rankings by up to 20%{' '}
+                      <strong className={`font-bold ${dark('text-white', 'text-black')}`}>(Moz, 2023)</strong>
+                    </p>
+                  </>
+                )}
+              </div>
+            </motion.div>
+          </div>
+        </section>
       )}
 
       {/* ── FAQ ── */}
