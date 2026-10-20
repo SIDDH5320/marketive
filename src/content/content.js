@@ -1278,14 +1278,14 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
   servicePages: {
     "strategy-consulting": {
       "seo": {
-        "title": "Digital Marketing Strategy Consulting Services Australia | Marketive",
+        "title": "Digital Marketing Strategy Consulting Services Australia",
         "description": "Marketive offers Digital Marketing Strategy Consulting Services Australia — from digital roadmap strategy to strategic business solutions that deliver growth.",
         "canonical": "https://marketive.com.au/services/strategy-consulting"
       },
       "hero": {
         "breadcrumb": "Strategy & Consulting",
-        "tagline": "Digital Strategy & Consulting Services",
-        "heading": "Strategic Business Solutions Built for Growth",
+        "tagline": "",
+        "heading": "Digital Strategy & Consulting Services",
         "paragraphs": [
           "Strategic business solutions that turn ambition into an actionable digital roadmap strategy — built for growth, backed by data.",
           "Marketive's business strategy consulting and digital strategy & consulting services help Australian businesses cut through complexity, align teams around a clear direction, and translate strategy into measurable digital and commercial outcomes. As a trusted marketing strategy consultant partner, we combine business consulting with hands-on delivery across SEO and social media strategies, ensuring your digital marketing strategy Australia is built to perform."
@@ -1315,7 +1315,7 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
       "help": {
         "tagline": "What We Help You With",
         "heading": "Our Digital Strategy & Consulting Services",
-        "description": "Marketive's strategy consulting services are designed to support businesses at every stage — whether you're setting direction for the first time or refining an existing plan.",
+        "description": "Marketive's strategy consulting services are designed to support businesses at every stage — whether you're setting direction for the first time or refining an existing plan. As a leading provider of consulting services Australia businesses trust, we combine business strategy consulting with hands-on digital delivery.",
         "cards": [
           {
             "icon": "Briefcase",
@@ -1352,7 +1352,11 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
             "title": "Ongoing Strategic Advisory",
             "text": "Continued access to our Marketing Strategy Consultant team as your strategy evolves, your market shifts, or new opportunities emerge."
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "included": {
         "tagline": "What's Included",
@@ -1373,8 +1377,8 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
         ]
       },
       "process": {
-        "tagline": "Our Unique Approach",
-        "heading": "Six-Stage Process for Strategy & Consulting",
+        "tagline": "",
+        "heading": "Our Unique Approach",
         "description": "We follow a structured, six-stage process for every strategy consulting and business consulting engagement — keeping you involved at every key decision point.",
         "steps": [
           {
@@ -1407,12 +1411,19 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
             "title": "Ongoing Support",
             "text": "Remain on hand for strategic advisory, roadmap updates, and emerging opportunities."
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "whyChoose": {
         "tagline": "Why Choose Us",
         "heading": "Strategy That Delivers Results",
-        "description": "Choosing the right Marketing Strategy Agency can make the difference between wasted marketing spend and sustainable business growth. As specialists in business strategy consulting and Digital Strategy & Consulting Services, our approach combines strategic thinking, market research, data analysis, and AI-powered insights to build a digital roadmap strategy that delivers measurable results.",
+        "description": [
+          "Choosing the right Marketing Strategy Agency can make the difference between wasted marketing spend and sustainable business growth. As specialists in business strategy consulting and Digital Strategy & Consulting Services, our approach combines strategic thinking, market research, data analysis, and AI-powered insights to build a digital roadmap strategy that delivers measurable results.",
+          "Whether you're refining your SEO and social media strategies or need a dedicated marketing strategy consultant to guide your next phase of growth, Marketive brings the strategic business solutions Australian businesses need to invest with confidence and grow sustainably."
+        ],
         "items": [
           {
             "icon": "BarChart3",
@@ -1438,7 +1449,11 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
             "icon": "MapPin",
             "label": "Australian Market Experience"
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "industries": {
         "tagline": "Industries We Serve",
@@ -1491,6 +1506,68 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
           }
         ]
       },
+      "faqs": {
+        "tagline": "FAQ's",
+        "heading": "Frequently Asked Questions",
+        "items": [
+          {
+            "q": "What is a Digital Marketing Strategy?",
+            "a": "A Digital Marketing Strategy is a customised digital roadmap strategy that outlines how your business will use digital channels such as SEO, Google Ads, social media, content marketing, email marketing, and automation to achieve specific business goals. A well-planned Digital Marketing Strategy Australia helps businesses reach the right audience, improve brand visibility, generate qualified leads, and maximise return on investment. As an experienced Digital Marketing Consultant, we develop strategies tailored to your industry, target market, and growth objectives."
+          },
+          {
+            "q": "Why is Strategy Important Before Running Ads?",
+            "a": "Running paid advertising without a clear strategy can result in wasted budget and inconsistent results. A well-defined Online Marketing Strategy — combining SEO and social media strategies with paid media — ensures your campaigns target the right audience with the right message at the right time. Our Marketing Strategy Consultant applies business strategy consulting principles to analyse your business goals, competitors, customer journey, and marketing channels before recommending the most effective approach, helping you achieve sustainable business growth rather than short-term wins."
+          },
+          {
+            "q": "How Long Does Strategy Development Take?",
+            "a": "The timeframe depends on your business size, objectives, and project complexity. In most cases, our Digital Strategy & Consulting Services are completed within 2 to 4 weeks. During this time, we conduct research, competitor analysis, audience profiling, and a comprehensive Digital Marketing Audit before developing a tailored strategy and actionable implementation plan."
+          },
+          {
+            "q": "What's Included?",
+            "a": {
+              "intro": "Our Marketing Consulting Services provide everything you need to build a successful marketing foundation and strategic business solutions, including:",
+              "items": [
+                "Business discovery workshop",
+                "Comprehensive Digital Marketing Audit",
+                "Competitor and market analysis",
+                "Customer and audience research",
+                "SEO and keyword research",
+                "Website performance review",
+                "Marketing channel recommendations",
+                "Budget planning",
+                "KPI framework",
+                "A customised Marketing Roadmap",
+                "A 90-day action plan"
+              ],
+              "outro": "Every strategy is tailored to your business goals and designed to support long-term growth."
+            }
+          },
+          {
+            "q": "Can You Implement the Strategy?",
+            "a": "Absolutely. As a full-service Marketing Strategy Agency, we don't just develop strategies — we also execute them. Combining digital consulting with hands-on delivery, our team can implement SEO, Google Ads, social media marketing, content marketing, website optimisation, marketing automation, and ongoing campaign management to ensure your strategy delivers measurable business results."
+          },
+          {
+            "q": "Do You Work With Small Businesses?",
+            "a": "Yes. We provide consulting services Australia-wide to startups, small businesses, growing companies, and established enterprises. Whether you're launching a new business or looking to scale an existing one, our Marketing Planning Services are tailored to your goals, budget, and growth stage. Every client receives a personalised Business Growth Strategy designed to maximise opportunities and deliver measurable outcomes."
+          },
+          {
+            "q": "How Much Does Strategy Consulting Cost?",
+            "a": "The cost of strategy consulting and business consulting services Australia businesses invest in varies depending on your business size, objectives, and the scope of work required. After an initial consultation, our Digital Marketing Consultant will recommend a tailored solution based on your goals. We provide transparent pricing with no hidden fees and focus on delivering strategies that generate long-term value and return on investment."
+          },
+          {
+            "q": "Do you Provide Ongoing Support?",
+            "a": "Yes. Strategy isn't a one-time activity — it evolves as your business grows and the market changes. As part of our broader business consulting offering, our ongoing Marketing Consulting Services include performance reviews, strategic planning sessions, campaign optimisation, reporting, and continuous improvements to keep your Online Marketing Strategy aligned with your business objectives."
+          },
+          {
+            "q": "Will I Receive a Written Strategy Document?",
+            "a": "Yes. Every client receives a comprehensive strategy document that includes market research, competitor analysis, customer insights, recommended marketing channels, KPIs, implementation priorities, and a detailed digital roadmap strategy. This document serves as a practical guide for executing your marketing activities and measuring success over time."
+          },
+          {
+            "q": "Can you Audit Our Existing Marketing?",
+            "a": "Yes. We offer a comprehensive Digital Marketing Audit that evaluates every aspect of your current marketing performance, including your website, SEO, paid advertising, social media, content, analytics, and conversion tracking. Our audit identifies strengths, uncovers growth opportunities, and provides actionable recommendations to strengthen your Business Growth Strategy through practical, strategic business solutions."
+          }
+        ]
+      },
       "finalCta": {
         "heading": "Ready to Scale Your Growth with Strategic Clarity?",
         "description": "Get in touch with Marketive's strategy consultants to build a data-driven digital roadmap tailored to your business."
@@ -1498,14 +1575,14 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
     },
     "seo": {
       "seo": {
-        "title": "Leading Search Engine Optimisation Agency in Australia | Marketive",
+        "title": "Leading Search Engine Optimisation Agency in Australia",
         "description": "Marketive is a results-driven Search Engine Optimisation Agency in Australia helping small businesses rank higher, get more traffic & grow online.",
         "canonical": "https://marketive.com.au/services/seo"
       },
       "hero": {
         "breadcrumb": "Search Engine Optimisation",
-        "tagline": "Search Engine Optimisation Agency in Australia",
-        "heading": "Rank Higher. Get Found. Grow Faster.",
+        "tagline": "",
+        "heading": "Search Engine Optimisation Agency in Australia",
         "paragraphs": [
           "Marketive is a specialist search engine optimisation agency delivering data-led search engine optimisation services that put your business in front of the right Australians — at the exact moment they're searching."
         ],
@@ -1515,24 +1592,24 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
         }
       },
       "help": {
-        "tagline": "Our Services",
-        "heading": "Complete Search Engine Optimisation Solutions",
+        "tagline": "",
+        "heading": "Our Services Complete Search Engine Optimisation Solutions",
         "description": "As a full-service digital marketing agency, Marketive offers a complete suite of SEO solutions designed to help Australian businesses grow their online visibility, attract qualified traffic, and convert visitors into customers.",
         "cards": [
           {
             "icon": "Target",
             "title": "Competitive Analysis",
-            "text": "Before we build your strategy, we study your competitors. Our team analyses who's ranking above you, what keywords they're targeting, and where the gaps are in their approach. This research forms the foundation of every search engine optimisation strategy we build."
+            "text": "Before we build your strategy, we study your competitors. Our team analyses who's ranking above you, what keywords they're targeting, and where the gaps are in their approach. This research forms the foundation of every search engine optimisation strategy we build, ensuring your campaign is designed to outperform, not just compete."
           },
           {
             "icon": "Search",
             "title": "Search Engine Optimization (SEO)",
-            "text": "Our core search engine optimisation services cover everything from on-page optimisation to authority building. Whether you need SEO services Australia wide or a hyper-targeted campaign for a single market, we tailor our approach to your industry, audience, and goals."
+            "text": "Our core search engine optimisation services cover everything from on-page optimisation to authority building. Whether you need SEO services Australia wide or a hyper-targeted campaign for a single market, we tailor our approach to your industry, audience, and goals — helping you climb the rankings and stay there."
           },
           {
             "icon": "MapPin",
             "title": "Local SEO",
-            "text": "For businesses that rely on nearby customers, our local SEO services for small business help you dominate location-based searches like 'near me' queries. As a trusted local SEO agency Australia businesses turn to, we optimise your Google Business Profile, build local citations, and manage reviews."
+            "text": "For businesses that rely on nearby customers, our local SEO services for small business help you dominate location-based searches like \"near me\" queries. As a trusted local SEO agency Australia businesses turn to, we optimise your Google Business Profile, build local citations, and manage reviews so you show up when it matters most."
           },
           {
             "icon": "Code",
@@ -1542,7 +1619,7 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
           {
             "icon": "FileText",
             "title": "Content Strategy",
-            "text": "Great content drives both rankings and conversions. We develop content strategies built around real search intent and keyword research, creating pages and articles that answer your customers' questions and position your brand as the authority."
+            "text": "Great content drives both rankings and conversions. We develop content strategies built around real search intent and keyword research, creating pages and articles that answer your customers' questions and position your brand as the authority in your industry."
           },
           {
             "icon": "Link",
@@ -1559,48 +1636,68 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
             "title": "Analytics and Reporting",
             "text": "You shouldn't have to guess whether your SEO investment is working. We provide transparent, easy-to-understand reporting on rankings, traffic, and conversions — so you always know exactly what your campaign is delivering."
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "included": {
         "tagline": "What's Included",
         "heading": "Everything in Your SEO Package",
-        "description": "No hidden extras, no bolt-on fees. Every Marketive SEO engagement includes a comprehensive set of deliverables from day one.",
+        "description": [
+          "No hidden extras, no bolt-on fees. Every Marketive SEO engagement includes a comprehensive set of deliverables from day one — because a genuine search engine optimisation agency shouldn't nickel-and-dime you for the basics.",
+          "Whether you're investing in SEO services for small business or a larger digital marketing services package, every plan includes:"
+        ],
         "items": [
-          "Comprehensive SEO Audit - A full technical, on-page, and competitive audit to identify opportunities",
-          "Keyword Research & Strategy — Industry-specific research that forms the backbone of your strategy",
-          "Technical SEO Fixes — Site speed, crawlability, indexing, and mobile optimisation",
+          "Comprehensive SEO Audit - A full technical, on-page, and competitive audit to identify exactly where your opportunities lie",
+          "Keyword Research & Strategy — Industry-specific research that forms the backbone of your search engine optimisation strategy",
+          "Technical SEO Fixes — Site speed, crawlability, indexing, and mobile optimisation covered under our technical SEO services",
           "On-Page Optimisation — Meta titles, descriptions, headers, and content structured to rank",
-          "Local SEO Setup — Google Business Profile optimisation and citation building",
-          "Content Recommendations — Strategic guidance on what to publish based on search intent",
-          "Link Building Activity — Ethical, white-hat outreach to build site authority",
-          "Monthly Reporting & Strategy Calls — Transparent, plain-English reporting and strategy reviews"
-        ]
+          "Local SEO Setup — Google Business Profile optimisation and citation building included as standard for our local SEO services for small business",
+          "Content Recommendations — Strategic guidance on what to publish and why, based on real search intent",
+          "Link Building Activity — Ethical, white-hat outreach to build your site's authority",
+          "Monthly Reporting & Strategy Calls — Transparent, plain-English reporting so you always know what your investment is achieving"
+        ],
+        "paragraphs": [
+          "No lock-in contracts. No surprise invoices. No \"that'll cost extra\" conversations halfway through the month. Just a straightforward, all-inclusive approach from a digital marketing agency that believes pricing transparency should be the standard — not the exception.",
+          "As a trusted digital marketing company serving businesses across Australia, we built our pricing model around one simple principle: what you're quoted is what you pay, every month, for as long as you work with us."
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "process": {
-        "tagline": "How We Do It",
-        "heading": "How We Do It",
+        "tagline": "",
+        "heading": "Our SEO Strategy Process",
+        "description": "A proven four-phase framework we use for every client — from initial discovery to sustained ranking growth.",
         "steps": [
           {
             "step": "1",
-            "title": "Research",
-            "text": "Every effective search engine optimisation strategy starts with deep research. We analyse your industry, audience, and competitors to uncover exactly what your customers are searching for and where your biggest opportunities lie. This includes comprehensive keyword research, a full technical SEO audit, and competitive analysis — giving us the data-driven foundation needed to build a campaign that actually works, not guesswork dressed up as strategy."
+            "title": "Discover & Audit",
+            "text": "We analyse your website, target keywords, competitors, and existing organic performance to establish a clear baseline and uncover quick wins. This phase includes a full technical SEO audit and forms the research foundation of every search engine optimisation strategy we build — whether you're a single-location business needing local SEO services for small business or a national brand competing at scale."
           },
           {
             "step": "2",
-            "title": "Optimise",
-            "text": "With research complete, we get to work optimising every element that influences your rankings. Our technical SEO services address site speed, structure, and crawlability, while our on-page and content optimisation ensures your website speaks Google's language. For businesses targeting nearby customers, this stage also includes local SEO services for small business — optimising your Google Business Profile, citations, and location-based content to capture local search demand."
+            "title": "Strategy & Roadmap",
+            "text": "Using your audit findings, we build a 90-day SEO roadmap that prioritises the highest-impact technical fixes, content opportunities, and link targets. As a dedicated search engine optimisation agency, we tailor this roadmap to your specific market — factoring in local search demand for businesses that need a trusted local SEO agency Australia partner, or broader visibility for those seeking national SEO services Australia wide."
           },
           {
             "step": "3",
-            "title": "Amplify",
-            "text": "Once your foundation is solid, we amplify your visibility through strategic link building, authoritative content, and ongoing optimisation. This is where a genuine search engine optimisation agency earns its value — building your domain authority, expanding your organic footprint, and compounding your results month over month as a long-term digital marketing strategy, not a one-off fix."
+            "title": "Execute & Optimise",
+            "text": "Our team implements on-page changes, publishes optimised content, builds authoritative links, and refines targeting as data comes in. This is where our technical SEO services and content strategy come together — turning roadmap priorities into measurable ranking improvements across both organic and local SEO for small businesses channels."
           },
           {
             "step": "4",
-            "title": "Report",
-            "text": "Growth means nothing without visibility into what's working. We track keyword rankings, organic traffic, and conversions, delivering transparent monthly reports in plain English. As your digital marketing company, we make sure you always understand exactly how your investment is performing — and where we're heading next."
+            "title": "Report & Scale",
+            "text": "Monthly reporting keeps you fully informed. As rankings improve, we identify new keyword clusters and opportunities to expand your organic reach. As your ongoing digital marketing agency, we don't just maintain results — we scale them, uncovering fresh opportunities that keep your search engine optimisation services delivering compounding returns month after month."
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "whyChoose": {
         "tagline": "Why Choose Us",
@@ -1637,7 +1734,11 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
             "title": "Ethical White-Hat Methods",
             "text": "We only use ethical, Google-approved SEO practices. No shortcuts, no black-hat tricks — just sustainable rankings that protect your brand."
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "didYouKnow": {
         "heading": "Did you know?",
@@ -1651,43 +1752,43 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
         "items": [
           {
             "q": "What is SEO and Why Does My Australian Business Need It?",
-            "a": "Search engine optimisation (SEO) is the process of improving your website so it appears higher in Google's organic (unpaid) search results. When Australians search for your product or service, a solid search engine optimisation strategy determines whether they find you or your competitor. Unlike paid ads that stop the moment you stop spending, SEO services for small business build compounding, long-term visibility that drives consistent traffic and leads without ongoing ad spend."
+            "a": "Search engine optimisation (SEO) is the process of improving your website so it appears higher in Google's organic (unpaid) search results. When Australians search for your product or service, a solid search engine optimisation strategy determines whether they find you or your competitor. Unlike paid ads that stop the moment you stop spending, SEO services for small business build compounding, long-term visibility that drives consistent traffic and leads without ongoing ad spend. If your customers are searching online — and they are — you need SEO services Australia businesses can rely on."
           },
           {
             "q": "How Long Does SEO Take to Show Results?",
-            "a": "SEO is a medium-to-long-term investment. Most clients begin to see measurable improvements in keyword rankings and organic traffic within 3–6 months of consistent optimisation through our search engine optimisation services. Competitive industries or newer websites may take 6–12 months to reach page-one rankings. However, technical SEO services and local SEO improvements can deliver noticeable results within the first 4–8 weeks."
+            "a": "SEO is a medium-to-long-term investment. Most clients begin to see measurable improvements in keyword rankings and organic traffic within 3–6 months of consistent optimisation through our search engine optimisation services. Competitive industries or newer websites may take 6–12 months to reach page-one rankings for high-traffic keywords. However, technical seo services and local SEO improvements can deliver noticeable results within the first 4–8 weeks. We set realistic expectations from day one and show you progress every month."
           },
           {
             "q": "What's the Difference Between Local SEO and General SEO Services?",
-            "a": "General search engine optimisation services focus on improving organic rankings broadly — targeting keywords at a national or industry level. Local SEO services for small business are specifically designed to help businesses rank in location-based searches like 'plumber in Brisbane' or 'dentist near me.' Local SEO involves optimising your Google Business Profile, building local citations, managing online reviews, and creating geo-targeted content."
+            "a": "General search engine optimisation services focus on improving organic rankings broadly — targeting keywords at a national or industry level. Local SEO services for small business are specifically designed to help businesses rank in location-based searches like \"plumber in Brisbane\" or \"dentist near me.\" Local seo for small businesses involves optimising your Google Business Profile, building local citations, managing online reviews, and creating geo-targeted content. If you serve customers in specific Australian cities, suburbs, or regions, working with a local seo agency Australia trusts is essential for capturing that intent-driven local traffic."
           },
           {
             "q": "How Much Do Your SEO Services Cost?",
-            "a": "Our SEO packages are tailored to the size, goals, and competitiveness of your business. Pricing varies depending on the scope of work — local SEO services for small business are priced differently from a national e-commerce SEO campaign. We offer transparent, fixed monthly retainers with no hidden fees."
+            "a": "Our SEO packages are tailored to the size, goals, and competitiveness of your business. Pricing varies depending on the scope of work — local seo services for small business are priced differently from a national e-commerce SEO campaign. We offer transparent, fixed monthly retainers with no hidden fees, as with any digital marketing services worth investing in. Contact us for a free SEO audit and proposal, and we'll recommend the right investment level to achieve your growth goals."
           },
           {
             "q": "Will SEO Work For My Industry or Niche?",
-            "a": "Yes — SEO works for virtually every industry, including healthcare, real estate, legal, trades, retail, hospitality, finance, and education. As long as your target customers are using Google to search for what you offer, there's a significant opportunity for any search engine optimisation agency to help you capture it."
+            "a": "Yes — SEO works for virtually every industry, including healthcare, real estate, legal, trades, retail, hospitality, finance, and education. As long as your target customers are using Google to search for what you offer (and in Australia, almost all of them are), there's a significant opportunity for any search engine optimisation agency to help you capture it. Our team has delivered results across dozens of Australian industries, and we'll conduct industry-specific keyword research to identify your biggest opportunities before we begin."
           },
           {
             "q": "Do You Offer SEO Services For Businesses Outside Major Cities?",
-            "a": "Absolutely. Our local SEO services are particularly effective for regional and rural Australian businesses, where there's often less competition and faster ranking opportunities. Whether you're in Sydney, Melbourne, Brisbane, Perth, Adelaide, or a regional town, we can build a geo-targeted strategy that captures local search demand."
+            "a": "Absolutely. Our local SEO services are particularly effective for regional and rural Australian businesses, where there's often less competition and faster ranking opportunities. Whether you're in Sydney, Melbourne, Brisbane, Perth, Adelaide, or a regional town, we can build a geo-targeted strategy that captures local search demand. We work with clients across all states and territories as a local seo agency Australia wide — location is no barrier for our team."
           },
           {
             "q": "What Makes Marketive Different From Other SEO Agencies?",
-            "a": "Unlike many agencies that rely on templated campaigns, Marketive builds every strategy from scratch based on your specific market, competitors, and business goals. We're 100% focused on the Australian market, operate without lock-in contracts, and provide a dedicated strategist with transparent monthly reporting."
+            "a": "Unlike many search engine optimisation agency options that rely on templated campaigns, Marketive builds every strategy from scratch based on your specific market, competitors, and business goals. We're 100% focused on the Australian market, which means we understand the nuances of Google.com.au search behaviour and local ranking factors. As a full-service digital marketing agency, we also operate without lock-in contracts — our clients stay because we deliver results, not because they're contractually obligated. You'll have a dedicated strategist, not a rotating team, and transparent monthly reporting that shows exactly what your investment is achieving."
           },
           {
             "q": "What Does the Onboarding Process Look Like When I Start With You?",
-            "a": "We begin with a discovery session, followed by a full technical SEO audit, keyword research, and competitor analysis. Within the first two weeks, you'll receive a clear, prioritised 90-day SEO roadmap outlining focus areas and implementation timelines."
+            "a": "When you engage Marketive, we begin with a comprehensive discovery session to understand your business, goals, and target audience. From there, we conduct a full technical seo services audit, keyword research, and competitor analysis. Within the first two weeks, you'll receive a clear, prioritised SEO roadmap outlining what we'll focus on and why. Our onboarding is designed to be smooth and efficient — most clients have their strategy confirmed and implementation underway within 7–14 days of signing."
           },
           {
             "q": "Can I Track the Progress of My SEO Campaign?",
-            "a": "Yes — every client receives access to a live reporting dashboard showing keyword rankings, organic traffic, click-through rates, and conversion data, paired with detailed monthly reports and strategy calls."
+            "a": "Yes — complete transparency is one of our core commitments as a digital marketing company. Every client receives access to a live reporting dashboard showing keyword rankings, organic traffic, click-through rates, and conversion data. We also provide a detailed monthly report with plain-English commentary, and we schedule a regular strategy call to walk through results, answer questions, and adjust our approach based on what the data shows. You'll never be left wondering what's happening with your campaign."
           },
           {
             "q": "Do I Need to Sign a Long-Term Contract?",
-            "a": "No. We operate on flexible, rolling monthly agreements — there are no lock-in contracts required. We recommend committing to at least 6 months to allow the SEO process to demonstrate full compounding results."
+            "a": "No. We operate on flexible, rolling monthly agreements — there are no lock-in contracts or long-term commitments required. We believe the quality of our work and the results we deliver should be the reason you stay with us, not a contract. That said, we do recommend committing to at least 6 months to allow the SEO process to fully take effect — sustainable rankings are built over time, not overnight."
           }
         ]
       },
@@ -1698,14 +1799,14 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
     },
     "sem": {
       "seo": {
-        "title": "Leading Search Engine Marketing Agency in Australia | Marketive",
+        "title": "Leading Search Engine Marketing Agency in Australia",
         "description": "Marketive is a results-driven Search Engine Marketing Agency in Australia helping businesses nationwide boost ROAS with expert Google Ads, PPC & SEM management.",
         "canonical": "https://marketive.com.au/services/sem"
       },
       "hero": {
         "breadcrumb": "Search Engine Marketing",
-        "tagline": "Search Engine Marketing Agency in Australia",
-        "heading": "Maximise ROAS with Precision PPC Management",
+        "tagline": "",
+        "heading": "Search Engine Marketing Agency in Australia",
         "paragraphs": [
           "Marketive is the search engine marketing company Australian businesses turn to when they want results, not guesswork. As a search engine marketing agency focused on accountability over vanity metrics, we deliver complete search engine marketing services under one roof — so your strategy, execution, and reporting all stay connected."
         ],
@@ -1719,43 +1820,47 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
         "blocks": [
           {
             "img": "/images/services/hero.jpg",
-            "text": "Search engine marketing is the fastest way to get your business in front of high-intent Australian buyers — but only when managed with precision. Poorly structured Google Ads campaigns bleed budget on the wrong clicks, wrong audiences, and wrong keywords, with nothing to show for it."
+            "text": "Search engine marketing is the fastest way to get your business in front of high-intent Australian buyers — but only when it's managed with precision. Poorly structured Google Ads campaigns bleed budget on the wrong clicks, wrong audiences, and wrong keywords, with nothing to show for it. This is exactly why businesses eventually stop trying to manage it themselves and look for a proper search engine marketing company or Google Ads Agency Australia can rely on."
           },
           {
             "img": "/images/case-studies/gradient-2.jpg",
-            "text": "At Marketive, our SEM marketing approach starts with a deep understanding of your customer journey, competitive landscape, and profit targets. Every campaign we run is engineered to maximise return on ad spend (ROAS) — not just impressions or clicks. Our PPC strategy is developed by dedicated PPC specialists who treat every dollar of your ad spend as an investment, not a line item."
+            "text": "At Marketive, our SEM marketing approach starts with a deep understanding of your customer journey, competitive landscape, and profit targets. As a search engine marketing agency built around accountability, every campaign we run is engineered to maximise return on ad spend (ROAS) — not just impressions or clicks. Our PPC strategy is developed by dedicated PPC specialists who treat every dollar of your ad spend as an investment, not a line item."
+          },
+          {
+            "img": "/images/services/process-2.jpg",
+            "text": "Whether you need full PPC management Australia businesses can trust for lead generation, ongoing Google Ads Management Australia for an established account, or you're comparing us as a digital marketing agency offering digital marketing services beyond paid search, our search engine marketing services and PPC Australia services are built on the same principle: precision over guesswork. It's this discipline that positions us as one of the best PPC agency Australia options for businesses who are done watching budget disappear with nothing to show for it."
           }
         ]
       },
       "help": {
         "tagline": "What We Help You With",
         "heading": "SEM, End to End",
-        "description": "A complete suite of search engine marketing services — from Google Ads management to conversion optimisation — all under one roof.",
+        "description": "A complete suite of search engine marketing services — from Google Ads management to conversion optimisation — all under one roof. As a full-service search engine marketing company, we bring everything under one team so nothing falls through the cracks between strategy and execution.",
         "cards": [
           {
             "icon": "Search",
             "title": "Google Ads Services",
-            "text": "End-to-end Google Ads management including campaign setup, keyword research, audience targeting, ad copy, and ongoing optimisation to maximise your return on every dollar spent. Covering brand-new builds to scaling established accounts nationally."
+            "text": "End-to-end Google Ads management including campaign setup, keyword research, audience targeting, ad copy, and ongoing optimisation to maximise your return on every dollar spent. As a trusted Google Ads Agency Australia businesses turn to, our Google Ads Management Australia service covers everything from brand-new account builds to scaling established campaigns nationally."
           },
           {
             "icon": "MousePointerClick",
             "title": "Pay Per Click Services",
-            "text": "Our PPC specialists identify highest-intent search terms, eliminate wasted spend on irrelevant queries, and continuously refine bids to lower cost per conversion."
+            "text": "Our PPC services are built around one goal: profitable clicks. Our PPC specialists identify the highest-intent search terms, eliminate wasted spend on irrelevant queries, and continuously refine bids to lower your cost per conversion — the same standard we hold ourselves to as a PPC agency Australia businesses come to rely on."
           },
           {
             "icon": "ShoppingCart",
             "title": "Google Shopping Ads",
-            "text": "Put your products directly in front of buyers ready to purchase. We optimise product feeds, shopping campaigns, and bidding strategies to drive revenue from high-commercial-intent searches."
+            "text": "Put your products directly in front of buyers ready to purchase. We optimise your product feed, shopping campaigns, and bidding strategy to drive revenue from high-commercial-intent searches."
           },
           {
             "icon": "Eye",
             "title": "Display & Remarketing",
-            "text": "Re-engage visitors who didn't convert the first time. Remarketing campaigns keep your brand visible across Google's Display Network, bringing warm prospects back to convert."
+            "text": "Re-engage visitors who didn't convert the first time. Our remarketing campaigns keep your brand visible across Google's Display Network, bringing warm prospects back to complete their purchase or enquiry."
           },
           {
             "icon": "Video",
             "title": "YouTube & Video Ads",
-            "text": "Capture attention at the top of the funnel with targeted YouTube advertising. We handle scripting guidance, audience segmentation, and performance tracking to make video work harder."
+            "text": "Capture attention at the top of the funnel with targeted YouTube advertising. We handle scripting guidance, audience segmentation, and performance tracking to make your video budget work harder."
           },
           {
             "icon": "TrendingUp",
@@ -1765,40 +1870,75 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
           {
             "icon": "FileText",
             "title": "PPC Strategy & Consulting",
-            "text": "Clear roadmap — channel selection, budget allocation, and campaign structure — backed by experienced PPC specialists. A lighter-touch option for businesses seeking direction."
+            "text": "Not sure where to start, or want a second opinion on your current setup? Our PPC strategy consulting gives you a clear roadmap — channel selection, budget allocation, and campaign structure — backed by the same PPC Australia services and PPC management Australia approach we use for our full-service clients. It's a lighter-touch option for businesses that want direction from experienced PPC specialists without handing over full account management yet."
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "included": {
         "tagline": "What's Included",
         "heading": "Everything in Your SEM Package",
-        "description": "No hidden fees, no vague deliverables. Every Marketive SEM engagement covers the full scope of what it takes to run profitable paid search campaigns.",
+        "description": "No hidden fees, no vague deliverables. Every Marketive SEM engagement covers the full scope of what it takes to run profitable paid search campaigns — the same standard behind our PPC management Australia and Google Ads Management Australia services.",
         "items": [
-          "Google Ads Account Audit — Comprehensive review of existing campaigns, wasted spend, and quality scores",
-          "Keyword Research & Negative Lists — Identifying high-intent terms and blocking wasteful queries",
-          "Campaign Structure & Setup — Logically structured ad groups built for high relevance",
-          "Ad Copywriting & Testing — Benefit-led headlines and descriptions written for high CTR",
-          "Bid Strategy & Budget Management — Smart bidding aligned to CPA or ROAS targets",
-          "Conversion Tracking Setup — Full GTM and GA4 implementation for accurate attribution",
-          "Landing Page Recommendations — Actionable CRO improvements to increase lead conversion",
-          "Monthly Reporting & Strategy Calls — Plain-English reports plus dedicated monthly calls",
-          "Full Account Access & Ownership — 100% account ownership in your name with no lock-in"
-        ]
+          {
+            "title": "Google Ads Account Audit",
+            "text": "A comprehensive review of your existing campaigns, wasted spend, quality scores, and structural issues — with a clear fix-it roadmap."
+          },
+          {
+            "title": "Keyword Research & Negative Lists",
+            "text": "Identifying the exact search terms your ideal customers use — and blocking the irrelevant ones that drain your budget."
+          },
+          {
+            "title": "Campaign Structure & Setup",
+            "text": "Logically structured ad groups, match types, and campaign hierarchies built to maximise quality score and relevance."
+          },
+          {
+            "title": "Ad Copywriting & Testing",
+            "text": "Compelling, benefit-led headlines and descriptions written for high CTR — with ongoing A/B testing to continually improve performance."
+          },
+          {
+            "title": "Bid Strategy & Budget Management",
+            "text": "Smart bidding configuration aligned to your CPA or ROAS targets, with daily budget monitoring to eliminate overspend — a core part of every PPC strategy we build."
+          },
+          {
+            "title": "Conversion Tracking Setup",
+            "text": "Full Google Tag Manager and GA4 implementation so every lead, call, form, and purchase is accurately attributed to your campaigns."
+          },
+          {
+            "title": "Landing Page Recommendations",
+            "text": "We audit the pages your ads send traffic to and provide actionable improvements to increase conversion rates and lower your cost per lead."
+          },
+          {
+            "title": "Monthly Reporting & Strategy Calls",
+            "text": "Plain-English performance reports plus a dedicated monthly call with your PPC specialists to review results, ad spend efficiency, and next-period priorities."
+          },
+          {
+            "title": "Full Account Access & Ownership",
+            "text": "Every account we manage stays in your name, under your login — no lock-in, no hidden dependencies. It's the transparency you should expect from any PPC agency Australia businesses trust with their ad spend."
+          }
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "process": {
-        "tagline": "Our Search Engine Marketing Process",
-        "heading": "Four-Phase SEM Growth Framework",
-        "description": "A disciplined four-phase approach we apply to every SEM account — from first audit to full-scale growth.",
+        "tagline": "",
+        "heading": "Our Search Engine Marketing Process",
+        "description": "A disciplined four-phase approach we apply to every SEM account — from first audit to full-scale growth. It's the same process behind every engagement we run as a search engine marketing agency, whether you're starting fresh or handing us an underperforming account.",
         "steps": [
           {
             "step": "1",
             "title": "Audit & Research",
-            "text": "We analyse your current ad account (or competitors' strategies if starting fresh), identify wasted spend, map your highest-value keywords, and define your CPA targets."
+            "text": "We analyse your current ad account (or competitors' strategies if you're starting fresh), identify wasted spend, map your highest-value keywords, and define your CPA targets. This is where our PPC specialists set the foundation for everything that follows."
           },
           {
             "step": "2",
             "title": "Build & Launch",
-            "text": "We architect your campaign structure, write compelling ad copy, configure bidding strategies, set up conversion tracking, and launch campaigns optimised from day one."
+            "text": "We architect your campaign structure, write compelling ad copy, configure bidding strategies, set up conversion tracking, and launch campaigns optimised from day one — following the same PPC strategy framework we use across every Google Ads Management Australia engagement."
           },
           {
             "step": "3",
@@ -1808,9 +1948,13 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
           {
             "step": "4",
             "title": "Scale & Report",
-            "text": "Once campaigns are profitable, we identify opportunities to scale — new campaign types, expanded audiences, and higher budgets — while keeping your ROAS firmly on target."
+            "text": "Once campaigns are profitable, we identify opportunities to scale — new campaign types, expanded audiences, and higher budgets — while keeping your ROAS firmly on target. As your Google Ads Agency Australia partner, we revisit your PPC strategy at this stage to make sure it's still built around your actual growth goals, not just last quarter's numbers."
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "whyChoose": {
         "tagline": "Why Choose Us",
@@ -1820,34 +1964,74 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
           {
             "icon": "MapPin",
             "title": "Australian Market Experts",
-            "text": "We understand how Australians search, compare, and buy. Tailored to local buying behaviour, seasonality, and competitive dynamics."
+            "text": "We understand how Australians search, compare, and buy. Our Google Ads services are tailored to local buying behaviour, seasonality, and competitive dynamics — not copy-pasted from overseas playbooks. It's this local focus that makes us a genuine Google Ads Agency Australia businesses, not an overseas team running generic campaigns."
           },
           {
             "icon": "TrendingUp",
             "title": "ROAS-Obsessed Management",
-            "text": "We don't celebrate clicks; we celebrate profitable conversions that grow your business. Driven by return on ad spend."
+            "text": "Every decision we make — from keyword selection to bid adjustments — is driven by return on ad spend. We don't celebrate clicks; we celebrate profitable conversions that grow your business. This is the standard behind every PPC strategy our team builds."
           },
           {
             "icon": "Sparkles",
             "title": "Relentless Testing Culture",
-            "text": "We run structured A/B tests on ad copy, landing pages, audience segments, and bid strategies every week to lower CPAs."
+            "text": "We run structured A/B tests on ad copy, landing pages, audience segments, and bid strategies every week. Continuous testing is how our PPC specialists consistently lower CPAs and increase conversion rates over time."
           },
           {
             "icon": "User",
             "title": "Dedicated SEM Strategist",
-            "text": "You get a single, senior point of contact who knows your account inside out. No account managers handing you off to juniors."
+            "text": "You get a single, senior point of contact who knows your account inside out. No account managers handing you off to juniors — the person you speak to is the person managing your campaigns. It's a level of hands-on PPC management Australia businesses often expect but rarely get."
           },
           {
             "icon": "Key",
             "title": "You Own Your Account",
-            "text": "Your Google Ads account is yours — always. Work inside your account, and take full campaign history if you ever leave."
+            "text": "Your Google Ads account is yours — always. We work inside your own account, not ours. If you ever leave, you take everything with you: campaign history, data, and conversion tracking. It's a principle every trustworthy PPC agency Australia should operate by."
           },
           {
             "icon": "FileText",
             "title": "Transparent Reporting",
-            "text": "No vanity metrics. Every report shows cost per lead, cost per sale, ROAS, and revenue attributed with honest commentary."
+            "text": "No vanity metrics, no spin. Every report shows the numbers that matter to your business — cost per lead, cost per sale, ROAS, and revenue attributed — with honest commentary on what's working and what's next. It's the same transparency you'd expect from a digital marketing company you're trusting with real budget, whether you're working with us purely for Google Ads Management Australia or as your broader digital marketing agency."
           }
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
+      },
+      "platforms": {
+        "tagline": "Platform We Work With",
+        "heading": "Tools We Advertise Across",
+        "description": "Our SEM marketing team is certified and experienced across the full Google advertising ecosystem and the analytics tools that power smarter decisions — the backbone of every search engine marketing services engagement we run.",
+        "items": [
+          "Google Search Ads",
+          "Google Shopping",
+          "Google Display Network",
+          "YouTube Ads",
+          "Performance Max",
+          "Google Tag Manager",
+          "Google Analytics 4 (GA4)",
+          "Microsoft Advertising",
+          "Google Merchant Center",
+          "Looker Studio"
         ]
+      },
+      "industries": {
+        "tagline": "Industries We Serve",
+        "heading": "Built for Your Sector",
+        "description": "Our pay per click services and Google Ads expertise spans a wide range of Australian industries — from local service businesses to national e-commerce brands, delivered through the same PPC Australia services approach regardless of sector.",
+        "items": [
+          { "icon": "HeartPulse", "label": "Healthcare" },
+          { "icon": "Accessibility", "label": "NDIS" },
+          { "icon": "Building2", "label": "Real Estate" },
+          { "icon": "Wrench", "label": "Tradies" },
+          { "icon": "Briefcase", "label": "Professional Services" },
+          { "icon": "GraduationCap", "label": "Education" },
+          { "icon": "UtensilsCrossed", "label": "Hospitality" },
+          { "icon": "ShoppingCart", "label": "eCommerce" }
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "faqs": {
         "tagline": "FAQ's",
@@ -1855,43 +2039,51 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
         "items": [
           {
             "q": "What is Search Engine Marketing (SEM) and How Does It Work?",
-            "a": "Search engine marketing (SEM) is digital advertising that places your business at the top of Google search results through paid ads. You set a budget, choose keywords, and pay only when someone clicks (PPC). Marketive manages keyword research, ad creation, bid management, and ongoing optimisation end-to-end."
+            "a": "Search engine marketing (SEM) is a form of digital advertising that places your business at the top of Google's search results through paid ads. Unlike SEO, which builds organic rankings over time, SEM delivers immediate visibility to people actively searching for your products or services. You set a budget, choose the keywords you want to appear for, and pay only when someone clicks your ad — which is why it's also called pay per click (PPC). As a dedicated search engine marketing company, we manage the entire process: keyword research, ad creation, bid management, and ongoing optimisation to ensure your budget generates the best possible return. Businesses looking for reliable search engine marketing services typically come to us once they've outgrown DIY campaigns and want a search engine marketing agency that can scale results properly."
           },
           {
             "q": "What's the Difference Between SEM, PPC, and Google Ads?",
-            "a": "SEM is the overall category covering paid search marketing. PPC is the pay-per-click pricing model. Google Ads is the specific advertising platform where most search ad campaigns run (alongside Microsoft Advertising / Bing Ads)."
+            "a": "These terms are closely related but not identical. Search engine marketing (SEM) is the broad category that covers all paid advertising on search engines. Pay per click (PPC) refers to the pricing model where you pay each time someone clicks your ad — it applies to search, display, shopping, and video ads alike. Google Ads is the specific platform (formerly Google AdWords) where the majority of SEM and PPC campaigns run. As a Google Ads Agency Australia businesses trust, our PPC Australia services and Google Ads management are the core of our SEM offering, though we also manage Microsoft Advertising (Bing Ads) when relevant for your audience."
           },
           {
             "q": "How Much Does It Cost to Run Google Ads in Australia?",
-            "a": "Google Ads costs vary by industry competition. Cost-per-click (CPC) ranges from under $1 for niche terms to $30–$80+ for high-competition sectors like legal or finance. We recommend a minimum monthly ad spend of $1,500–$3,000 to generate enough data for optimization."
+            "a": "Google Ads costs vary significantly by industry, keyword competition, and targeting. In Australia, cost-per-click (CPC) can range from under $1 for low-competition niches to $30–$80+ per click in highly competitive sectors like legal, finance, or insurance. We typically recommend a minimum monthly ad spend of $1,500–$3,000 to generate enough data for meaningful optimisation. On top of ad spend, our management fee covers strategy, campaign management, reporting, and continuous optimisation. As part of our PPC management Australia service, we'll provide a transparent budget recommendation during your free audit based on your specific goals and industry."
           },
           {
             "q": "How Quickly Can I See Results From Search Engine Marketing?",
-            "a": "Ads appear as soon as campaigns go live, generating initial clicks and leads in days. However, optimal ROAS performance usually takes 4–8 weeks of active testing and data-driven bid adjustments."
+            "a": "One of the biggest advantages of SEM over SEO is speed. Once your campaigns go live, your ads can start appearing in Google search results within hours and generating leads or sales within the first few days. However, it typically takes 4–8 weeks of active management and testing to reach peak efficiency — as we gather conversion data, refine your keyword lists, test ad variations, and tighten your audience targeting. This kind of iterative testing is central to our PPC strategy, and by month three, most clients see significantly improved ROAS compared to their campaign launch benchmarks."
           },
           {
             "q": "Do I Need a Minimum Ad Spend Budget to Work With You?",
-            "a": "We recommend a minimum monthly ad spend of $1,500 for lead generation and $5,000+ for e-commerce/national campaigns to ensure sufficient conversion data for machine learning and manual optimization."
+            "a": "We recommend a minimum monthly ad spend of $1,500 for our Google Ads Management Australia service to ensure there's enough data to optimise effectively and generate a meaningful volume of leads or sales. Campaigns running on very small budgets are difficult to optimise because there simply aren't enough clicks and conversions to draw statistically reliable conclusions. For e-commerce or national campaigns, we typically recommend $5,000 or more in monthly ad spend to scale results. As experienced PPC specialists, we'll advise the right investment level for your goals during your free strategy consultation."
           },
           {
             "q": "Will I Own My Google Ads Account and Campaign Data?",
-            "a": "Yes — non-negotiable for us. Your Google Ads account is set up under your ownership. You retain 100% of campaign history, keyword data, conversion tracking setups, and audience lists forever."
+            "a": "Absolutely — and this is non-negotiable for us. Your Google Ads account is set up in your name and under your Google login. We request manager access to run your campaigns, but you retain full ownership at all times. If you ever decide to leave us, your entire account history, campaign structure, keyword lists, conversion data, and audience lists remain yours. We never hold your account hostage or lock you into a proprietary system. This is your most important asset in paid search, and it belongs to you — a principle every reputable PPC agency Australia businesses should stand behind."
           },
           {
             "q": "What Makes a Good SEM Agency — And How Do I Evaluate One?",
-            "a": "Look for complete account access, transparent reporting focused on cost-per-lead and ROAS (not vanity reach), and proactive strategy updates rather than set-and-forget management."
+            "a": "A trustworthy search engine marketing agency should be able to clearly explain their strategy, show you real case studies with measurable results, give you access to your own account, and report on the metrics that actually matter to your business — not just impressions and clicks. Warning signs include agencies that hide your account access, charge a percentage of ad spend with no performance accountability, or focus reports on vanity metrics like \"reach.\" When people search for the best PPC agency Australia has to offer, they're usually looking for exactly this level of transparency. We benchmark our performance against your cost per acquisition and revenue generated, and we hold ourselves accountable to those numbers every month."
           },
           {
             "q": "Can You Take Over and Fix an Underperforming Google Ads Account?",
-            "a": "Yes. Account rescues are a major part of our work. We audit broad match waste, poor negative keyword lists, faulty tracking, and unoptimized landing pages to quickly restructure for profit."
+            "a": "Yes — account rescues are one of the most common engagements we take on. If your current Google Ads campaigns are spending budget without delivering results, our team will conduct a thorough audit to identify exactly what's going wrong. Common issues include poor campaign structure, overly broad keyword match types, missing negative keyword lists, no conversion tracking, generic ad copy, and landing pages that aren't optimised to convert. We'll present our findings with a clear action plan and, once you approve it, begin restructuring and optimising your account immediately."
           },
           {
             "q": "Do You Manage SEM For E-Commerce Businesses Specifically?",
-            "a": "Yes. We specialize in Google Shopping, product feed optimization, Merchant Center setups, dynamic remarketing, and Performance Max campaigns for Shopify, WooCommerce, and Magento stores."
+            "a": "Yes. E-commerce SEM requires a different approach to lead-generation campaigns — particularly around Google Shopping, product feed optimisation, dynamic remarketing, and Performance Max campaigns. Our Google Ads services for e-commerce clients include shopping campaign management, Merchant Centre optimisation, cart-abandonment remarketing, and revenue-focused ROAS tracking through GA4. Whether you're on Shopify, WooCommerce, Magento, or BigCommerce, we have experience integrating your store's product data with Google's advertising ecosystem to drive profitable online sales."
           },
           {
             "q": "Do You Lock Clients Into Long-Term Contracts for SEM Services?",
-            "a": "No. We operate on month-to-month rolling agreements with a recommended initial 3-month setup window to properly test and optimize."
+            "a": "No. We operate on rolling monthly agreements with no lock-in contracts. We believe a good agency earns your ongoing business through results, not fine print. That said, we do ask that new clients commit to a minimum of three months when starting a new account — this is the realistic timeframe needed to build campaign data, complete testing cycles, and demonstrate meaningful performance improvements. After that initial period, you're free to continue on a month-to-month basis with 30 days' notice to cancel."
+          },
+          {
+            "q": "Are You a Full Digital Marketing Agency, or Do You Only Handle PPC and SEM?",
+            "a": "While paid search is our specialty, we operate as a full-service digital marketing agency, meaning your SEM and PPC campaigns are never managed in isolation. As a digital marketing company, we can also support you with SEO, conversion rate optimisation, landing page design, and analytics — so your paid campaigns work alongside the rest of your marketing rather than against it. If you only need our digital marketing services for paid search right now, that's completely fine too; you can scale up to other channels whenever it makes sense for your business."
+          },
+          {
+            "q": "Why Choose Marketive as Your PPC Agency in Australia?",
+            "a": "Businesses searching for a PPC agency Australia trusts usually want three things: transparency, accountability, and results — and that's exactly how we operate. As a locally focused Google Ads Agency Australia wide, our team of PPC specialists builds every PPC strategy around your actual commercial goals, not vanity metrics. From PPC management Australia businesses rely on for lead generation, to full Google Ads Management Australia for e-commerce brands scaling nationally, we combine local market knowledge with hands-on account ownership. It's this combination that consistently puts us in the conversation when people ask who the best PPC agency Australia has to offer really is."
           }
         ]
       },
@@ -1902,14 +2094,14 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
     },
     "marketing-automation": {
       "seo": {
-        "title": "Leading Marketing Automation Services in Australia | Marketive",
+        "title": "Leading Marketing Automation Services in Australia",
         "description": "Expert marketing automation services in Australia. Email automation, CRM integration & lead nurturing built to convert. Book your free audit today.",
         "canonical": "https://marketive.com.au/services/marketing-automation"
       },
       "hero": {
         "breadcrumb": "Marketing Automation",
-        "tagline": "Marketing Automation Services in Australia",
-        "heading": "Marketing Automation Solutions That Drive Growth",
+        "tagline": "",
+        "heading": "Marketing Automation Services in Australia",
         "paragraphs": [
           "Marketive delivers marketing automation services that streamline your sales and marketing processes, personalise every customer touchpoint at scale, and convert more leads into customers — without your team having to manually lift a finger."
         ],
@@ -1928,11 +2120,11 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
           },
           {
             "img": "/images/case-studies/gradient-3.jpg",
-            "text": "A well-built marketing automation strategy puts your entire lead nurturing process on autopilot — sending the right message, to the right person, at the right moment based on user behaviour across email, CRM, and website touchpoints."
+            "text": "A well-built marketing automation strategy puts your entire lead nurturing process on autopilot — sending the right message, to the right person, at the right moment in their buying journey, based on their actual behaviour. Whether a prospect downloads a guide, visits a pricing page, abandons a cart, or hasn't engaged in 30 days — your automated workflows respond instantly, intelligently, and personally at scale, with email marketing automation forming the backbone of every sequence. This is what effective automation marketing looks like in practice: not a single tool or tactic, but a connected system working continuously in the background."
           },
           {
             "img": "/images/services/process-2.jpg",
-            "text": "At Marketive, we design and implement marketing automation solutions that work as a seamless extension of your sales and marketing team. As a specialist in automation digital marketing, we bring the strategic thinking of a dedicated marketing agency automation partner to every build — meaning you get a system engineered around your specific buyer journey."
+            "text": "At Marketive, we design and implement marketing automation solutions that work as a seamless extension of your sales and marketing team. As a specialist in automation digital marketing, we bring the strategic thinking of a dedicated marketing agency automation partner to every build — meaning you get more than software configuration, you get a system engineered around your specific buyer journey. It's an approach that's helped us become a trusted name in marketing automation Australia-wide, working with businesses that are done watching hard-won leads slip away."
           }
         ]
       },
@@ -1944,44 +2136,48 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
           {
             "icon": "Compass",
             "title": "Marketing Automation Strategy",
-            "text": "Before we build a single workflow, we map your full customer journey — identifying every touchpoint, conversion opportunity, and gap where automation can replace manual effort."
+            "text": "Before we build a single workflow, we map your full customer journey — identifying every touchpoint, conversion opportunity, and gap where automation can replace manual effort. Your marketing automation strategy becomes the blueprint that ensures every tool and workflow serves a clear business purpose, and the foundation every other automation marketing initiative builds on."
           },
           {
             "icon": "Settings",
             "title": "Platform Selection & Setup",
-            "text": "Whether it's HubSpot, ActiveCampaign, Klaviyo, or Salesforce Marketing Cloud, we assess your business size, budget, and technical requirements before configuring your platform and migrating data."
+            "text": "Choosing the right platform is one of the most consequential decisions in any marketing automation solutions project. Whether it's HubSpot, ActiveCampaign, Klaviyo, or Salesforce Marketing Cloud, we assess your business size, budget, and technical requirements before configuring your platform, migrating your data, and setting up the foundations properly from day one."
           },
           {
             "icon": "Workflow",
             "title": "Workflow Automation & Implementation",
-            "text": "We design and implement intelligent automation workflows that trigger based on real user behaviour — website visits, form submissions, email opens, page views, and purchase events."
+            "text": "We design and implement intelligent automation workflows that trigger based on real user behaviour — website visits, form submissions, email opens, page views, and purchase events. Every workflow is mapped, tested, and refined to guide prospects through your sales funnel without manual intervention, forming the operational core of your broader advertising automation and marketing automation efforts."
           },
           {
             "icon": "Mail",
             "title": "Email Marketing Automation",
-            "text": "We build sophisticated email marketing automation sequences — welcome series, drip campaigns, abandoned cart flows, re-engagement campaigns, and post-purchase sequences."
+            "text": "We build sophisticated email marketing automation sequences — welcome series, drip campaigns, abandoned cart flows, re-engagement campaigns, and post-purchase sequences — that deliver the right message to each subscriber based on where they are in their journey, not just when they joined your list."
           },
           {
             "icon": "UserCheck",
             "title": "Automated Lead Nurturing",
-            "text": "Not every lead is ready to buy today. Our automated lead nurturing programs keep your brand top-of-mind across weeks and months, notifying sales when a lead is ready."
+            "text": "Not every lead is ready to buy today. Our automated lead nurturing programs keep your brand top-of-mind across weeks and months — delivering relevant content, case studies, testimonials, and offers that educate and build trust until the lead is ready to convert, with your sales team notified the moment they are."
           },
           {
             "icon": "Filter",
             "title": "Lead Scoring & Segmentation",
-            "text": "We build lead scoring models that rank prospects by engagement and buying intent, paired with dynamic segmentation that groups contacts by behaviour and interests."
+            "text": "We build lead scoring models that rank prospects by engagement and buying intent, paired with dynamic segmentation that groups contacts by behaviour, interests, and funnel stage. This ensures your email automation and nurturing sequences always reach the right audience with the right message — not a one-size-fits-all broadcast."
           },
           {
             "icon": "Database",
             "title": "CRM Integration & Sales Alignment",
-            "text": "We connect your marketing automation platform with your CRM (HubSpot, Salesforce, Pipedrive, Zoho) creating a unified view of every contact's interaction history and lead score."
+            "text": "We connect your marketing automation platform with your CRM — HubSpot, Salesforce, Pipedrive, Zoho, and more — creating a unified view of every contact's interaction history, lead score, and funnel stage. Your sales team always knows exactly where a lead is, what they've engaged with, and when to reach out."
           },
           {
             "icon": "BarChart3",
             "title": "Automation Reporting & Optimisation",
-            "text": "We monitor, test, and continuously refine your automation workflows — tracking open rates, CTRs, conversion rates, and revenue attributed."
+            "text": "We monitor, test, and continuously refine your automation workflows — tracking open rates, click-through rates, conversion rates, revenue attributed, and workflow drop-off points. Monthly reporting and optimisation calls ensure your marketing automation solutions are always performing at their best."
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "included": {
         "tagline": "What's Included",
@@ -2020,7 +2216,11 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
             "title": "Monthly Reporting, Testing & Optimisation",
             "text": "Monthly performance reports covering workflow conversion rates, email marketing automation metrics, lead attribution, and revenue influenced — plus ongoing A/B testing and workflow refinements to continuously improve results over time. It's the ongoing layer of support that sets a genuine marketing agency automation partner apart from a one-off platform setup."
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "process": {
         "tagline": "Our Strategy Process",
@@ -2047,44 +2247,98 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
             "title": "Test & Optimise",
             "text": "Using real performance data, we run structured A/B tests on email subject lines, content, timing, and workflow logic — continuously refining your marketing automation to improve open rates, conversion rates, and revenue generated month over month. It's this ongoing optimisation that distinguishes a genuine marketing automation service from a one-time setup."
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "whyChoose": {
         "tagline": "Why Choose Us",
         "heading": "Why Choose Us as Your Marketing Automation Agency",
-        "description": "We're not a platform reseller or a tool-first implementation shop. We're a strategic marketing automation agency that designs systems aligned to your actual business goals.",
+        "description": "We're not a platform reseller or a tool-first implementation shop. We're a strategic marketing automation agency that designs systems aligned to your actual business goals — not just impressive-looking workflow diagrams. For businesses searching for the best agency for Marketing Automation services in Australia, this is the difference that shows up in results, not just in a sales pitch.",
         "items": [
           {
             "icon": "Compass",
             "title": "Strategy Before Software",
-            "text": "We start with business objectives, customer journey, and revenue targets — choosing tools to support your goals."
+            "text": "We start with your business objectives, customer journey, and revenue targets — not the features of a particular platform. Your marketing automation strategy is built around what your business needs to achieve, with the right tools selected to support that strategy, not the other way around."
           },
           {
             "icon": "Users",
             "title": "Sales & Marketing Aligned",
-            "text": "We bridge the gap between marketing platforms and sales teams so no lead falls through the cracks."
+            "text": "Marketing automation only delivers its full potential when sales and marketing work as one. We design automation workflows and CRM integrations that bridge the gap between your marketing platform and your sales team — ensuring no lead falls through the cracks and every handover happens at exactly the right moment."
           },
           {
             "icon": "Sparkles",
             "title": "Personalisation at Scale",
-            "text": "Behavioural triggers and dynamic content ensure every lead receives tailored, relevant communication."
+            "text": "We use behavioural triggers, dynamic content, progressive profiling, and predictive data to create genuinely personalised experiences for every lead and customer — at scale. Every prospect feels like they're receiving individually crafted communication, not being blasted with a mass email campaign."
           },
           {
             "icon": "Cpu",
             "title": "Full-Stack Integration Expertise",
-            "text": "We integrate CRM, website, e-commerce, Google Ads, social media, and analytics into one connected ecosystem."
+            "text": "We integrate your marketing automation with your CRM, website, ecommerce platform, Google Ads, social media, and analytics tools — creating a connected ecosystem where data flows between every system, giving you a complete picture of your customer across every touchpoint. It's this breadth that sets a true agency automation partner apart from a single-platform specialist."
           },
           {
             "icon": "BarChart3",
             "title": "ROI-Focused Reporting",
-            "text": "We track pipeline value, revenue attributed to email flows, and cost-per-acquisition improvements over time."
+            "text": "We don't report on open rates and call it a win. We track and report on the business metrics that matter — leads generated by automation, pipeline value influenced, revenue attributed to email marketing automation sequences, and cost-per-acquisition improvements over time."
           },
           {
             "icon": "MapPin",
             "title": "Entirely Australian-Run",
-            "text": "Managed 100% by our in-house Australian team — direct access to strategists and builders with full accountability."
+            "text": "Your marketing automation is managed entirely by our in-house Australian team — no offshore outsourcing, no handoff to a third-party implementation partner. As a dedicated marketing automation Australia provider, we give you direct access to the strategists and builders managing your account, with fast communication and full accountability throughout."
           }
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
+      },
+      "platforms": {
+        "tagline": "",
+        "heading": "Platforms We Work With — Tools We Know Inside Out",
+        "description": "Our marketing automation agency works across all major marketing automation platforms and CRM systems — recommending the right combination of tools for your business size, budget, and automation marketing objectives. Whether you need a single email marketing automation platform or a fully integrated tech stack, we bring hands-on implementation experience, not just theoretical familiarity.",
+        "items": [
+          "HubSpot",
+          "ActiveCampaign",
+          "Klaviyo",
+          "Salesforce Marketing Cloud",
+          "Mailchimp",
+          "Pipedrive",
+          "Zoho CRM",
+          "Google Analytics 4"
         ]
+      },
+      "industries": {
+        "tagline": "",
+        "heading": "Industries Built for Your Sector",
+        "description": "Our marketing automation services have delivered measurable results across a broad range of Australian industries — each requiring a different automation architecture, lead nurturing approach, and CRM integration strategy. From ecommerce to professional services, our marketing automation solutions are tailored to how your specific sector actually buys, not applied as a generic template.",
+        "items": [
+          {
+            "icon": "ShoppingCart",
+            "label": "eCommerce & Retail",
+            "text": "Abandoned cart flows, post-purchase sequences, and loyalty automation."
+          },
+          {
+            "icon": "Briefcase",
+            "label": "B2B & SaaS",
+            "text": "Multi-touch lead nurturing, trial onboarding, and renewal automation."
+          },
+          {
+            "icon": "Building2",
+            "label": "Professional Services",
+            "text": "Proposal follow-up, client onboarding, and referral automation."
+          },
+          {
+            "icon": "GraduationCap",
+            "label": "Healthcare & Education",
+            "text": "Patient/student inquiry nurturing, appointment reminders, and re-engagement."
+          }
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "faqs": {
         "tagline": "FAQ's",
@@ -2139,21 +2393,17 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
     },
     "social-media": {
       "seo": {
-        "title": "Leading Social Media Marketing Services in Australia | Marketive",
+        "title": "Leading Social Media Marketing Services in Australia",
         "description": "Leading Social Media Marketing Services in Australia: grow your brand, boost engagement and drive real results with our proven, data-driven strategies.",
         "canonical": "https://marketive.com.au/services/social-media"
       },
       "hero": {
         "breadcrumb": "Social Media Marketing",
-        "tagline": "Social Media Marketing Services in Australia",
-        "heading": "Social Media Marketing That Drives Real Australian Revenue",
+        "tagline": "",
+        "heading": "Social Media Marketing Services in Australia",
         "paragraphs": [
           "Marketive delivers social media marketing services that go far beyond likes and followers — turning your social channels into a consistent engine for brand awareness, audience trust, and real Australian revenue."
-        ],
-        "primaryCta": {
-          "label": "Get in Touch",
-          "path": "/contact"
-        }
+        ]
       },
       "whyMatters": {
         "heading": "Posting Without a Strategy Is Just Making Noise",
@@ -2180,7 +2430,11 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
           "Content pillars aligned to your brand voice and business objectives",
           "Organic and paid social working together as one unified strategy",
           "Monthly reporting tied to leads, traffic, and revenue — not vanity metrics"
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "help": {
         "tagline": "What We Help You With",
@@ -2190,34 +2444,38 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
           {
             "icon": "Camera",
             "title": "Social Media Content Creation",
-            "text": "We research, write, design, and produce platform-native content tailored to your brand and audience — from Instagram Reels and carousels to LinkedIn articles and Facebook posts."
+            "text": "We research, write, design, and produce platform-native content tailored to your brand and audience, from Instagram Reels and carousels to LinkedIn articles and Facebook posts that actually get engagement. Our social media marketing services cover every format your brand needs, and our Social Media Services team keeps your content consistent and on brand."
           },
           {
             "icon": "Compass",
             "title": "Social Media Marketing Strategy",
-            "text": "Before a single post goes live, we build your strategy from scratch — defining content pillars, tone of voice, target audience personas, and platform mix for organic growth."
+            "text": "Before a single post goes live, we build your social media marketing strategy from scratch, defining your content pillars, tone of voice, target audience personas, and platform mix to maximise every piece of content. Our organic social media strategy lays the foundation for long-term audience growth, supported by our social media branding services so every post reflects who you are."
           },
           {
             "icon": "TrendingUp",
             "title": "Paid Social Advertising",
-            "text": "Organic content builds your audience; paid social scales it. We deliver paid social media marketing across Facebook Ads, Instagram Ads, LinkedIn, and TikTok advertising."
+            "text": "Organic content builds your audience; paid social scales it. As a leading social media marketing agency, we deliver paid social media marketing across Facebook Ads, Instagram Ads, LinkedIn campaigns, and TikTok advertising, targeting new audiences and retargeting existing ones with precision."
           },
           {
             "icon": "MessageSquare",
             "title": "Community Management",
-            "text": "Our social media management services include actively monitoring and responding to comments, DMs, and brand mentions to build genuine relationships and protect brand reputation."
+            "text": "Social media is a two-way conversation. Our social media management services include actively monitoring and responding to your comments, DMs, and brand mentions, building genuine relationships with your audience and protecting your brand reputation in real time. As a trusted social media management agency, we make sure no message goes unanswered."
           },
           {
             "icon": "Users",
             "title": "Influencer & Creator Partnerships",
-            "text": "We identify, vet, and manage Australian influencer partnerships genuinely aligned to your brand — driving real reach across targeted demographics."
+            "text": "We identify, vet, and manage Australian influencer partnerships that are genuinely aligned to your brand, from niche micro-influencers with highly engaged audiences to broader ambassador programs that drive real reach. This is a key part of our social media marketing Australia offering."
           },
           {
             "icon": "BarChart3",
             "title": "Social Media Analytics & Reporting",
-            "text": "Every month you receive clear, jargon-free reports showing reach, engagement, follower growth, website traffic, and revenue/leads attributed to social channels."
+            "text": "Every month you receive clear, jargon-free reports showing what's actually working: reach, engagement, follower growth, website traffic from social, and revenue or leads attributed to your social media channels. Our social media marketing management and Social Media Management approach keeps every campaign accountable, and our Social media management Australia clients always know their return on investment."
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "included": {
         "tagline": "What's Included",
@@ -2256,37 +2514,45 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
             "title": "Monthly Performance Reports & Strategy Calls",
             "text": "Plain-English monthly reports covering reach, engagement, follower growth, social traffic, and conversions, plus a dedicated strategy session to review results and align on next steps. Our social media marketing management keeps every campaign accountable, and as a social media marketing agency serving social media marketing Australia clients, we make sure you always see the return on your investment."
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "process": {
-        "tagline": "Our Social Media Marketing Strategy Process",
-        "heading": "Four-Phase Social Growth Framework",
+        "tagline": "",
+        "heading": "Our Social Media Marketing Strategy Process",
         "description": "A proven four-phase framework we apply to every social media marketing client — from initial discovery to sustained audience and revenue growth.",
         "steps": [
           {
             "step": "1",
             "title": "Discover & Define",
-            "text": "We audit your current social media presence, analyse top competitors, and define target audience personas, content pillars, and tone of voice."
+            "text": "We audit your current social media presence, analyse your top competitors, and define your target audience personas, content pillars, and tone of voice. This is the foundation of every effective social media marketing strategy, and it shapes your organic social media strategy from day one."
           },
           {
             "step": "2",
             "title": "Plan & Produce",
-            "text": "We build your monthly content calendar, produce platform-native creative assets, and plan paid social media marketing campaigns."
+            "text": "We build your monthly content calendar, produce platform-native creative assets, and plan paid social media marketing campaigns, ensuring every piece of content serves a clear purpose tied to your business goals. Our social media branding services keep every asset on brand."
           },
           {
             "step": "3",
             "title": "Publish & Engage",
-            "text": "Content goes live on schedule across all managed platforms. We actively manage your community, responding to comments and DMs."
+            "text": "Content goes live on schedule across all managed platforms. Our social media management services include actively managing your community, responding to comments and DMs, engaging with relevant conversations, and building the social proof that converts audiences into customers."
           },
           {
             "step": "4",
             "title": "Measure & Refine",
-            "text": "Monthly reporting covers performance metrics. We use real data to continuously sharpen your strategy and double down on high-converting content formats."
+            "text": "Monthly reporting covers what's working, what's not, and exactly what we're doing next. As a data-led social media marketing agency, we use real performance data to continuously sharpen your social media marketing strategy, doubling down on what drives results through ongoing social media marketing management."
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "whyChoose": {
-        "tagline": "Why Choose Us",
+        "tagline": "",
         "heading": "Why Choose Marketive as Your Social Media Marketing Agency",
         "description": "Followers are nice. Revenue is better. As a specialist social media marketing agency in Australia, we build social media marketing services that grow your business, not just your numbers.",
         "items": [
@@ -2320,7 +2586,11 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
             "title": "No Lock-In Contracts",
             "text": "Our social media marketing services operate on rolling monthly agreements. We earn your business every month through the results we deliver, not the fine print of a long-term contract that traps you in a relationship that isn't working."
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "platforms": {
         "tagline": "Platforms We Work With",
@@ -2385,7 +2655,11 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
             "label": "Travel & Tourism",
             "text": "Tour operators, accommodation, experiences"
           }
-        ]
+        ],
+        "cta": {
+          "label": "Get in Touch",
+          "path": "/contact"
+        }
       },
       "faqs": {
         "tagline": "FAQ's",

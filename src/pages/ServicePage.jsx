@@ -85,6 +85,46 @@ export default function ServicePage({ slug }) {
 
   const { seo, hero, whyMatters, help, included, process, whyChoose, platforms, industries, didYouKnow, faqs, finalCta } = data;
 
+  const renderHelpSection = () => (
+    help && (
+      <SectionWrapper tagline={help.tagline} heading={help.heading} description={help.description} className={nextBg()}>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-80px' }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          {help.cards.map((card) => {
+            const Icon = LucideIcons[card.icon] || LucideIcons.Sparkles;
+            return (
+              <motion.div key={card.title} variants={fadeInUp} className={`p-8 rounded-2xl ${dark('card-dark', 'card-light')}`}>
+                <div className="w-12 h-12 rounded-xl bg-primary-500 border-2 border-black flex items-center justify-center mb-5">
+                  <Icon size={22} className="text-black" />
+                </div>
+                <h3 className={`text-xl font-bold font-display mb-3 ${dark('text-white', 'text-gray-900')}`}>{card.title}</h3>
+                <p className={`text-sm leading-relaxed ${dark('text-gray-400', 'text-gray-600')}`}>{card.text}</p>
+              </motion.div>
+            );
+          })}
+        </motion.div>
+        {help.cta && (
+          <motion.div
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-60px' }}
+            className="flex justify-center mt-12"
+          >
+            <Link to={help.cta.path} className="btn-primary">
+              {help.cta.label} <ArrowRight size={16} />
+            </Link>
+          </motion.div>
+        )}
+      </SectionWrapper>
+    )
+  );
+
   return (
     <motion.div {...pageTransition}>
       <Helmet>
@@ -130,16 +170,18 @@ export default function ServicePage({ slug }) {
                 {para}
               </motion.p>
             ))}
-            <motion.div variants={fadeInUp} className="flex flex-wrap justify-center gap-4">
-              <Link to={hero.primaryCta.path} className="btn-primary">
-                {hero.primaryCta.label} <ArrowRight size={16} />
-              </Link>
-              {hero.secondaryCta && hero.secondaryCta.path !== '/case-studies' && (
-                <Link to={hero.secondaryCta.path} className={dark('btn-secondary-dark', 'btn-secondary-light')}>
-                  {hero.secondaryCta.label}
+            {hero.primaryCta && (
+              <motion.div variants={fadeInUp} className="flex flex-wrap justify-center gap-4">
+                <Link to={hero.primaryCta.path} className="btn-primary">
+                  {hero.primaryCta.label} <ArrowRight size={16} />
                 </Link>
-              )}
-            </motion.div>
+                {hero.secondaryCta && hero.secondaryCta.path !== '/case-studies' && (
+                  <Link to={hero.secondaryCta.path} className={dark('btn-secondary-dark', 'btn-secondary-light')}>
+                    {hero.secondaryCta.label}
+                  </Link>
+                )}
+              </motion.div>
+            )}
           </motion.div>
         </div>
       </section>
@@ -189,34 +231,24 @@ export default function ServicePage({ slug }) {
               ))}
             </motion.div>
           )}
+          {whyMatters.cta && (
+            <motion.div
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-60px' }}
+              className="flex justify-center mt-12"
+            >
+              <Link to={whyMatters.cta.path} className="btn-primary">
+                {whyMatters.cta.label} <ArrowRight size={16} />
+              </Link>
+            </motion.div>
+          )}
         </SectionWrapper>
       )}
 
-      {/* ── WHAT WE HELP YOU WITH ── */}
-      {help && (
-        <SectionWrapper tagline={help.tagline} heading={help.heading} description={help.description} className={nextBg()}>
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: '-80px' }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
-            {help.cards.map((card) => {
-              const Icon = LucideIcons[card.icon] || LucideIcons.Sparkles;
-              return (
-                <motion.div key={card.title} variants={fadeInUp} className={`p-8 rounded-2xl ${dark('card-dark', 'card-light')}`}>
-                  <div className="w-12 h-12 rounded-xl bg-primary-500 border-2 border-black flex items-center justify-center mb-5">
-                    <Icon size={22} className="text-black" />
-                  </div>
-                  <h3 className={`text-xl font-bold font-display mb-3 ${dark('text-white', 'text-gray-900')}`}>{card.title}</h3>
-                  <p className={`text-sm leading-relaxed ${dark('text-gray-400', 'text-gray-600')}`}>{card.text}</p>
-                </motion.div>
-              );
-            })}
-          </motion.div>
-        </SectionWrapper>
-      )}
+      {/* ── WHAT WE HELP YOU WITH (Default position for non-strategy pages) ── */}
+      {slug !== 'strategy-consulting' && renderHelpSection()}
 
       {/* ── PROCESS & INCLUDED ── */}
       {slug === 'seo' ? (
@@ -249,6 +281,19 @@ export default function ServicePage({ slug }) {
                   </div>
                 ))}
               </div>
+              {process.cta && (
+                <motion.div
+                  variants={fadeInUp}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: '-60px' }}
+                  className="flex justify-center mt-12"
+                >
+                  <Link to={process.cta.path} className="btn-primary">
+                    {process.cta.label} <ArrowRight size={16} />
+                  </Link>
+                </motion.div>
+              )}
             </SectionWrapper>
           )}
 
@@ -285,11 +330,39 @@ export default function ServicePage({ slug }) {
                         <Check size={15} className="text-black" />
                       </div>
                       <div>
-                        <span className={`block text-sm font-bold mb-1 ${dark('text-white', 'text-gray-900')}`}>{item.title}</span>
+                        <h3 className={`text-sm font-bold mb-1 ${dark('text-white', 'text-gray-900')}`}>{item.title}</h3>
                         <span className={`text-sm leading-relaxed ${dark('text-gray-400', 'text-gray-600')}`}>{item.text}</span>
                       </div>
                     </motion.div>
                   ))}
+                </motion.div>
+              )}
+
+              {included.paragraphs && (
+                <div className="max-w-3xl mx-auto mt-12 space-y-4 text-center">
+                  {included.paragraphs.map((p, i) => (
+                    <motion.p
+                      key={i}
+                      variants={fadeInUp}
+                      className={`text-base lg:text-lg leading-relaxed ${dark('text-gray-400', 'text-gray-600')}`}
+                    >
+                      {p}
+                    </motion.p>
+                  ))}
+                </div>
+              )}
+
+              {included.cta && (
+                <motion.div
+                  variants={fadeInUp}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: '-60px' }}
+                  className="flex justify-center mt-10"
+                >
+                  <Link to={included.cta.path} className="btn-primary">
+                    {included.cta.label} <ArrowRight size={16} />
+                  </Link>
                 </motion.div>
               )}
             </SectionWrapper>
@@ -330,11 +403,39 @@ export default function ServicePage({ slug }) {
                         <Check size={15} className="text-black" />
                       </div>
                       <div>
-                        <span className={`block text-sm font-bold mb-1 ${dark('text-white', 'text-gray-900')}`}>{item.title}</span>
+                        <h3 className={`text-sm font-bold mb-1 ${dark('text-white', 'text-gray-900')}`}>{item.title}</h3>
                         <span className={`text-sm leading-relaxed ${dark('text-gray-400', 'text-gray-600')}`}>{item.text}</span>
                       </div>
                     </motion.div>
                   ))}
+                </motion.div>
+              )}
+
+              {included.paragraphs && (
+                <div className="max-w-3xl mx-auto mt-12 space-y-4 text-center">
+                  {included.paragraphs.map((p, i) => (
+                    <motion.p
+                      key={i}
+                      variants={fadeInUp}
+                      className={`text-base lg:text-lg leading-relaxed ${dark('text-gray-400', 'text-gray-600')}`}
+                    >
+                      {p}
+                    </motion.p>
+                  ))}
+                </div>
+              )}
+
+              {included.cta && (
+                <motion.div
+                  variants={fadeInUp}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: '-60px' }}
+                  className="flex justify-center mt-10"
+                >
+                  <Link to={included.cta.path} className="btn-primary">
+                    {included.cta.label} <ArrowRight size={16} />
+                  </Link>
                 </motion.div>
               )}
             </SectionWrapper>
@@ -368,6 +469,19 @@ export default function ServicePage({ slug }) {
                   </div>
                 ))}
               </div>
+              {process.cta && (
+                <motion.div
+                  variants={fadeInUp}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: '-60px' }}
+                  className="flex justify-center mt-12"
+                >
+                  <Link to={process.cta.path} className="btn-primary">
+                    {process.cta.label} <ArrowRight size={16} />
+                  </Link>
+                </motion.div>
+              )}
             </SectionWrapper>
           )}
         </>
@@ -416,6 +530,20 @@ export default function ServicePage({ slug }) {
                   </motion.div>
                 );
               })}
+            </motion.div>
+          )}
+
+          {whyChoose.cta && (
+            <motion.div
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-60px' }}
+              className="flex justify-center mt-12"
+            >
+              <Link to={whyChoose.cta.path} className="btn-primary">
+                {whyChoose.cta.label} <ArrowRight size={16} />
+              </Link>
             </motion.div>
           )}
         </SectionWrapper>
@@ -468,8 +596,25 @@ export default function ServicePage({ slug }) {
               );
             })}
           </motion.div>
+
+          {industries.cta && (
+            <motion.div
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-60px' }}
+              className="flex justify-center mt-12"
+            >
+              <Link to={industries.cta.path} className="btn-primary">
+                {industries.cta.label} <ArrowRight size={16} />
+              </Link>
+            </motion.div>
+          )}
         </SectionWrapper>
       )}
+
+      {/* ── WHAT WE HELP YOU WITH (Strategy & Consulting: positioned under Built for Your Sector) ── */}
+      {slug === 'strategy-consulting' && renderHelpSection()}
 
       {/* ── DID YOU KNOW ── */}
       {didYouKnow && (
