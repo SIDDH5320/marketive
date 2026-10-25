@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ArrowRight, Check, Search, BarChart3, FileText, Share2, Lightbulb, Zap, TrendingUp, Target, Palette, Monitor } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Check, Search, BarChart3, FileText, Share2, Lightbulb, Zap, TrendingUp, Target, Palette, Monitor } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 import content from '../content/content';
 import { fadeInUp, slideInLeft, slideInRight, staggerContainer, pageTransition } from '../utils/animations';
@@ -83,8 +83,9 @@ export default function Services() {
                 {services.hero.description}
               </motion.p>
               <motion.div variants={fadeInUp}>
-                <Link to="/contact" className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-primary-500 text-black font-semibold text-sm hover:bg-primary-600 transition-colors">
-                  Get in touch <ArrowRight size={16} />
+                <Link to="/contact" className="btn-primary">
+                  <span>Get in Touch</span>
+                  <ArrowRight size={18} className="relative z-[1]" />
                 </Link>
               </motion.div>
             </motion.div>
@@ -198,9 +199,9 @@ export default function Services() {
                   </ul>
                   <Link
                     to={`/services/${service.id}`}
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-500 group-hover:underline"
+                    className="inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-primary-500 group-hover:text-primary-400 transition-colors"
                   >
-                    Learn more <ArrowRight size={14} />
+                    Explore Service <ArrowUpRight size={16} />
                   </Link>
                 </motion.div>
               );
@@ -308,11 +309,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-
-      <CTASection
-        heading="Let's Build Something Great"
-        cta={{ label: "View Case Studies", path: "/case-studies" }}
-      />
     </motion.div>
   );
 }

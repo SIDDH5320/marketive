@@ -64,8 +64,8 @@ export default function CaseStudyDetail() {
 
       {/* ── Hero Banner ── */}
       <div className="relative pt-20">
-        <div className="h-[460px] md:h-[540px] overflow-hidden">
-          <img src={imgSrc} alt={study.title} className="w-full h-full object-cover" />
+        <div className="relative h-[460px] md:h-[540px] overflow-hidden">
+          <img src={imgSrc} alt={study.title} className="w-full h-full object-cover object-top" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
         </div>
         <div className="absolute bottom-0 left-0 right-0 pb-14 px-6">

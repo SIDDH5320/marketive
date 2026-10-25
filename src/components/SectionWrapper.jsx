@@ -44,14 +44,30 @@ export default function SectionWrapper({
               </motion.h2>
             )}
             {description && (
-              <motion.p
-                variants={fadeInUp}
-                className={`text-base lg:text-lg leading-relaxed ${
-                  isDark ? 'text-gray-400' : 'text-gray-600'
-                }`}
-              >
-                {description}
-              </motion.p>
+              Array.isArray(description) ? (
+                <div className="space-y-4">
+                  {description.map((p, i) => (
+                    <motion.p
+                      key={i}
+                      variants={fadeInUp}
+                      className={`text-base lg:text-lg leading-relaxed ${
+                        isDark ? 'text-gray-400' : 'text-gray-600'
+                      }`}
+                    >
+                      {p}
+                    </motion.p>
+                  ))}
+                </div>
+              ) : (
+                <motion.p
+                  variants={fadeInUp}
+                  className={`text-base lg:text-lg leading-relaxed ${
+                    isDark ? 'text-gray-400' : 'text-gray-600'
+                  }`}
+                >
+                  {description}
+                </motion.p>
+              )
             )}
           </motion.div>
         )}

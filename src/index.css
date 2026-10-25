@@ -86,56 +86,12 @@
     color: #3f3f46;
   }
 
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-
-  ::-webkit-scrollbar-track {
-    border-radius: 8px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    transition: background-color 0.2s ease;
-  }
-
-  body.light ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-
-  body.light ::-webkit-scrollbar-thumb {
-    background: #b3b3b3;
-    border: 2px solid #f1f1f1;
-  }
-
-  body.light ::-webkit-scrollbar-thumb:hover {
-    background: #969696;
-  }
-
-  body.dark ::-webkit-scrollbar-track {
-    background: #1a1a1a;
-  }
-
-  body.dark ::-webkit-scrollbar-thumb {
-    background: #5a5a5a;
-    border: 2px solid #1a1a1a;
-  }
-
-  body.dark ::-webkit-scrollbar-thumb:hover {
-    background: #787878;
-  }
-
   body.light {
     color-scheme: light;
-    scrollbar-width: thin;
-    scrollbar-color: #b3b3b3 #f1f1f1;
   }
 
   body.dark {
     color-scheme: dark;
-    scrollbar-width: thin;
-    scrollbar-color: #5a5a5a #1a1a1a;
   }
 
   ::selection {

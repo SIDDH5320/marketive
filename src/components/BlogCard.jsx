@@ -7,22 +7,25 @@ const IMAGE_MAP = {
   'gradient-4': '/images/blog/gradient-4.jpg',
   'gradient-5': '/images/blog/gradient-5.jpg',
   'gradient-6': '/images/blog/gradient-6.jpg',
+  'ethical-ai': '/images/blog/ethical-ai.png',
+  'dental-marketing': '/images/blog/dental-marketing.png',
+  'bing-webmaster': '/images/blog/bing-webmaster.png',
 };
 
 export default function BlogCard({ post, onClick }) {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
-  const imgSrc = IMAGE_MAP[post.image] || IMAGE_MAP['gradient-1'];
+  const imgSrc = IMAGE_MAP[post.image] || post.image || IMAGE_MAP['gradient-1'];
 
   return (
     <article
       onClick={onClick}
-      className={`group cursor-pointer flex flex-col rounded-2xl overflow-hidden h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
-        isDark ? 'bg-surface-card shadow-black/20' : 'bg-white shadow-sm'
+      className={`group cursor-pointer flex flex-col rounded-3xl overflow-hidden h-full transition-all duration-300 hover:-translate-y-1 ${
+        isDark ? 'bg-surface-card shadow-black/20' : 'bg-transparent'
       }`}
     >
       {/* Image */}
-      <div className="h-52 overflow-hidden shrink-0">
+      <div className="h-56 overflow-hidden rounded-2xl shrink-0 mb-4">
         <img
           src={imgSrc}
           alt={post.title}
@@ -37,29 +40,32 @@ export default function BlogCard({ post, onClick }) {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col flex-1 p-6">
+      <div className="flex flex-col flex-1 px-1 py-1">
         {/* Badge + Date */}
         <div className="flex items-center gap-3 mb-3">
-          <span className="px-3 py-1 rounded-full text-xs font-semibold text-black bg-primary-500 shrink-0">
+          <span className="px-3.5 py-1 rounded-full text-xs font-bold text-white bg-[#d9661e] shrink-0">
             {post.category}
           </span>
-          <span className={`text-sm truncate ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
+          <span className={`text-xs font-medium ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
             {post.date}
           </span>
         </div>
 
         {/* Title */}
-        <h3 className={`text-base font-bold leading-snug mb-3 transition-colors group-hover:text-primary-500 ${
+        <h3 className={`text-lg font-bold leading-snug transition-colors group-hover:text-primary-500 ${
           isDark ? 'text-white' : 'text-gray-900'
         }`}>
           {post.title}
         </h3>
 
-        {/* Excerpt */}
-        <p className={`text-sm leading-relaxed line-clamp-3 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-          {post.excerpt}
-        </p>
+        {/* Excerpt if present */}
+        {post.excerpt && (
+          <p className={`text-sm leading-relaxed mt-2 line-clamp-2 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+            {post.excerpt}
+          </p>
+        )}
       </div>
     </article>
   );
 }
+

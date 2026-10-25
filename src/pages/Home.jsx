@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useAnimationFrame } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Quote, Star } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
@@ -10,6 +10,7 @@ import { fadeInUp, staggerContainer, scaleIn, pageTransition } from '../utils/an
 import SectionWrapper from '../components/SectionWrapper';
 import ServiceCard from '../components/ServiceCard';
 import CaseStudyCard from '../components/CaseStudyCard';
+import BlogCard from '../components/BlogCard';
 import CTASection from '../components/CTASection';
 import AnimatedText from '../components/AnimatedText';
 
@@ -200,7 +201,8 @@ function StatItem({ item }) {
 export default function Home() {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
-  const { home, caseStudies } = content;
+  const { home, caseStudies, blog } = content;
+  const navigate = useNavigate();
 
   return (
     <motion.div {...pageTransition}>
@@ -486,12 +488,14 @@ export default function Home() {
                 <span>{home.hero.cta.label}</span>
                 <ArrowRight size={18} className="relative z-[1]" />
               </Link>
-              <Link
-                to={home.hero.secondaryCta.path}
-                className={isDark ? 'btn-secondary-dark' : 'btn-secondary-light'}
-              >
-                {home.hero.secondaryCta.label}
-              </Link>
+              {home.hero.secondaryCta && home.hero.secondaryCta.path !== '/case-studies' && (
+                <Link
+                  to={home.hero.secondaryCta.path}
+                  className={isDark ? 'btn-secondary-dark' : 'btn-secondary-light'}
+                >
+                  {home.hero.secondaryCta.label}
+                </Link>
+              )}
             </motion.div>
           </motion.div>
         </div>
@@ -581,21 +585,6 @@ export default function Home() {
             <CaseStudyCard key={study.id} study={study} />
           ))}
         </motion.div>
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <Link
-            to="/case-studies"
-            className="inline-flex items-center gap-2 text-primary-400 font-medium hover:text-primary-300 transition-colors group"
-          >
-            View all case studies
-            <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </motion.div>
       </SectionWrapper>
 
       {/* ======================== CTA BANNER ======================== */}
@@ -603,6 +592,47 @@ export default function Home() {
         heading={home.ctaBanner.heading}
         showForm
       />
+
+      {/* ======================== BLOG & RESOURCES ======================== */}
+      <section className={`py-20 lg:py-28 ${isDark ? 'bg-surface-dark' : 'bg-white'}`}>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+              <span className={`inline-block text-xs font-bold uppercase tracking-[0.2em] mb-3 ${isDark ? 'text-gray-400' : 'text-gray-900'}`}>
+                BLOG &amp; RESOURCES
+              </span>
+              <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-bold font-display tracking-tight ${isDark ? 'text-white' : 'text-gray-900'}`}>
+                Browse our articles on<br className="hidden sm:block" /> marketing and growth
+              </h2>
+            </div>
+            <Link
+              to="/blog"
+              className={`px-7 py-3 rounded-full text-sm font-semibold border transition-all duration-300 shrink-0 self-start md:self-auto ${
+                isDark
+                  ? 'border-white/30 text-white hover:bg-white hover:text-black'
+                  : 'border-gray-800 text-gray-900 hover:bg-gray-900 hover:text-white'
+              }`}
+            >
+              All Blog Posts
+            </Link>
+          </div>
+
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-80px' }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          >
+            {blog.posts.slice(0, 3).map((post) => (
+              <motion.div key={post.id} variants={fadeInUp}>
+                <BlogCard post={post} onClick={() => navigate(`/blog/${post.id}`)} />
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
     </motion.div>
   );
 }
+
