@@ -23,7 +23,7 @@ const content = {
     links: [
       { label: "Home", path: "/" },
       { label: "Services", path: "/services" },
-      { label: "Case Studies", path: "/case-studies" },
+      //{ label: "Case Studies", path: "/case-studies" },
       { label: "About", path: "/about" },
       { label: "Blog", path: "/blog" },
       { label: "Contact", path: "/contact" },
