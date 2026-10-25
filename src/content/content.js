@@ -1304,7 +1304,7 @@ Use this checklist quarterly to ensure nothing falls through the cracks.
           },
           {
             "img": "/images/case-studies/gradient-1.jpg",
-            "text": "Our business strategy consulting identifies where your biggest opportunities exist before you invest another marketing dollar — replacing guesswork with strategic business solutions built on data, not assumptions."
+            "text": "Our <a href='https://www.marketive.com.au/services/seo' class='inline-link'>business strategy consulting</a> identifies where your biggest opportunities exist before you invest another marketing dollar — replacing guesswork with strategic business solutions built on data, not assumptions."
           },
           {
             "img": "/images/services/process-1.jpg",

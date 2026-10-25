@@ -207,7 +207,7 @@ export default function ServicePage({ slug }) {
                     </div>
                   </motion.div>
                   <motion.div variants={imageLeft ? slideInRight : slideInLeft} className={imageLeft ? 'lg:order-2' : 'lg:order-1'}>
-                    <p className={`text-base lg:text-lg leading-relaxed mb-10 max-w-3xl mx-auto ${dark('text-gray-400', 'text-gray-600')}`}>{block.text}</p>
+                    <p className={`text-base lg:text-lg leading-relaxed mb-10 max-w-3xl mx-auto ${dark('text-gray-400', 'text-gray-600')}`} dangerouslySetInnerHTML={{ __html: block.text }} />
                   </motion.div>
                 </motion.div>
               );

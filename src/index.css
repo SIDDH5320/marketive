@@ -131,6 +131,20 @@
   }
 
   /* ============================================================
+     INLINE TEXT LINKS
+     ============================================================ */
+  .inline-link {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity 0.2s ease;
+  }
+  .inline-link:hover {
+    opacity: 0.75;
+  }
+
+  /* ============================================================
      BRUTALIST BUTTONS
      ============================================================ */
   .btn-primary {
